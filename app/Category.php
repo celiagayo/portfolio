@@ -26,4 +26,13 @@ class Category extends Model
     		->select('projects.*')
     		->get();
     }
+
+    public function getProject($project_slug){
+    	return DB::table('projects')
+    		-> join('category_project','projects.id','category_project.project_id')
+    		->where('category_project.category_id', $this->id)
+    		->where('projects.slug','=',$project_slug)
+    		->select('projects.*')
+    		->first();
+    }
 }

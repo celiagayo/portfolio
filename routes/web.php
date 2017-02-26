@@ -12,5 +12,4 @@
 */
 
 Route::get('/','StaticPagesController@home');
-
-Route::get('/todo','StaticPagesController@index');
+Route::get('/{category_slug}/{project_slug}', 'StaticPagesController@show');
