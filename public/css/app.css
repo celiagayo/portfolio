@@ -1,3 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -mewbkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
+.portada {
+  background: #FCE9E7;
+  font-family: "Cormorant Garamond", serif;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  color: #353535;
+  text-align: center; }
+  .portada h1.titulo {
+    text-transform: uppercase; }
+  .portada h2.titulo {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    padding-bottom: 25px; }
+  .portada ul {
+    font-family: "Cormorant Garamond", serif;
+    list-style: none;
+    color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EE6F49;
+    height: 100%; }
+    .portada ul li {
+      width: 100%;
+      padding: 18px;
+      text-transform: uppercase; }
+    .portada ul .c-web {
+      background-color: #FACBBD; }
+    .portada ul .c-graphic {
+      background-color: #F5A992; }
+    .portada ul .c-producto {
+      background-color: #F18767; }
+    .portada ul .c-arquitectura {
+      background-color: #EE6F49; }
 
 /*# sourceMappingURL=app.css.map */

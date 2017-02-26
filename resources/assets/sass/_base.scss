@@ -1,0 +1,65 @@
+$color-web:#FACBBD;
+$color-graphic:#F5A992;
+$color-producto:#F18767;
+$color-arquitectura:#EE6F49;
+$color-light:#FCE9E7;
+$color-dark:#353535;
+$color-white:#ffffff;
+
+
+$color-op-web:rgba(238,111, 73, 1 );
+$color-op-graphic:rgba(238,111, 73, 0.9 );
+$color-op-producto:rgba(238,111, 73, 0.8 );
+$color-op-arquitectura:rgba(238,111, 73, 0.7 );
+$color-op-light:rgba(238,111, 73, 0.6 );
+
+$font-sans: 'Cormorant Garamond', serif;
+$font-italic-light:'Raleway', sans-serif;
+.portada{
+    background: $color-light;
+    font-family: $font-sans;
+    width: 100%; 
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    color: $color-dark;
+    text-align:center;
+
+    h1.titulo{
+        text-transform: uppercase;
+
+    }
+    h2.titulo{
+        font-family: $font-italic-light;
+        font-size: 14px;
+        padding-bottom: 25px;
+    }
+
+    ul{
+        font-family: $font-sans;
+        list-style: none;
+        color: $color-white;
+        width: 100%;
+        margin: 0 auto;
+        background-color:$color-arquitectura;
+        height:100%;
+        li{
+            width: 100%;
+            padding: 18px;
+            text-transform: uppercase;
+
+        }
+        .c-web{
+            background-color: $color-web;
+        }
+        .c-graphic{
+            background-color: $color-graphic;
+        }
+        .c-producto{
+            background-color: $color-producto;
+        }
+        .c-arquitectura{
+            background-color: $color-arquitectura;
+        }
+    }
+}
