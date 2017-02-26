@@ -16,12 +16,14 @@ class CategoriesTableSeeder extends Seeder
             [
             	'id' => 1,
                 'slug' => 'disenyo-web',
-                'title' => 'Proyectos de diseño web'
+                'title' => 'Proyectos de diseño web',
+                'detail' => 'Detalle de la categoria diseño web'
             ],
             [
                 'id' => 2,
                 'slug' => 'arquitectura',
-                'title' => 'Proyectos de arquitectura'
+                'title' => 'Proyectos de arquitectura',
+                'detail' => 'Detalle de la categoria arquitectra'
             ]
         ]);
     }

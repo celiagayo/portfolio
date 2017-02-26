@@ -21,6 +21,8 @@ class CreateCategoriesTable extends Migration
             $table->string('title')
                 ->comment('Título de la categoria')
                 ->nullable();
+            $table->longText('detail')
+                ->nullable();
             $table->timestamps();
         });
     }

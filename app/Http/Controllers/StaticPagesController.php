@@ -51,4 +51,25 @@ class StaticPagesController extends Controller
 		}
 
 	}
+
+	public function home(){
+
+		$categories = Category::all();
+
+		/**
+		Para cada categoría, obtenemos sus proyectos
+		y los guardamos en el atributo no persistente
+		*/
+		foreach ($categories as $category) {
+
+			$projects = $category->projectsDb();
+			$category->projects = $projects;
+
+		}
+
+		//dd($categories);
+		return view('home')
+			->with('categories',$categories);
+
+	}
 }
