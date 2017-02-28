@@ -18,7 +18,7 @@
     </head>
     <body >
         <header>
-<!--            @include('layout.navbar')-->
+            @include('layout.navbar')
         </header>
 
         @yield('content')

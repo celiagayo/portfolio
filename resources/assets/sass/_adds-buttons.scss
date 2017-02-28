@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../../font/fontello.eot?27784399');
+  src: url('../../font/fontello.eot?27784399#iefix') format('embedded-opentype'),
+       url('../../font/fontello.woff2?27784399') format('woff2'),
+       url('../../font/fontello.woff?27784399') format('woff'),
+       url('../../font/fontello.ttf?27784399') format('truetype'),
+       url('../../font/fontello.svg?27784399#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?27784399#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="ico-form"]:before, [class*="ico-form"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 5px;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.ico-form.nombre:before { content: '\e804'; } /* '' */
+.ico-form.apellidos:before { content: '\e805'; } /* '' */ 
+.ico-form.email:before { content: '\f0e0'; } /* '' */
+.ico-form.telf:before { content: '\e80b'; } /* '' */
+.ico-form.curso:before { content: '\e813'; } /* '' */
+.ico-form.pais:before { content: '\e803'; } /* '' */
+.ico-form.provincia:before { content: '\f11d'; } /* '' */
+.ico-form-thumbs-up-alt:before { content: '\f164'; } /* '' */
+
+.ico-form-mail:before { content: '\e800'; } /* '' */
+.ico-form-home:before { content: '\e801'; } /* '' */
+.ico-form-bookmark:before { content: '\e802'; } /* '' */
+.ico-form-flag:before { content: '\e803'; } /* '' */
+.ico-form-user:before { content: '\e804'; } /* '' */
+.ico-form-users:before { content: '\e805'; } /* '' */
+.ico-form-comment:before { content: '\e806'; } /* '' */
+.ico-form-chat:before { content: '\e807'; } /* '' */
+.ico-form-attention:before { content: '\e808'; } /* '' */
+.ico-form-attention-circled:before { content: '\e809'; } /* '' */
+.ico-form-location:before { content: '\e80a'; } /* '' */
+.ico-form-phone:before { content: '\e80b'; } /* '' */
+.ico-form-heart:before { content: '\e80c'; } /* '' */
+.ico-form-heart-empty:before { content: '\e80d'; } /* '' */
+.ico-form-ok:before { content: '\e80e'; } /* '' */
+.ico-form-down-open:before { content: '\e80f'; } /* '' */
+.ico-form-left-open:before { content: '\e810'; } /* '' */
+.ico-form-right-open:before { content: '\e811'; } /* '' */
+.ico-form-up-open:before { content: '\e812'; } /* '' */
+.ico-form-folder:before { content: '\e813'; } /* '' */
+.ico-form-folder-open:before { content: '\e814'; } /* '' */
+.ico-form-info-circled:before { content: '\e815'; } /* '' */
+.ico-form-help-circled:before { content: '\e816'; } /* '' */
+.ico-form-plus:before { content: '\e817'; } /* '' */
+.ico-form-cancel:before { content: '\e818'; } /* '' */
+.ico-form-minus:before { content: '\e819'; } /* '' */
+.ico-form-pin:before { content: '\e81a'; } /* '' */
+.ico-form-eye:before { content: '\e81b'; } /* '' */
+.ico-form-thumbs-up:before { content: '\e81c'; } /* '' */
+.ico-form-thumbs-down:before { content: '\e81d'; } /* '' */
+.ico-form-pencil:before { content: '\e81e'; } /* '' */
+.ico-form-edit:before { content: '\e81f'; } /* '' */
+.ico-form-doc:before { content: '\e820'; } /* '' */
+.ico-form-user-1:before { content: '\e821'; } /* '' */
+.ico-form-users-1:before { content: '\e822'; } /* '' */
+.ico-form-user-add:before { content: '\e823'; } /* '' */
+.ico-form-star-empty:before { content: '\e824'; } /* '' */
+.ico-form-star-half:before { content: '\e825'; } /* '' */
+.ico-form-ok-circled:before { content: '\e826'; } /* '' */
+.ico-form-ok-circled2:before { content: '\e827'; } /* '' */
+.ico-form-cancel-circled2:before { content: '\e828'; } /* '' */
+.ico-form-cancel-circled:before { content: '\e829'; } /* '' */
+.ico-form-plus-circled:before { content: '\e82a'; } /* '' */
+.ico-form-minus-circled:before { content: '\e82b'; } /* '' */
+.ico-form-attach:before { content: '\e82c'; } /* '' */
+.ico-form-download:before { content: '\e82d'; } /* '' */
+.ico-form-upload:before { content: '\e82e'; } /* '' */
+.ico-form-mobile:before { content: '\e82f'; } /* '' */
+.ico-form-monitor:before { content: '\e830'; } /* '' */
+.ico-form-install:before { content: '\e831'; } /* '' */
+.ico-form-folder-close:before { content: '\e832'; } /* '' */
+.ico-form-folder-open-1:before { content: '\e833'; } /* '' */
+.ico-form-bookmark-empty:before { content: '\f097'; } /* '' */
+.ico-form-docs:before { content: '\f0c5'; } /* '' */
+.ico-form-mail-alt:before { content: '\f0e0'; } /* '' */
+.ico-form-comment-empty:before { content: '\f0e5'; } /* '' */
+.ico-form-chat-empty:before { content: '\f0e6'; } /* '' */
+.ico-form-doc-text:before { content: '\f0f6'; } /* '' */
+.ico-form-plus-squared:before { content: '\f0fe'; } /* '' */
+.ico-form-angle-left:before { content: '\f104'; } /* '' */
+.ico-form-angle-right:before { content: '\f105'; } /* '' */
+.ico-form-angle-up:before { content: '\f106'; } /* '' */
+.ico-form-angle-down:before { content: '\f107'; } /* '' */
+.ico-form-quote-left:before { content: '\f10d'; } /* '' */
+.ico-form-quote-right:before { content: '\f10e'; } /* '' */
+.ico-form-folder-empty:before { content: '\f114'; } /* '' */
+.ico-form-folder-open-empty:before { content: '\f115'; } /* '' */
+.ico-form-flag-empty:before { content: '\f11d'; } /* '' */
+.ico-form-star-half-alt:before { content: '\f123'; } /* '' */
+.ico-form-help:before { content: '\f128'; } /* '' */
+.ico-form-info:before { content: '\f129'; } /* '' */
+.ico-form-calendar-empty:before { content: '\f133'; } /* '' */
+.ico-form-angle-circled-left:before { content: '\f137'; } /* '' */
+.ico-form-angle-circled-right:before { content: '\f138'; } /* '' */
+.ico-form-angle-circled-up:before { content: '\f139'; } /* '' */
+.ico-form-angle-circled-down:before { content: '\f13a'; } /* '' */
+.ico-form-minus-squared:before { content: '\f146'; } /* '' */
+.ico-form-minus-squared-alt:before { content: '\f147'; } /* '' */
+.ico-form-ok-squared:before { content: '\f14a'; } /* '' */
+.ico-form-compass:before { content: '\f14e'; } /* '' */
+.ico-form-doc-inv:before { content: '\f15b'; } /* '' */
+.ico-form-doc-text-inv:before { content: '\f15c'; } /* '' */
+.ico-form-thumbs-up-alt:before { content: '\f164'; } /* '' */
+.ico-form-thumbs-down-alt:before { content: '\f165'; } /* '' */
+.ico-form-graduation-cap:before { content: '\f19d'; } /* '' */
+.ico-form-file-pdf:before { content: '\f1c1'; } /* '' */
+.ico-form-file-image:before { content: '\f1c5'; } /* '' */
+.ico-form-user-plus:before { content: '\f234'; } /* '' */
+.ico-form-user-times:before { content: '\f235'; } /* '' */
+.ico-form-map-o:before { content: '\f278'; } /* '' */
+.ico-form-map:before { content: '\f279'; } /* '' */
+.ico-form-commenting:before { content: '\f27a'; } /* '' */
+.ico-form-commenting-o:before { content: '\f27b'; } /* '' */

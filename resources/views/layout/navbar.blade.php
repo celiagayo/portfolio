@@ -1,20 +1,14 @@
-<nav class="navbar">
+<div class="navbar">
+   <h1 class="titulo">Celia Gayo Escribano</h1>
 
-    <div><a href="/"><h1>Celia Gayo Escribano</h1> </a></div>
-    <h2>diseñadora</h2>
+    <div class="menu-box">
+        <p>menú</p>
+        <nav>
+            <div>Inicio</div>
+            <div>Sobre mi</div>
+            <div>Contacto</div>
+            <div>Web</div>  
+        </nav>
 
-
-</nav>
-<div class="menu">
-    <p>menu</p>
-    <div class="close"></div>
-    <ul>
-        <li>Inicio</li>
-        <li>Sobre mi</li>
-        <li>Contacto</li>
-        <li>Web</li>
-        <li>Grafico</li>
-        <li>Producto</li>
-        <li>Arquitectura</li>
-    </ul>
+    </div>
 </div>

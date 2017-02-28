@@ -15,6 +15,147 @@ $color-op-light:rgba(238,111, 73, 0.6 );
 
 $font-sans: 'Cormorant Garamond', serif;
 $font-italic-light:'Raleway', sans-serif;
+body{
+    font-family: $font-sans;
+}
+.navbar{
+    background: $color-light;
+    width: 100%;
+    position:fixed;
+    text-align: center;
+
+    height: 70px;
+
+    h1{
+        line-height: 70px;
+        font-size: 17px;
+        color: $color-producto;
+    }
+}
+
+.menu-box{
+    background: $color-producto;
+    color: $color-white;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    z-index: 90;
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+    nav {
+        display:none;
+        position: absolute;
+        text-align: right;
+        z-index: 91;
+        width: 100%;
+        padding: 40px 17px 30px 50px;
+        font-size: 20px;
+        height: 100%;
+        div{
+            border-bottom: 1px solid $color-white;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.menu-box.abremenu{
+    min-height: 500px;
+    height: 100%;
+    min-width: 250px;
+    width: 25%;
+    line-height: inherit;
+
+    p{
+        font-size: 30px;
+        text-align: left;
+        position: relative;
+        top: 20px;
+        left: 10px;
+        cursor: pointer;
+        width: 100%;
+        height: 40px;
+        display: block;
+        line-height: auto;
+        padding-left: 10px;
+
+
+    }
+}
+
+h1.titulo{
+    text-transform: uppercase;
+}
+h2.titulo{
+    font-family: $font-italic-light;
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+ul.titulo{
+    font-family: $font-sans;
+    list-style: none;
+    color: $color-white;
+    width: 100%;
+    margin: 0 auto;
+    background-color:$color-arquitectura;
+    height:100%;
+    position:relative;
+    li{
+        position: absolute;
+        line-height: 80px;
+        height: 80px;
+        width: 100%;
+        top: 0px;
+        text-transform: uppercase;
+        color: transparent;
+        cursor: pointer;
+    }
+
+    .c-web{
+        background-color: $color-web;
+        font-size: 1px;
+    }
+    .c-graphic{
+        background-color: $color-graphic;
+        font-size: 1px;
+        top:20px
+    }
+    .c-producto{
+        background-color: $color-producto;
+        font-size: 1px;
+        top:45px
+    }
+    .c-arquitectura{
+        background-color: $color-arquitectura;
+        font-size: 1px;
+        top:80px
+    }
+
+    li.hovered{
+        position: relative;
+        color: $color-white;
+
+    }
+    .c-web.hovered{
+        font-size: 49px;
+
+    }
+    .c-graphic.hovered{
+        font-size: 22px;
+        top: 0px;
+    }
+    .c-producto.hovered{
+        font-size: 18px;
+        top: 0px;
+    }
+    .c-arquitectura.hovered{
+        font-size: 13px;
+        top: 0px;
+    }
+}
 .portada{
     background: $color-light;
     font-family: $font-sans;
@@ -25,41 +166,27 @@ $font-italic-light:'Raleway', sans-serif;
     color: $color-dark;
     text-align:center;
 
-    h1.titulo{
-        text-transform: uppercase;
 
-    }
-    h2.titulo{
-        font-family: $font-italic-light;
-        font-size: 14px;
-        padding-bottom: 25px;
-    }
+}
+.content{
+    width: 100%;
+    overflow: hidden;
 
-    ul{
-        font-family: $font-sans;
-        list-style: none;
-        color: $color-white;
-        width: 100%;
-        margin: 0 auto;
-        background-color:$color-arquitectura;
-        height:100%;
-        li{
-            width: 100%;
-            padding: 18px;
-            text-transform: uppercase;
 
-        }
-        .c-web{
-            background-color: $color-web;
-        }
-        .c-graphic{
-            background-color: $color-graphic;
-        }
-        .c-producto{
-            background-color: $color-producto;
-        }
-        .c-arquitectura{
-            background-color: $color-arquitectura;
-        }
+}
+.oculto{
+    display: none;
+}
+.banda{
+    color: $color-white;
+    width: 80px;
+    height: 100%;
+    float: right;
+}
+
+.contenido-web{
+    color:  $color-web;
+    .banda{
+        background: $color-web;
     }
 }
