@@ -13,6 +13,7 @@ body {
   width: 100%;
   position: fixed;
   text-align: center;
+  z-index: 3;
   height: 70px; }
   .navbar h1 {
     line-height: 70px;
@@ -26,7 +27,7 @@ body {
   width: 50px;
   line-height: 50px;
   position: absolute;
-  z-index: 90;
+  z-index: 4;
   top: 10px;
   left: 10px;
   font-size: 13px; }
@@ -34,7 +35,7 @@ body {
     display: none;
     position: absolute;
     text-align: right;
-    z-index: 91;
+    z-index: 5;
     width: 100%;
     padding: 40px 17px 30px 50px;
     font-size: 20px;
@@ -127,24 +128,67 @@ ul.titulo {
   height: 100%;
   position: relative;
   color: #353535;
-  text-align: center; }
+  text-align: center;
+  z-index: 10; }
 
 .content {
   width: 100%;
   overflow: hidden; }
-
-.oculto {
-  display: none; }
+  .content > div {
+    width: 100%;
+    position: relative; }
 
 .banda {
+  width: 90px;
   color: #ffffff;
-  width: 80px;
   height: 100%;
-  float: right; }
+  display: block;
+  font-size: 17px;
+  text-align: left;
+  padding: 150px 10px 10px;
+  position: absolute;
+  right: 0px; }
+  .banda h2 {
+    word-break: break-all; }
+  .banda .detalle {
+    padding-left: 100px; }
+
+.fix {
+  position: fixed;
+  top: 200px; }
+
+.banda.mostrada {
+  width: 40%;
+  padding: 150px 30px; }
+  .banda.mostrada .detalle {
+    padding-left: 0px; }
+
+.bloque {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px 100px 100px 50px; }
+  .bloque > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    margin: 40px 2%; }
+  .bloque img {
+    width: 100%;
+    height: auto;
+    text-align: center; }
+  .bloque .all {
+    display: block;
+    margin: 30px auto; }
 
 .contenido-web {
   color: #FACBBD; }
   .contenido-web .banda {
     background: #FACBBD; }
+
+.contenido-graphic {
+  color: #F5A992; }
+  .contenido-graphic .banda {
+    background: #F5A992; }
 
 /*# sourceMappingURL=app.css.map */

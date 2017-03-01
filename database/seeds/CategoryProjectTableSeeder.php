@@ -18,10 +18,15 @@ class CategoryProjectTableSeeder extends Seeder
             ],
             [
                 'project_id' => 2,
-                'category_id' => 2
+                'category_id' => 1
             ],
             [
                 'project_id' => 3,
+                'category_id' => 1
+            ]
+            ,
+            [
+                'project_id' => 4,
                 'category_id' => 1
             ]
         ]);
