@@ -15,6 +15,45 @@ $color-op-light:rgba(238,111, 73, 0.6 );
 
 $font-sans: 'Cormorant Garamond', serif;
 $font-italic-light:'Raleway', sans-serif;
+
+
+$max-width:1500px;
+
+
+$main-text: 15px;
+$boton-text:26px; 
+$boton-text-d: 2.3vw;
+$medium-text: 16px;
+$second-text: 13px;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin shadow-1() {
+    -webkit-box-shadow:3px 3px 6px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow:03px 3px 6px 0px rgba(0, 0, 0, 0.23);
+    -ms-webkit-box-shadow:3px 3px 6px 0px rgba(0, 0, 0, 0.23);
+    box-shadow:3px 3px 6px 0px rgba(0, 0, 0, 0.23);
+}
+
+
+@mixin inline-middle{
+    display: inline-block;
+    vertical-align: middle;
+}
+@mixin inline-top{
+    display: inline-block;
+    vertical-align: top;
+}
+@mixin inline-bottom{
+    display: inline-block;
+    vertical-align: bottm;
+}
+
+
 body{
     font-family: $font-sans;
 }
@@ -23,7 +62,7 @@ body{
     width: 100%;
     position:fixed;
     text-align: center;
-
+    z-index: 3;
     height: 70px;
 
     h1{
@@ -40,7 +79,7 @@ body{
     width: 50px;
     line-height: 50px;
     position: absolute;
-    z-index: 90;
+    z-index: 4;
     top: 10px;
     left: 10px;
     font-size: 13px;
@@ -48,7 +87,7 @@ body{
         display:none;
         position: absolute;
         text-align: right;
-        z-index: 91;
+        z-index: 5;
         width: 100%;
         padding: 40px 17px 30px 50px;
         font-size: 20px;
@@ -165,6 +204,7 @@ ul.titulo{
     position: relative;
     color: $color-dark;
     text-align:center;
+    z-index: 10;
 
 
 }
@@ -172,21 +212,78 @@ ul.titulo{
     width: 100%;
     overflow: hidden;
 
+    >div{
+        width: 100%;
+        position: relative;
+    }
+}
 
-}
-.oculto{
-    display: none;
-}
 .banda{
+    width: 90px;
     color: $color-white;
-    width: 80px;
     height: 100%;
-    float: right;
-}
+    display: block;
+    font-size: 17px;
+    text-align: left;
+    padding: 150px 10px 10px;
+    position: absolute;
+    right: 0px;
+     >div{
 
+    }
+    h2{word-break: break-all}
+    .detalle{
+        padding-left: 100px;
+    }
+   
+}
+.fix{
+    position: fixed;
+  top: 200px;
+}
+.banda.mostrada{
+    width: 40%;
+    padding: 150px 30px;
+    .detalle{ padding-left: 0px;}
+}
+.bloque{
+    max-width: $max-width;
+    width:100%;
+    margin: 0 auto;
+    padding: 200px 100px 100px 50px;
+
+
+
+    >div{
+        @include inline-top;
+        width: 28%;
+        margin: 40px 2%;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .all{
+        display: block;
+        margin: 30px auto;
+    }
+}
 .contenido-web{
     color:  $color-web;
+
     .banda{
         background: $color-web;
     }
+
+
+}
+.contenido-graphic{
+    color:  $color-graphic;
+
+    .banda{
+        background: $color-graphic;
+    }
+
+
 }

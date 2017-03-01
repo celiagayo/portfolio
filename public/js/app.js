@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var WindHeight = $(window).height();
 
-
+    console.log(WindHeight);
 //PORTADA ocupa todo el alto de la ventana
     function portadaTodo() {
         $('.portada').height(WindHeight);
@@ -22,24 +22,68 @@ $(document).ready(function () {
                 $('.portada ul li').removeClass('hovered');
             });
 
-//PORTADA ha sido pasada con scroll - mostramos cabecera 
-    function mostrarCabecera() {
+//PORTADA adapta su tamaño al scroll
+    function scrollPortada() {
         if ($('.portada').length) {
-            var positionFijar = $(".c-arquitectura").position().top;
-            if ($(window).scrollTop() <= positionFijar) {
-                $('.portada').height(WindHeight);
-                //coge los datos del navbar para colocarlos en la cabecera 
-
-
+            if ($(window).scrollTop() >= 100) {
+                $('.portada').height('auto');
             }
             else {
-
-                $('.portada').height('auto');
+                $('.portada').height(WindHeight);
             }
         }
 
     }
-    mostrarCabecera();
+    scrollPortada();
+
+
+//  BANDA ACOMPAÑA
+    var flotante = $(".banda >div");
+    function mueveFlotante() {
+//        if (flotante.length) {
+//            var positionFijar = $(".c-arquitectura").offset().top;
+//            var positionQuitar = $(".contenido-graphic").offset().top;
+//            if ($(window).scrollTop() >= positionFijar) {
+//                console.log("mueve");
+//                $(flotante).addClass("fix");
+//                
+//            } else {
+//                $(flotante).removeClass("fix");
+//            }
+//        }
+
+    }
+    mueveFlotante();
+//PORTADA ha sido pasada con scroll - mostramos cabecera 
+//    function pasadaPortada() {
+//        if ($('.portada').length) {
+//            var positionFijar = $(".c-arquitectura").offset().top;
+//
+//            if ($(window).scrollTop() <= positionFijar) {
+//
+//
+////
+//
+//            }
+//            else {
+//
+//            }
+//        }
+//
+//    }
+//    pasadaPortada();
+//Barra lateral info
+    $('.banda')
+            .mouseenter(function () {
+                $(this).addClass('mostrada');
+            })
+            .mouseleave(function () {
+                $(this).removeClass('mostrada');
+            });
+
+
+
+
 
 //MENUBOX funcionamiento
     $('.menu-box')
@@ -74,7 +118,8 @@ $(document).ready(function () {
 
     //SCROLL
     $(window).scroll(function () {
-        mostrarCabecera();
-
+//        pasadaPortada();
+        scrollPortada();
+        mueveFlotante();
     });
 });
