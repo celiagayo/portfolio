@@ -2,41 +2,45 @@
 
 use Illuminate\Database\Seeder;
 
-class CategoriesTableSeeder extends Seeder
-{
+class CategoriesTableSeeder extends Seeder {
+
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
-    {
-    	// Categorías de ejemplo
-    	DB::table('categories')->insert([
+    public function run() {
+        // Categorías de ejemplo
+        DB::table('categories')->insert([
             [
-            	'id' => 1,
+                'id' => 1,
                 'slug' => 'web',
-                'title' => 'Diseño web',
+                'css_class' => 'c-web',
+                'title' => 'WEB',
                 'detail' => 'Detalle de la categoria diseño web'
             ],
             [
                 'id' => 2,
                 'slug' => 'graphic',
-                'title' => 'Diseño gráfico',
+                'css_class' => 'c-graphic',
+                'title' => 'GRAPHIC',
                 'detail' => 'Detalle de la categoria diseño gráfico'
             ],
             [
                 'id' => 3,
                 'slug' => 'product',
-                'title' => 'Diseño de producto',
+                'css_class' => 'c-product',
+                'title' => 'PRODUCTO',
                 'detail' => 'Detalle de la categoria diseño de producto'
             ],
             [
                 'id' => 4,
                 'slug' => 'architecture',
-                'title' => 'Proyectos de arquitectura',
+                'css_class' => 'c-architecture',
+                'title' => 'ARQUITECTURA',
                 'detail' => 'Detalle de la categoria arquitectra'
             ]
         ]);
     }
+
 }

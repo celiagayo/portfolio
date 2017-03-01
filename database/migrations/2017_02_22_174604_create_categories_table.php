@@ -18,6 +18,9 @@ class CreateCategoriesTable extends Migration
             $table->string('slug')
                 ->comment('slug tipo "nombre-categoria"')
                 ->nullable();
+            $table->string('css_class')
+                ->comment('clase de css')
+                ->nullable();
             $table->string('title')
                 ->comment('Título de la categoria')
                 ->nullable();
