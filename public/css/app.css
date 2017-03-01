@@ -20,6 +20,9 @@ body {
     font-size: 17px;
     color: #F18767; }
 
+.navbar.con-banda {
+  padding-right: 90px; }
+
 .menu-box {
   background: #F18767;
   color: #ffffff;
@@ -155,7 +158,8 @@ ul.titulo {
   text-align: left;
   padding: 150px 10px 10px;
   position: absolute;
-  right: 0px; }
+  right: 0px;
+  z-index: 15; }
   .banda h2 {
     word-break: break-all; }
   .banda .detalle {

@@ -19,6 +19,7 @@ $font-italic-light:'Raleway', sans-serif;
 
 $max-width:1500px;
 
+$ancho-banda:90px;
 
 $main-text: 15px;
 $boton-text:26px; 
@@ -64,12 +65,16 @@ body{
     text-align: center;
     z-index: 3;
     height: 70px;
+    
 
     h1{
         line-height: 70px;
         font-size: 17px;
         color: $color-producto;
     }
+}
+.navbar.con-banda{
+    padding-right: $ancho-banda;
 }
 
 .menu-box{
@@ -236,7 +241,7 @@ ul.titulo{
 }
 
 .banda{
-    width: 90px;
+    width: $ancho-banda;
     color: $color-white;
     height: 100%;
     display: block;
@@ -245,6 +250,7 @@ ul.titulo{
     padding: 150px 10px 10px;
     position: absolute;
     right: 0px;
+    z-index:15;
     >div{
 
     }

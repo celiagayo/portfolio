@@ -80,7 +80,12 @@ $(document).ready(function () {
             .mouseleave(function () {
                 $(this).removeClass('mostrada');
             });
-
+    //Si existe banda, centrar navbar
+    if ($('.banda').length) {
+        $('.navbar').addClass('con-banda');
+    } else {
+        $('.navbar').removeClass('con-banda');
+    }
 
 
 
@@ -103,6 +108,7 @@ $(document).ready(function () {
                 $('.menu-box').removeClass('abremenu');
                 $('.menu-box p').html('menu');
             });
+
 
 
 
