@@ -23,11 +23,36 @@ class CategoryProjectTableSeeder extends Seeder
             [
                 'project_id' => 3,
                 'category_id' => 1
-            ]
-            ,
+            ],
             [
                 'project_id' => 4,
                 'category_id' => 1
+            ],
+            [
+                'project_id' => 5,
+                'category_id' => 2
+            ]
+            ,
+            [
+                'project_id' => 6,
+                'category_id' => 2
+            ],
+            [
+                'project_id' => 7,
+                'category_id' => 2
+            ]
+            , [
+                'project_id' => 8,
+                'category_id' => 2
+            ] ,
+            [
+                'project_id' => 9,
+                'category_id' => 3
+            ]
+            ,
+            [
+                'project_id' => 10,
+                'category_id' => 3
             ]
         ]);
     }

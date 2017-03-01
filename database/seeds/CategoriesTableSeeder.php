@@ -16,30 +16,31 @@ class CategoriesTableSeeder extends Seeder {
                 'id' => 1,
                 'slug' => 'web',
                 'css_class' => 'c-web',
-                'title' => 'WEB',
+                'title' => 'Web',
                 'detail' => 'Detalle de la categoria diseño web'
             ],
             [
                 'id' => 2,
                 'slug' => 'graphic',
                 'css_class' => 'c-graphic',
-                'title' => 'GRAPHIC',
+                'title' => 'Graphic',
                 'detail' => 'Detalle de la categoria diseño gráfico'
             ],
             [
                 'id' => 3,
                 'slug' => 'product',
                 'css_class' => 'c-product',
-                'title' => 'PRODUCTO',
+                'title' => 'Producto',
                 'detail' => 'Detalle de la categoria diseño de producto'
             ],
             [
                 'id' => 4,
                 'slug' => 'architecture',
                 'css_class' => 'c-architecture',
-                'title' => 'ARQUITECTURA',
+                'title' => 'Arquitectura',
                 'detail' => 'Detalle de la categoria arquitectra'
             ]
+            
         ]);
     }
 

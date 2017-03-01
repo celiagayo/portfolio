@@ -1,5 +1,5 @@
 <div class="navbar">
-   <h1 class="titulo">Celia Gayo Escribano</h1>
+    <h1 class="titulo">Celia Gayo Escribano</h1>
 
     <div class="menu-box">
         <p>menú</p>
@@ -7,7 +7,10 @@
             <div>Inicio</div>
             <div>Sobre mi</div>
             <div>Contacto</div>
-            <div>Web</div>  
+            @foreach ($categories as $category)
+            <div>{{ $category->title }}</div>
+
+            @endforeach
         </nav>
 
     </div>
