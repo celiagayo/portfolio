@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var WindHeight = $(window).height();
 
-    console.log(WindHeight);
+//    console.log(WindHeight);
 //PORTADA ocupa todo el alto de la ventana
     function portadaTodo() {
         $('.portada').height(WindHeight);
@@ -21,6 +21,10 @@ $(document).ready(function () {
             .mouseleave(function () {
                 $('.portada ul li').removeClass('hovered');
             });
+    $('.portada').click(function () {
+        $('.portada ul li').addClass('hovered');
+    });
+
 
 //PORTADA adapta su tamaño al scroll
     function scrollPortada() {
@@ -38,19 +42,23 @@ $(document).ready(function () {
 
 
 //  BANDA ACOMPAÑA
-    var flotante = $(".banda >div");
     function mueveFlotante() {
-//        if (flotante.length) {
-//            var positionFijar = $(".c-arquitectura").offset().top;
-//            var positionQuitar = $(".contenido-graphic").offset().top;
-//            if ($(window).scrollTop() >= positionFijar) {
-//                console.log("mueve");
-//                $(flotante).addClass("fix");
-//                
-//            } else {
-//                $(flotante).removeClass("fix");
-//            }
-//        }
+
+        $('.area').each(function () {
+            var attrArea = $(this).attr('data-attr');
+            var positionFijar = $(this).find($(".fijador." + attrArea)).offset().top;
+            var positionSoltar = $(".soltador").offset().top;
+            console.log(positionFijar);
+            if ($(document).scrollTop() >= positionFijar) {
+                $(".banda>div." + attrArea).addClass("fix");
+
+
+            } else {
+                $(".banda>div").removeClass("fix").css("top", "0px");
+            }
+        });
+
+
 
     }
     mueveFlotante();
