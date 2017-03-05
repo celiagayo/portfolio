@@ -74,7 +74,7 @@ class ProjectsTableSeeder extends Seeder {
                 'slug' => 'graphic-photography',
                 'title' => 'Fotografía',
                 'url' => 'www.ualcala.es',
-                'featured_image' => '/img/graphic/illustration/featured-graphic-illustration-woman-celia-gayo.jpg',
+                'featured_image' => '/img/graphic/photography/featured-photography-portadas-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
                 'detail_two' => 'texto de detalle 2',
             ]

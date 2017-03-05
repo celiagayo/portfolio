@@ -148,6 +148,14 @@ ul.titulo {
     color: #F5A992; }
     .content .c-graphic .banda {
       background: #F5A992; }
+  .content .c-product {
+    color: #F18767; }
+    .content .c-product .banda {
+      background: #F18767; }
+  .content .c-architecture {
+    color: #EE6F49; }
+    .content .c-architecture .banda {
+      background: #EE6F49; }
 
 .banda {
   width: 90px;
@@ -161,13 +169,13 @@ ul.titulo {
   right: 0px;
   z-index: 15; }
   .banda h2 {
-    word-break: break-all; }
+    word-break: break-all;
+    text-transform: uppercase; }
   .banda .detalle {
     padding-left: 100px; }
 
 .fix {
-  position: fixed;
-  top: 200px; }
+  position: fixed; }
 
 .banda.mostrada {
   width: 40%;

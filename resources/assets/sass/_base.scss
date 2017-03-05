@@ -228,14 +228,24 @@ ul.titulo{
         .banda{
             background: $color-web;
         }
-
     }
     .c-graphic{
         color:  $color-graphic;
         .banda{
             background: $color-graphic;
         }
-
+    }
+    .c-product{
+        color:  $color-producto;
+        .banda{
+            background: $color-producto;
+        }
+    }
+     .c-architecture{
+        color:  $color-arquitectura;
+        .banda{
+            background: $color-arquitectura;
+        }
     }
 
 }
@@ -254,7 +264,7 @@ ul.titulo{
     >div{
 
     }
-    h2{word-break: break-all}
+    h2{word-break: break-all; text-transform: uppercase;}
     .detalle{
         padding-left: 100px;
     }
@@ -262,7 +272,6 @@ ul.titulo{
 }
 .fix{
     position: fixed;
-    top: 200px;
 }
 .banda.mostrada{
     width: 40%;
