@@ -103,6 +103,10 @@ body{
             cursor: pointer;
         }
     }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .menu-box.abremenu{
@@ -158,6 +162,7 @@ ul.titulo{
         cursor: pointer;
     }
 
+
     .c-web{
         background-color: $color-web;
         font-size: 1px;
@@ -200,6 +205,7 @@ ul.titulo{
         top: 0px;
     }
 }
+.menu-ap:hover{text-decoration: underline;}
 .portada{
     background: $color-light;
     font-family: $font-sans;
@@ -270,7 +276,6 @@ ul.titulo{
     .fix{
         position: fixed;
         top: 60px;
-
     }
 
 }

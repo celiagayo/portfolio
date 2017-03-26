@@ -47,6 +47,9 @@ body {
       border-bottom: 1px solid #ffffff;
       margin-bottom: 10px;
       cursor: pointer; }
+  .menu-box a {
+    text-decoration: none;
+    color: inherit; }
 
 .menu-box.abremenu {
   min-height: 500px;
@@ -122,6 +125,9 @@ ul.titulo {
   ul.titulo .c-architecture.hovered {
     font-size: 13px;
     top: 0px; }
+
+.menu-ap:hover {
+  text-decoration: underline; }
 
 .portada {
   background: #FCE9E7;

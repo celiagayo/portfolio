@@ -10,10 +10,7 @@
 
         <ul class="titulo">
             @foreach ($categories as $category)
-            <li class="{{ $category->css_class }}">{{ $category->title }}</li>
-            <!--            <li class="c-graphic">Graphic</li>
-                        <li class="c-producto">Producto</li>
-                        <li class="c-arquitectura">Arquitectura</li>-->
+            <li class="menu-ap {{ $category->css_class }}">{{ $category->title }}</li>
             @endforeach
         </ul>
     </div>
@@ -23,8 +20,7 @@
 <div class="content">
     @foreach ($categories as $category)
     <div class="area" data-attr="{{ $category->slug }}">
-      
-        <div  class="{{ $category->css_class }}">
+        <div class="{{ $category->css_class }}">
             <div class="banda {{ $category->slug }}">
                 <div>
                     <h2>{{ $category->title }}</h2>
@@ -47,7 +43,7 @@
 
         </div>
     </div>
-  
+
 
 
     @endforeach

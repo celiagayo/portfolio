@@ -34,9 +34,16 @@ $(document).ready(function () {
 
     }
     scrollPortada();
+
+    //Anclas del menu
+//    function anlcasMenu() {
+//        $('.menu-ap').click(function () {
+//            var atributo = ($(this).attr("class"));
+//            $(window).scrollTop($('.area').find(atributo));
+//        });
+//    }
+//    anlcasMenu();
 //  BANDA ACOMPAÑA
-
-
     function mueveFlotante() {
         ventanaScrollTop = $(window).scrollTop();
         areaWeb = $(".area[data-attr='web']");
@@ -59,7 +66,7 @@ $(document).ready(function () {
         }
 
 //muy cutre: Para GRAPHIC
-       if (ventanaScrollTop > areaGraphic.offset().top) {
+        if (ventanaScrollTop > areaGraphic.offset().top) {
             if (ventanaScrollTop < areaGraphic.offset().top + areaGraphic.height() - $(areaGraphic).find('.banda > div').height()) {
 //                console.log("ahora area WEb");
                 $(areaGraphic).find('.banda > div').addClass('fix');
@@ -74,7 +81,7 @@ $(document).ready(function () {
 
 
 //muy cutre: Para PRODUCT
-       if (ventanaScrollTop > areaProduct.offset().top) {
+        if (ventanaScrollTop > areaProduct.offset().top) {
             if (ventanaScrollTop < areaProduct.offset().top + areaProduct.height() - $(areaProduct).find('.banda > div').height()) {
 //                console.log("ahora area WEb");
                 $(areaProduct).find('.banda > div').addClass('fix');
@@ -88,7 +95,7 @@ $(document).ready(function () {
         }
 
 //muy cutre: Para ARQUITECTURA
-       if (ventanaScrollTop > areaArchitecture.offset().top) {
+        if (ventanaScrollTop > areaArchitecture.offset().top) {
             if (ventanaScrollTop < areaArchitecture.offset().top + areaArchitecture.height() - $(areaArchitecture).find('.banda > div').height()) {
 //                console.log("ahora area WEb");
                 $(areaArchitecture).find('.banda > div').addClass('fix');
@@ -100,30 +107,9 @@ $(document).ready(function () {
 //            console.log("NO area WEb");
             $(areaArchitecture).find('.banda > div').removeClass('fix');
         }
-       
-
-
     }
     mueveFlotante();
-//PORTADA ha sido pasada con scroll - mostramos cabecera 
-//    function pasadaPortada() {
-//        if ($('.portada').length) {
-//            var positionFijar = $(".c-arquitectura").offset().top;
-//
-//            if ($(window).scrollTop() <= positionFijar) {
-//
-//
-////
-//
-//            }
-//            else {
-//
-//            }
-//        }
-//
-//    }
-//    pasadaPortada();
-//Barra lateral info
+
     $('.banda')
             .mouseenter(function () {
                 $(this).addClass('mostrada');
