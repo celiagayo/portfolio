@@ -100,40 +100,7 @@ $(document).ready(function () {
 //            console.log("NO area WEb");
             $(areaArchitecture).find('.banda > div').removeClass('fix');
         }
-        
-        
-//        areaPosTop = $('.area').offset().top;
-//        areaAltura = $('.area').height();
-//        ventanaScrollTop = $(window).scrollTop();
-////        console.log(areaPosTop);
-////        console.log(areaAltura);
-////        console.log(ventanaScrollTop);
-//        if (ventanaScrollTop > areaPosTop) {
-//            console.log("ahora area");
-//            var attrArea = $('.area').attr('data-attr');
-//            console.log(attrArea);
-//        }
-//        if (ventanaScrollTop > areaPosTop + areaAltura) {
-//            console.log("ahora no area");
-//        }
-
-
-
-
-//        $('.area').each(function () {
-//            var attrArea = $(this).attr('data-attr');
-//            var positionFijar = $(this).find($(".fijador." + attrArea)).offset().top;
-//            var positionSoltar = $(".soltador").offset().top;
-//            console.log(positionFijar);
-//            if ($(document).scrollTop() >= positionFijar) {
-//                $(".banda>div." + attrArea).addClass("fix");
-//
-//
-//            } else {
-//                $(".banda>div").removeClass("fix").css("top", "0px");
-//            }
-//        });
-
+       
 
 
     }

@@ -174,7 +174,8 @@ ul.titulo {
   .banda .detalle {
     padding-left: 100px; }
   .banda div {
-    position: relative; }
+    position: relative;
+    width: 70px; }
   .banda .fix {
     position: fixed;
     top: 60px; }
@@ -184,6 +185,8 @@ ul.titulo {
   padding: 150px 30px; }
   .banda.mostrada .detalle {
     padding-left: 0px; }
+  .banda.mostrada div {
+    width: 100%; }
 
 .bloque {
   max-width: 1500px;

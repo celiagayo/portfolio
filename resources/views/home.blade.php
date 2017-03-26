@@ -23,7 +23,7 @@
 <div class="content">
     @foreach ($categories as $category)
     <div class="area" data-attr="{{ $category->slug }}">
-        <div class="fijador {{ $category->slug }}"></div>
+      
         <div  class="{{ $category->css_class }}">
             <div class="banda {{ $category->slug }}">
                 <div>
@@ -47,7 +47,7 @@
 
         </div>
     </div>
-    <div class="soltador" ></div>
+  
 
 
     @endforeach

@@ -266,12 +266,13 @@ ul.titulo{
     .detalle{
         padding-left: 100px;
     }
-     div{position: relative}
+    div{position: relative; width: 70px;}
     .fix{
         position: fixed;
         top: 60px;
+
     }
-   
+
 }
 
 
@@ -279,7 +280,9 @@ ul.titulo{
     width: 40%;
     padding: 150px 30px;
     .detalle{ padding-left: 0px;}
+    div{width: 100%;}
 }
+
 .bloque{
     max-width: $max-width;
     width:100%;
