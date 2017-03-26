@@ -132,7 +132,7 @@ ul.titulo {
   position: relative;
   color: #353535;
   text-align: center;
-  z-index: 10; }
+  z-index: 12; }
 
 .content {
   width: 100%;
@@ -167,15 +167,17 @@ ul.titulo {
   padding: 150px 10px 10px;
   position: absolute;
   right: 0px;
-  z-index: 15; }
+  z-index: 10; }
   .banda h2 {
     word-break: break-all;
     text-transform: uppercase; }
   .banda .detalle {
     padding-left: 100px; }
-
-.fix {
-  position: fixed; }
+  .banda div {
+    position: relative; }
+  .banda .fix {
+    position: fixed;
+    top: 60px; }
 
 .banda.mostrada {
   width: 40%;

@@ -65,7 +65,7 @@ body{
     text-align: center;
     z-index: 3;
     height: 70px;
-    
+
 
     h1{
         line-height: 70px;
@@ -209,7 +209,7 @@ ul.titulo{
     position: relative;
     color: $color-dark;
     text-align:center;
-    z-index: 10;
+    z-index: 12;
 
 
 }
@@ -241,7 +241,7 @@ ul.titulo{
             background: $color-producto;
         }
     }
-     .c-architecture{
+    .c-architecture{
         color:  $color-arquitectura;
         .banda{
             background: $color-arquitectura;
@@ -260,19 +260,21 @@ ul.titulo{
     padding: 150px 10px 10px;
     position: absolute;
     right: 0px;
-    z-index:15;
-    >div{
+    z-index:10;
 
-    }
     h2{word-break: break-all; text-transform: uppercase;}
     .detalle{
         padding-left: 100px;
     }
+     div{position: relative}
+    .fix{
+        position: fixed;
+        top: 60px;
+    }
+   
+}
 
-}
-.fix{
-    position: fixed;
-}
+
 .banda.mostrada{
     width: 40%;
     padding: 150px 30px;
@@ -306,7 +308,7 @@ ul.titulo{
     p{
         padding-top: 10px;
         text-align: center;
-  font-size: 14px;
+        font-size: 14px;
         text-transform: uppercase;
     }
 }
