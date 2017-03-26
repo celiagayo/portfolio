@@ -43,73 +43,75 @@ $(document).ready(function () {
 //        });
 //    }
 //    anlcasMenu();
-//  BANDA ACOMPAÑA
+
+    //  BANDA ACOMPAÑA
     function mueveFlotante() {
         ventanaScrollTop = $(window).scrollTop();
         areaWeb = $(".area[data-attr='web']");
         areaGraphic = $(".area[data-attr='graphic']");
         areaProduct = $(".area[data-attr='product']");
         areaArchitecture = $(".area[data-attr='architecture']");
-
+        altoCaja = $(this).height();
 //muy cutre: Para WEB
         if (ventanaScrollTop > areaWeb.offset().top) {
-            if (ventanaScrollTop < areaWeb.offset().top + areaWeb.height() - $(areaWeb).find('.banda > div').height()) {
-//                console.log("ahora area WEb");
-                $(areaWeb).find('.banda > div').addClass('fix');
+            if (ventanaScrollTop < areaWeb.offset().top + areaWeb.height() - altoCaja) {
+                //                console.log("ahora area WEb");
+                $(areaWeb).find('.cont-banda').addClass('fix');
             } else {
 //                console.log("NO area WEb");
-                $(areaWeb).find('.banda > div').removeClass('fix');
+                $(areaWeb).find('.cont-banda').removeClass('fix');
             }
         } else {
 //            console.log("NO area WEb");
-            $(areaWeb).find('.banda > div').removeClass('fix');
+            $(areaWeb).find('.cont-banda').removeClass('fix');
         }
 
 //muy cutre: Para GRAPHIC
         if (ventanaScrollTop > areaGraphic.offset().top) {
-            if (ventanaScrollTop < areaGraphic.offset().top + areaGraphic.height() - $(areaGraphic).find('.banda > div').height()) {
+            if (ventanaScrollTop < areaGraphic.offset().top + areaGraphic.height() - altoCaja) {
 //                console.log("ahora area WEb");
-                $(areaGraphic).find('.banda > div').addClass('fix');
+                $(areaGraphic).find('.cont-banda').addClass('fix');
             } else {
 //                console.log("NO area WEb");
-                $(areaGraphic).find('.banda > div').removeClass('fix');
+                $(areaGraphic).find('.cont-banda').removeClass('fix');
             }
         } else {
 //            console.log("NO area WEb");
-            $(areaGraphic).find('.banda > div').removeClass('fix');
+            $(areaGraphic).find('.cont-banda').removeClass('fix');
         }
 
 
 //muy cutre: Para PRODUCT
         if (ventanaScrollTop > areaProduct.offset().top) {
-            if (ventanaScrollTop < areaProduct.offset().top + areaProduct.height() - $(areaProduct).find('.banda > div').height()) {
+            if (ventanaScrollTop < areaProduct.offset().top + areaProduct.height() - altoCaja) {
 //                console.log("ahora area WEb");
-                $(areaProduct).find('.banda > div').addClass('fix');
+                $(areaProduct).find('.cont-banda').addClass('fix');
             } else {
 //                console.log("NO area WEb");
-                $(areaProduct).find('.banda > div').removeClass('fix');
+                $(areaProduct).find('.cont-banda').removeClass('fix');
             }
         } else {
 //            console.log("NO area WEb");
-            $(areaProduct).find('.banda > div').removeClass('fix');
+            $(areaProduct).find('.cont-banda').removeClass('fix');
         }
 
 //muy cutre: Para ARQUITECTURA
         if (ventanaScrollTop > areaArchitecture.offset().top) {
-            if (ventanaScrollTop < areaArchitecture.offset().top + areaArchitecture.height() - $(areaArchitecture).find('.banda > div').height()) {
+            if (ventanaScrollTop < areaArchitecture.offset().top + areaArchitecture.height() - altoCaja) {
 //                console.log("ahora area WEb");
-                $(areaArchitecture).find('.banda > div').addClass('fix');
+                $(areaArchitecture).find('.cont-banda').addClass('fix');
             } else {
 //                console.log("NO area WEb");
-                $(areaArchitecture).find('.banda > div').removeClass('fix');
+                $(areaArchitecture).find('.cont-banda').removeClass('fix');
             }
         } else {
 //            console.log("NO area WEb");
-            $(areaArchitecture).find('.banda > div').removeClass('fix');
+            $(areaArchitecture).find('.cont-banda').removeClass('fix');
         }
     }
     mueveFlotante();
 
+// BANDA SE MUESTRA
     $('.banda')
             .mouseenter(function () {
                 $(this).addClass('mostrada');
@@ -123,6 +125,7 @@ $(document).ready(function () {
     } else {
         $('.navbar').removeClass('con-banda');
     }
+
 
 
 
@@ -150,7 +153,7 @@ $(document).ready(function () {
     });
     //SCROLL
     $(window).scroll(function () {
-//        pasadaPortada();
+
         scrollPortada();
         mueveFlotante();
     });

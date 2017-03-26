@@ -64,7 +64,7 @@ class ProjectsTableSeeder extends Seeder {
                 'slug' => 'graphic-bitacora',
                 'title' => 'Cuadernos de viaje',
                 'url' => 'www.ualcala.es',
-                'featured_image' => '/img/praphic/bitacora/featured-graphic-bitacora-fez-celia-gayo.jpg',
+                'featured_image' => '/img/graphic/bitacora/featured-graphic-bitacora-fez-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
                 'detail_two' => 'texto de detalle 2',
             ]

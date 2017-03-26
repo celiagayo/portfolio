@@ -22,7 +22,7 @@
     <div class="area" data-attr="{{ $category->slug }}">
         <div class="{{ $category->css_class }}">
             <div class="banda {{ $category->slug }}">
-                <div>
+                <div class="cont-banda">
                     <h2>{{ $category->title }}</h2>
                     <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>
                     <div class="detalle">
