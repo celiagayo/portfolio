@@ -8,7 +8,7 @@
             <div class="menu-ap"><a href="sobre-mi" title="Saber más sobre mi">Sobre mi</a></div>
             <div class="menu-ap"><a href="contacto" title="Contactar">Contacto</a></div>
             @foreach ($categories as $category)
-            <div class="menu-ap {{ $category->css_class }}">{{ $category->title }}</div>
+            <div class="menu-ap {{ $category->css_class }}" data-attr="{{ $category->slug }}">{{ $category->title }}</div>
 
             @endforeach
         </nav>

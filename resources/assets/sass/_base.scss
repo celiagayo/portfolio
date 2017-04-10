@@ -27,6 +27,46 @@ $boton-text-d: 2.3vw;
 $medium-text: 16px;
 $second-text: 13px;
 
+
+/*MEDIAQUUERIES*/
+$hd-width:1920px;
+$desktop-width:1366px;
+$laptop-width: 1170px;
+$tablet-width: 850px;
+$mobile-width: 600px;
+$minimobile-width: 300px;
+
+
+@mixin desktop {
+    @media screen and (max-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: #{$laptop-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+@mixin minimobile {
+    @media screen and (max-width: #{$minimobile-width}) {
+        @content;
+    }
+}
+
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -267,18 +307,24 @@ ul.titulo{
     position: absolute;
     right: 0px;
     z-index:10;
+    @include tablet { width:70px;}
 
     h2{word-break: break-all; text-transform: uppercase;}
     .detalle{
         padding-left: 100px;
     }
-    div{position: relative; width: 70px;}
+    div{
+        position: relative; 
+        width: 70px;
+        @include tablet { width:55px;}
+    }
 
 }
 
 .banda.mostrada{
     width: 40%;
     padding: 150px 30px;
+    @include tablet { width:70%;}
     .detalle{ padding-left: 0px;}
     div{width: auto; overflow: hidden; padding-right: 20px;}
 }
@@ -293,10 +339,14 @@ ul.titulo{
     margin: 0 auto;
     padding: 200px 100px 100px 50px;
 
+    @include laptop {padding: 200px 130px 100px 50px;}
+    @include tablet {padding: 100px 90px 100px 20px;}
     >div{
         @include inline-top;
         width: 28%;
         margin: 40px 2%;
+        @include laptop { width:45%;}
+         @include mobile { width:80%; margin: 40px auto;    display: block;}
     }
     a{
         display: block;
@@ -308,6 +358,7 @@ ul.titulo{
         height: auto;
         text-align: center;
     }
+    img:hover{opacity:0.9}
     .all{
         display: block;
         margin: 30px auto;

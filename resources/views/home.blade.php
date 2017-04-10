@@ -10,7 +10,7 @@
 
         <ul class="titulo">
             @foreach ($categories as $category)
-            <li class="menu-ap {{ $category->css_class }}">{{ $category->title }}</li>
+            <li class="menu-ap {{ $category->css_class }}" data-attr="{{ $category->slug }}">{{ $category->title }}</li>
             @endforeach
         </ul>
     </div>
@@ -19,7 +19,7 @@
 
 <div class="content">
     @foreach ($categories as $category)
-    <div class="area" data-attr="{{ $category->slug }}">
+    <div class="area {{ $category->slug }}" >
         <div class="{{ $category->css_class }}">
             <div class="banda {{ $category->slug }}">
                 <div class="cont-banda">
@@ -32,7 +32,7 @@
             </div>
             <div class="bloque">
                 @foreach ($category->projects as $project)
-                <div >
+                <div>
                     <a href="{{ $project->url }}" title="Ver {{ $project->title }}">
                         <img src="{{ $project->featured_image }}"/>
                         <p>{{ $project->title }}</p>

@@ -5,6 +5,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/*MEDIAQUUERIES*/
 body {
   font-family: "Cormorant Garamond", serif; }
 
@@ -174,6 +175,9 @@ ul.titulo {
   position: absolute;
   right: 0px;
   z-index: 10; }
+  @media screen and (max-width: 850px) {
+    .banda {
+      width: 70px; } }
   .banda h2 {
     word-break: break-all;
     text-transform: uppercase; }
@@ -182,10 +186,16 @@ ul.titulo {
   .banda div {
     position: relative;
     width: 70px; }
+    @media screen and (max-width: 850px) {
+      .banda div {
+        width: 55px; } }
 
 .banda.mostrada {
   width: 40%;
   padding: 150px 30px; }
+  @media screen and (max-width: 850px) {
+    .banda.mostrada {
+      width: 70%; } }
   .banda.mostrada .detalle {
     padding-left: 0px; }
   .banda.mostrada div {
@@ -203,11 +213,25 @@ ul.titulo {
   width: 100%;
   margin: 0 auto;
   padding: 200px 100px 100px 50px; }
+  @media screen and (max-width: 1170px) {
+    .bloque {
+      padding: 200px 130px 100px 50px; } }
+  @media screen and (max-width: 850px) {
+    .bloque {
+      padding: 100px 90px 100px 20px; } }
   .bloque > div {
     display: inline-block;
     vertical-align: top;
     width: 28%;
     margin: 40px 2%; }
+    @media screen and (max-width: 1170px) {
+      .bloque > div {
+        width: 45%; } }
+    @media screen and (max-width: 600px) {
+      .bloque > div {
+        width: 80%;
+        margin: 40px auto;
+        display: block; } }
   .bloque a {
     display: block;
     color: inherit;
@@ -216,6 +240,8 @@ ul.titulo {
     width: 100%;
     height: auto;
     text-align: center; }
+  .bloque img:hover {
+    opacity: 0.9; }
   .bloque .all {
     display: block;
     margin: 30px auto; }
