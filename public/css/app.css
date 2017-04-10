@@ -223,14 +223,27 @@ ul.titulo {
     display: inline-block;
     vertical-align: top;
     width: 28%;
-    margin: 40px 2%; }
+    margin: 40px 2.5%; }
     @media screen and (max-width: 1170px) {
       .bloque > div {
-        width: 45%; } }
+        width: 45%;
+        margin: 40px 2%; } }
     @media screen and (max-width: 600px) {
       .bloque > div {
         width: 80%;
-        margin: 40px auto;
+        margin: 30px auto;
+        display: block; } }
+  .bloque > div:first-child {
+    display: block;
+    margin: 40px auto; }
+    @media screen and (max-width: 1170px) {
+      .bloque > div:first-child {
+        display: inline-block;
+        vertical-align: top;
+        margin: 40px 2%; } }
+    @media screen and (max-width: 600px) {
+      .bloque > div:first-child {
+        margin: 30px auto;
         display: block; } }
   .bloque a {
     display: block;
@@ -250,5 +263,11 @@ ul.titulo {
     text-align: center;
     font-size: 14px;
     text-transform: uppercase; }
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  background: #EE6F49; }
 
 /*# sourceMappingURL=app.css.map */

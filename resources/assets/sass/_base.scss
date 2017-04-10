@@ -344,9 +344,17 @@ ul.titulo{
     >div{
         @include inline-top;
         width: 28%;
-        margin: 40px 2%;
-        @include laptop { width:45%;}
-         @include mobile { width:80%; margin: 40px auto;    display: block;}
+        margin: 40px 2.5%;
+
+        @include laptop { width:45%; margin: 40px 2%;}
+        @include mobile { width:80%; margin: 30px auto;    display: block;}
+    }
+    >div:first-child{
+        display: block;
+        margin:40px auto;
+        @include laptop {@include inline-top;  margin: 40px 2%;}
+        @include mobile {margin: 30px auto; display: block;}
+
     }
     a{
         display: block;
@@ -369,4 +377,12 @@ ul.titulo{
         font-size: 14px;
         text-transform: uppercase;
     }
+}
+
+.footer{
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    background: $color-arquitectura;
+
 }
