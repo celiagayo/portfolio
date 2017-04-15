@@ -35,7 +35,9 @@ class StaticPagesController extends Controller
 			Obtenemos la categoría, first() devuelve un objeto
 			de la clase del Modelo Category
 		*/
+//            @todo: Pendiente de refactorizar para hacer sólo una llamada
 		$category = Category::where('slug','=',$category_slug)->first();
+                $categories = Category::all();
 
 		if ($category == null){
 			return "error";
@@ -50,9 +52,12 @@ class StaticPagesController extends Controller
 		if ($project == null){
 			return "error";
 		}
+                
+                
 
 
 		return view('project')
+                        ->with('categories',$categories)
 			->with('category',$category)
 			->with('project',$project);
 	}

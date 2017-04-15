@@ -246,6 +246,7 @@ ul.titulo{
     }
 }
 .menu-ap:hover{text-decoration: underline;}
+
 .portada{
     background: $color-light;
     font-family: $font-sans;
@@ -378,7 +379,31 @@ ul.titulo{
         text-transform: uppercase;
     }
 }
-
+@-webkit-keyframes color-change-2x {
+    0% {
+        background: $color-arquitectura;
+    }
+    50%{background: $color-web;
+    }
+    100% {
+        background: $color-arquitectura;
+    }
+}
+@keyframes color-change-2x {
+      0% {
+        background: $color-arquitectura;
+    }
+    50%{background: $color-web;
+    }
+    100% {
+        background: $color-arquitectura;
+    }
+}
+.color-change-2x {
+    -webkit-animation: color-change-2x 9s infinite alternate both;
+    -moz-animation: color-change-2x 9s infinite alternate both;
+    animation: color-change-2x 9s infinite alternate both;
+}
 .footer{
     width: 100%;
     margin: 0 auto;

@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="portada">
+<div class="portada ">
     <div>
         <h1 class="titulo">Celia Gayo Escribano</h1>
         <h2 class="titulo"><em>diseñadora</em></h2>
@@ -26,7 +26,7 @@
                     <h2>{{ $category->title }}</h2>
                     <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>
                     <div class="detalle">
-                        {{ $category->detail }}
+                        {!!html_entity_decode($category->detail)!!}
                     </div>
                 </div>
             </div>

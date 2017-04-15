@@ -264,6 +264,25 @@ ul.titulo {
     font-size: 14px;
     text-transform: uppercase; }
 
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #EE6F49; }
+  50% {
+    background: #FACBBD; }
+  100% {
+    background: #EE6F49; } }
+@keyframes color-change-2x {
+  0% {
+    background: #EE6F49; }
+  50% {
+    background: #FACBBD; }
+  100% {
+    background: #EE6F49; } }
+.color-change-2x {
+  -webkit-animation: color-change-2x 9s infinite alternate both;
+  -moz-animation: color-change-2x 9s infinite alternate both;
+  animation: color-change-2x 9s infinite alternate both; }
+
 .footer {
   width: 100%;
   margin: 0 auto;
