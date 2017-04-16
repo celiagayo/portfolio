@@ -1,18 +1,34 @@
-$color-web:#FACBBD;
+/*$color-web:#FACBBD;
 $color-graphic:#F5A992;
 $color-producto:#F18767;
-$color-arquitectura:#EE6F49;
+$color-arquitectura:#EE6F49;*/
+
+$color-web:#EE6F49;
+$color-graphic:#F18767;
+$color-producto:#F5A992;
+$color-arquitectura:#FACBBD;
+
+$color-portada:#ec6137;
 $color-light:#FCE9E7;
+
 $color-dark:#353535;
 $color-white:#ffffff;
 $color-grey:#F7F4F1;
 
 
-$color-op-web:rgba(238,111, 73, 1 );
+/*$color-op-web:rgba(238,111, 73, 1 );
 $color-op-graphic:rgba(238,111, 73, 0.9 );
 $color-op-producto:rgba(238,111, 73, 0.8 );
 $color-op-arquitectura:rgba(238,111, 73, 0.7 );
-$color-op-light:rgba(238,111, 73, 0.6 );
+$color-op-light:rgba(238,111, 73, 0.6 );*/
+
+
+$color-op-web:(238,111, 73, 0.6 );
+$color-op-graphic:rgba(238,111, 73, 0.7 );
+$color-op-producto:rgba(238,111, 73, 0.8 );
+$color-op-arquitectura:rgba(238,111, 73, 0.9 );
+$color-op-light:rgba(238,111, 73, 1 );
+
 
 $font-sans: 'Cormorant Garamond', serif;
 $font-italic-light:'Raleway', sans-serif;
@@ -250,13 +266,13 @@ ul.titulo{
 .menu-ap:hover{text-decoration: underline;}
 
 .portada{
-    background: $color-light;
+    background: $color-portada;
     font-family: $font-sans;
     width: 100%; 
     margin: 0 auto;
     height: 100%;
     position: relative;
-    color: $color-dark;
+    color: $color-arquitectura;
     text-align:center;
     z-index: 12;
 

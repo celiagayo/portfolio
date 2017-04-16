@@ -5,6 +5,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/*$color-web:#FACBBD;
+$color-graphic:#F5A992;
+$color-producto:#F18767;
+$color-arquitectura:#EE6F49;*/
+/*$color-op-web:rgba(238,111, 73, 1 );
+$color-op-graphic:rgba(238,111, 73, 0.9 );
+$color-op-producto:rgba(238,111, 73, 0.8 );
+$color-op-arquitectura:rgba(238,111, 73, 0.7 );
+$color-op-light:rgba(238,111, 73, 0.6 );*/
 /*MEDIAQUUERIES*/
 body {
   font-family: "Cormorant Garamond", serif; }
@@ -19,13 +28,13 @@ body {
   .navbar h1 {
     line-height: 70px;
     font-size: 17px;
-    color: #F18767; }
+    color: #F5A992; }
 
 .navbar.con-banda {
   padding-right: 90px; }
 
 .menu-box {
-  background: #F18767;
+  background: #F5A992;
   color: #ffffff;
   height: 50px;
   width: 50px;
@@ -85,7 +94,7 @@ ul.titulo {
   color: #ffffff;
   width: 100%;
   margin: 0 auto;
-  background-color: #EE6F49;
+  background-color: #FACBBD;
   height: 100%;
   position: relative; }
   ul.titulo li {
@@ -98,18 +107,18 @@ ul.titulo {
     color: transparent;
     cursor: pointer; }
   ul.titulo .c-web {
-    background-color: #FACBBD;
+    background-color: #EE6F49;
     font-size: 1px; }
   ul.titulo .c-graphic {
-    background-color: #F5A992;
+    background-color: #F18767;
     font-size: 1px;
     top: 20px; }
   ul.titulo .c-product {
-    background-color: #F18767;
+    background-color: #F5A992;
     font-size: 1px;
     top: 45px; }
   ul.titulo .c-architecture {
-    background-color: #EE6F49;
+    background-color: #FACBBD;
     font-size: 1px;
     top: 80px; }
   ul.titulo li.hovered {
@@ -131,13 +140,13 @@ ul.titulo {
   text-decoration: underline; }
 
 .portada {
-  background: #FCE9E7;
+  background: #ec6137;
   font-family: "Cormorant Garamond", serif;
   width: 100%;
   margin: 0 auto;
   height: 100%;
   position: relative;
-  color: #353535;
+  color: #FACBBD;
   text-align: center;
   z-index: 12; }
 
@@ -148,21 +157,21 @@ ul.titulo {
     width: 100%;
     position: relative; }
   .content .c-web {
-    color: #FACBBD; }
-    .content .c-web .banda {
-      background: #FACBBD; }
-  .content .c-graphic {
-    color: #F5A992; }
-    .content .c-graphic .banda {
-      background: #F5A992; }
-  .content .c-product {
-    color: #F18767; }
-    .content .c-product .banda {
-      background: #F18767; }
-  .content .c-architecture {
     color: #EE6F49; }
-    .content .c-architecture .banda {
+    .content .c-web .banda {
       background: #EE6F49; }
+  .content .c-graphic {
+    color: #F18767; }
+    .content .c-graphic .banda {
+      background: #F18767; }
+  .content .c-product {
+    color: #F5A992; }
+    .content .c-product .banda {
+      background: #F5A992; }
+  .content .c-architecture {
+    color: #FACBBD; }
+    .content .c-architecture .banda {
+      background: #FACBBD; }
 
 .banda {
   width: 90px;
@@ -278,13 +287,13 @@ ul.titulo {
     overflow: hidden;
     margin: 0 auto 10px; }
     .proyect .enlaces-proyecto .c-web {
-      background: #FACBBD; }
-    .proyect .enlaces-proyecto .c-graphic {
-      background: #F5A992; }
-    .proyect .enlaces-proyecto .c-product {
-      background: #F18767; }
-    .proyect .enlaces-proyecto .c-architecture {
       background: #EE6F49; }
+    .proyect .enlaces-proyecto .c-graphic {
+      background: #F18767; }
+    .proyect .enlaces-proyecto .c-product {
+      background: #F5A992; }
+    .proyect .enlaces-proyecto .c-architecture {
+      background: #FACBBD; }
     .proyect .enlaces-proyecto div {
       padding: 10px;
       width: auto;
@@ -344,6 +353,6 @@ ul.titulo {
   width: 100%;
   margin: 0 auto;
   height: 200px;
-  background: #EE6F49; }
+  background: #FACBBD; }
 
 /*# sourceMappingURL=app.css.map */
