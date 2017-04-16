@@ -264,25 +264,82 @@ ul.titulo {
     font-size: 14px;
     text-transform: uppercase; }
 
-@-webkit-keyframes color-change-2x {
-  0% {
-    background: #EE6F49; }
-  50% {
-    background: #FACBBD; }
-  100% {
-    background: #EE6F49; } }
-@keyframes color-change-2x {
-  0% {
-    background: #EE6F49; }
-  50% {
-    background: #FACBBD; }
-  100% {
-    background: #EE6F49; } }
-.color-change-2x {
-  -webkit-animation: color-change-2x 9s infinite alternate both;
-  -moz-animation: color-change-2x 9s infinite alternate both;
-  animation: color-change-2x 9s infinite alternate both; }
+.proyect {
+  width: 100%;
+  margin: 0 auto;
+  padding: 150px 100px 100px 50px;
+  background: #F7F4F1;
+  text-align: center; }
+  .proyect .presenta-proyecto {
+    width: 600px;
+    margin: 0 auto; }
+  .proyect .enlaces-proyecto {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto 10px; }
+    .proyect .enlaces-proyecto .c-web {
+      background: #FACBBD; }
+    .proyect .enlaces-proyecto .c-graphic {
+      background: #F5A992; }
+    .proyect .enlaces-proyecto .c-product {
+      background: #F18767; }
+    .proyect .enlaces-proyecto .c-architecture {
+      background: #EE6F49; }
+    .proyect .enlaces-proyecto div {
+      padding: 10px;
+      width: auto;
+      float: left;
+      margin: 2px;
+      color: #ffffff !important; }
+    .proyect .enlaces-proyecto .titulo {
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      min-height: 50px; }
+    .proyect .enlaces-proyecto .volver, .proyect .enlaces-proyecto .ver {
+      width: 50px;
+      height: 50px;
+      cursor: pointer; }
+    .proyect .enlaces-proyecto .volver:hover, .proyect .enlaces-proyecto .ver:hover {
+      opacity: .8; }
+    .proyect .enlaces-proyecto a {
+      text-decoration: none;
+      color: inherit; }
+  .proyect img {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center; }
+  .proyect > div {
+    display: block;
+    width: auto;
+    margin: 40px 2.5%; }
 
+/*@-webkit-keyframes color-change-2x {
+    0% {
+        background: $color-arquitectura;
+    }
+    50%{background: $color-web;
+    }
+    100% {
+        background: $color-arquitectura;
+    }
+}
+@keyframes color-change-2x {
+      0% {
+        background: $color-arquitectura;
+    }
+    50%{background: $color-web;
+    }
+    100% {
+        background: $color-arquitectura;
+    }
+}
+.color-change-2x {
+    -webkit-animation: color-change-2x 9s infinite alternate both;
+    -moz-animation: color-change-2x 9s infinite alternate both;
+    animation: color-change-2x 9s infinite alternate both;
+}*/
 .footer {
   width: 100%;
   margin: 0 auto;
