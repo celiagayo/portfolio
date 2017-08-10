@@ -22,7 +22,7 @@ class CategoriesTableSeeder extends Seeder {
 <p>Mi intención es guiar sin forzar, haciendo elementos atractivos y funcionalidades intuitivas.</p>                     
 <p>Algo que me fascina y que está muy relacionado con mis estudios de arquitectura, es que la web, del mismo modo que los espacios proyectados, son vividos por el usuario. Hay algo muy divertido en el hecho de intentar marcar un camino al usuario, pero sin forzarle, e intentar que vaya a usar lo que hemos diseñado para él de la manera que hemos diseñado para él... y luego, ver cómo hace lo que quiere.</p>
              
-   <p>CV WEB</p>              
+   <h3>Currículum</h3>              
                 <ul>
                     <li><span>2016</span> Diseño y Desarrollo Web de sitio online de <em>Takk Group</em></li>      
                     <li><span>2014</span> Curso profesional de diseño y desarrollo web adaptativo con html 5.0 ,CSS y JavaScript en <em>Escuela Cice</em></li>          
@@ -31,7 +31,7 @@ class CategoriesTableSeeder extends Seeder {
 
                 </ul>
                 <br/>
-                <p>HERRAMIENTAS WEB</p>
+                <h3>Herramientas</h3>
                 <ul>
                     <li>HTML, CSS, SASS, Wordpress, Laravel, GIT, Meteor, Compiladores </li>
                     <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>

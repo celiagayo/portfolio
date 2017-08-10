@@ -21,7 +21,7 @@ class ProjectsTableSeeder extends Seeder {
                 'detail_one' => ' <p>Las necesidades específicas de la empresa requería de una web que aglutinara los diferentes proyectos que realizan con uno o varios clientes. Por eso, los proyectos se agrupan según cliente... </p>
  
                 <br/>
-                <h3>TECNOLOÍAS UTILIZADAS</h3>
+                <h3>Herramientas</h3>
                 <ul>
                 <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>
                     <li>HTML, CSS, SASS, Laravel, GIT,</li>

@@ -32,7 +32,7 @@ $color-op-light:rgba(238,111, 73, 1 );
 
 $font-sans: 'Cormorant Garamond', serif;
 $font-italic-light:'Raleway', cursive;
-$font-cuerpo:'Raleway', sans-serif;
+$font-cuerpo: 'Lato', sans-serif;
 
 $proyect-width:600px;
 
@@ -327,11 +327,12 @@ ul.titulo{
     position: absolute;
     right: 0px;
     z-index:10;
-    font-family:$font-cuerpo; 
-    font-weight: lighter;
-   @include tablet { width:70px;}
 
-    h2{word-break: break-all; text-transform: uppercase;}
+    font-weight: lighter;
+    @include tablet { width:70px;}
+
+    h2{word-break: break-all; text-transform: uppercase; font-family:$font-sans; }
+    h3{ font-family:$font-sans; }
     .detalle{
         padding-left: 100px;
         overflow:scroll!important;
@@ -342,9 +343,11 @@ ul.titulo{
         width: 70px;
         @include tablet { width:55px;}
     }
-    p{
+    p, ul{
+        font-family:$font-cuerpo; 
         margin-bottom: 15px;
-          font-weight: lighter;
+        font-weight: lighter;
+        font-size: 15px;
     }
 
 }
@@ -408,7 +411,7 @@ ul.titulo{
     }
 }
 .proyect{
-font-family: $font-italic-light;
+    font-family: $font-italic-light;
     width:100%;
     margin: 0 auto;
     padding: 110px 100px 100px 50px;
@@ -443,10 +446,12 @@ font-family: $font-italic-light;
             color: $color-white!important;
         }
         .titulo{
-            font-family: "Raleway", sans-serif;
-            font-weight: 300;
-            font-size: 11px;
+            font-family: $font-cuerpo;
             min-height: 50px;
+        }
+        .titulo h2{
+                padding-top: 5px;
+                font-size: 15px;
         }
         .volver, .ver{
             width: 50px;
