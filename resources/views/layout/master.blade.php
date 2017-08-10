@@ -7,7 +7,7 @@
         <meta name="description" content="Portfolio personal Celia Gayo Escribano">
         <script src="https://use.fontawesome.com/49c8611507.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,500,500i,600,600i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300i" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Raleway+Dots" rel="stylesheet">
         <!-- CSS files -->
         <link rel="stylesheet" href="/css/app.css">
 

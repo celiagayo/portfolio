@@ -31,7 +31,8 @@ $color-op-light:rgba(238,111, 73, 1 );
 
 
 $font-sans: 'Cormorant Garamond', serif;
-$font-italic-light:'Raleway', sans-serif;
+$font-italic-light:'Raleway', cursive;
+$font-cuerpo:'Raleway', sans-serif;
 
 $proyect-width:600px;
 
@@ -322,20 +323,28 @@ ul.titulo{
     display: block;
     font-size: 17px;
     text-align: left;
-    padding: 150px 10px 10px;
+    padding: 100px 10px 10px;
     position: absolute;
     right: 0px;
     z-index:10;
-    @include tablet { width:70px;}
+    font-family:$font-cuerpo; 
+    font-weight: lighter;
+   @include tablet { width:70px;}
 
     h2{word-break: break-all; text-transform: uppercase;}
     .detalle{
         padding-left: 100px;
+        overflow:scroll!important;
+        position: relative;
     }
     div{
         position: relative; 
         width: 70px;
         @include tablet { width:55px;}
+    }
+    p{
+        margin-bottom: 15px;
+          font-weight: lighter;
     }
 
 }
@@ -349,14 +358,15 @@ ul.titulo{
 }
 .fix{
     position: fixed!important;
-    top: 60px;
+    //top tiene que ser igual al padding top de la banda
+    top: 100px;
     width: auto;
 }
 .bloque{
     max-width: $max-width;
     width:100%;
     margin: 0 auto;
-    padding: 200px 100px 100px 50px;
+    padding: 100px 100px 100px 50px;
 
     @include laptop {padding: 200px 130px 100px 50px;}
     @include tablet {padding: 100px 90px 100px 20px;}
@@ -398,10 +408,10 @@ ul.titulo{
     }
 }
 .proyect{
- 
+font-family: $font-italic-light;
     width:100%;
     margin: 0 auto;
-    padding: 150px 100px 100px 50px;
+    padding: 110px 100px 100px 50px;
     background: $color-grey;
     text-align: center;
     .presenta-proyecto{
@@ -457,6 +467,7 @@ ul.titulo{
         height: auto;
         display: block;
         text-align: center;
+        margin-bottom: 20px;
     }
     >div{
         display: block;
@@ -469,6 +480,18 @@ ul.titulo{
 
 
 
+}
+.info-button{
+    height: 55px !important;
+    width: 55px !important;
+    border-radius: 300px;
+    text-align: center;
+    line-height: 49px;
+    font-size: 40px;
+    background: $color-white;
+    text-align: center;
+    color:$color-web;
+    margin-bottom: 10px;
 }
 /*@-webkit-keyframes color-change-2x {
     0% {

@@ -5,9 +5,9 @@ $(document).ready(function () {
     function portadaTodo() {
         $('.portada').height(WindHeight);
         var mitadPortada = $(".portada").height() / 2;
-        var padingPortada = mitadPortada - $('.portada h1').height() * 2;
+        var padingPortada = mitadPortada;
         $('.portada').css('padding-top', padingPortada);
-        $('.portada ul').height(mitadPortada);
+        $('.portada ul').height(mitadPortada + $('.portada h1').height());
     }
     portadaTodo();
 //PORTADA despliega datos
@@ -54,65 +54,69 @@ $(document).ready(function () {
         var atributoAncla = ($(this).attr('data-attr'));
         posicionAncla = $("div." + atributoAncla).offset();
         $('html, body').animate({scrollTop: posicionAncla.top}, 'slow');
-
+//        console.log(posicionAncla);
     });
 
 
 
     //  BANDA ACOMPAÑA
+
     function mueveFlotante() {
-        ventanaScrollTop = $(window).scrollTop();
-        areaWeb = $(".area.web");
-        areaGraphic = $(".area.graphic");
-        areaProduct = $(".area.product");
-        areaArchitecture = $(".area.architecture");
+
+        if ($('.portada').length) {
+            ventanaScrollTop = $(window).scrollTop();
+            areaWeb = $(".area.web");
+            areaGraphic = $(".area.graphic");
+            areaProduct = $(".area.product");
+            areaArchitecture = $(".area.architecture");
 
 //muy cutre: Para WEB
-        if (ventanaScrollTop > areaWeb.offset().top) {
-            if (ventanaScrollTop < areaWeb.offset().top + areaWeb.height() - 300) {
-                //                console.log("ahora area WEb");
-                $(areaWeb).find('.cont-banda').addClass('fix');
-            } else {
+            if (ventanaScrollTop > areaWeb.offset().top) {
+                if (ventanaScrollTop < areaWeb.offset().top + areaWeb.height()) {
+//                console.log("ahora area WEb");
+                    $(areaWeb).find('.cont-banda').addClass('fix');
+                } else {
 //                console.log("NO area WEb");
+                    $(areaWeb).find('.cont-banda').removeClass('fix');
+                }
+            } else {
+//            console.log("NO area WEb");
                 $(areaWeb).find('.cont-banda').removeClass('fix');
             }
-        } else {
-//            console.log("NO area WEb");
-            $(areaWeb).find('.cont-banda').removeClass('fix');
-        }
 
 //muy cutre: Para GRAPHIC
-        if (ventanaScrollTop > areaGraphic.offset().top) {
-            if (ventanaScrollTop < areaGraphic.offset().top + areaGraphic.height() - 300) {
-                $(areaGraphic).find('.cont-banda').addClass('fix');
+            if (ventanaScrollTop > areaGraphic.offset().top) {
+                if (ventanaScrollTop < areaGraphic.offset().top + areaGraphic.height()) {
+                    $(areaGraphic).find('.cont-banda').addClass('fix');
+                } else {
+                    $(areaGraphic).find('.cont-banda').removeClass('fix');
+                }
             } else {
                 $(areaGraphic).find('.cont-banda').removeClass('fix');
             }
-        } else {
-            $(areaGraphic).find('.cont-banda').removeClass('fix');
-        }
 
 
 //muy cutre: Para PRODUCT
-        if (ventanaScrollTop > areaProduct.offset().top) {
-            if (ventanaScrollTop < areaProduct.offset().top + areaProduct.height() - 300) {
-                $(areaProduct).find('.cont-banda').addClass('fix');
+            if (ventanaScrollTop > areaProduct.offset().top) {
+                if (ventanaScrollTop < areaProduct.offset().top + areaProduct.height()) {
+                    $(areaProduct).find('.cont-banda').addClass('fix');
+                } else {
+                    $(areaProduct).find('.cont-banda').removeClass('fix');
+                }
             } else {
                 $(areaProduct).find('.cont-banda').removeClass('fix');
             }
-        } else {
-            $(areaProduct).find('.cont-banda').removeClass('fix');
-        }
 
 //muy cutre: Para ARQUITECTURA
-        if (ventanaScrollTop > areaArchitecture.offset().top) {
-            if (ventanaScrollTop < areaArchitecture.offset().top + areaArchitecture.height() - 300) {
-                $(areaArchitecture).find('.cont-banda').addClass('fix');
+            if (ventanaScrollTop > areaArchitecture.offset().top) {
+                if (ventanaScrollTop < areaArchitecture.offset().top + areaArchitecture.height()) {
+                    $(areaArchitecture).find('.cont-banda').addClass('fix');
+                } else {
+                    $(areaArchitecture).find('.cont-banda').removeClass('fix');
+                }
             } else {
                 $(areaArchitecture).find('.cont-banda').removeClass('fix');
             }
-        } else {
-            $(areaArchitecture).find('.cont-banda').removeClass('fix');
         }
     }
     mueveFlotante();
@@ -133,8 +137,8 @@ $(document).ready(function () {
     }
 
 
-
-
+// ALTURA DE BANDA
+$('.banda .detalle').height(WindHeight - 100);
 
 //MENUBOX funcionamiento
     $('.menu-box')

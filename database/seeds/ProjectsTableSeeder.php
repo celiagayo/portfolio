@@ -18,8 +18,15 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Nueva web de la empresa Takk',
                 'url' => 'web/web-takk',
                 'featured_image' => '/img/web/takk/featured-landing-web-takk-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_one' => ' <p>Las necesidades específicas de la empresa requería de una web que aglutinara los diferentes proyectos que realizan con uno o varios clientes. Por eso, los proyectos se agrupan según cliente... </p>
+ 
+                <br/>
+                <h3>TECNOLOÍAS UTILIZADAS</h3>
+                <ul>
+                <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>
+                    <li>HTML, CSS, SASS, Laravel, GIT,</li>
+                </ul>',
+                'detail_two' => '<p>Diseño y programación Front de la web corporativa de la empresa de retail Takk Group</p>',
             ],
             [
                 'id' => 2,
@@ -88,7 +95,7 @@ class ProjectsTableSeeder extends Seeder {
                 'detail_one' => 'texto de detalle 1',
                 'detail_two' => 'texto de detalle 2',
             ]
-             ,
+            ,
             [
                 'id' => 9,
                 'slug' => 'objetcs',
@@ -98,7 +105,7 @@ class ProjectsTableSeeder extends Seeder {
                 'detail_one' => 'texto de detalle 1',
                 'detail_two' => 'texto de detalle 2',
             ]
-             ,
+            ,
             [
                 'id' => 10,
                 'slug' => 'joyeria-artistica',
@@ -107,7 +114,7 @@ class ProjectsTableSeeder extends Seeder {
                 'featured_image' => '/img/product/joyeria-artisitica/featured-product-joyeria-artistica-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
                 'detail_two' => 'texto de detalle 2',
-            ] ,
+            ],
             [
                 'id' => 11,
                 'slug' => 'joyas',

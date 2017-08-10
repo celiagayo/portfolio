@@ -17,13 +17,28 @@ class CategoriesTableSeeder extends Seeder {
                 'slug' => 'web',
                 'css_class' => 'c-web',
                 'title' => 'Web',
-                'detail' => '<p>Entiendo el diseño web como una prolongación de la imagen de marca o producto.</p>'.
-                '<p>Algo que me fascina y que está muy relacionado con mis estudios de arquitectura, es que la web,'.
-                ' del mismo modo que los espacios proyectados, son vividos por el usuario. Hay algo muy divertido en'.
-                ' el hecho de intentar marcar un camino al usuario, pero sin forzarle, e intentar que vaya a usar lo'.
-                ' que hemos diseñado para él de la manera que hemos diseñado para él... y luego, ver cómo hace lo que'.
-                ' quiere.</p><p>El usuario va aprendiendo el lenguaje de la web, identifica tres barras horizontales '.
-                'con un menú, igual que un va aprendiendo el significado de una puerta cerrada.</p>'
+                'detail' => '
+                    <p>Entiendo el diseño web como una prolongación de la imagen de marca o producto.</p>
+<p>Mi intención es guiar sin forzar, haciendo elementos atractivos y funcionalidades intuitivas.</p>                     
+<p>Algo que me fascina y que está muy relacionado con mis estudios de arquitectura, es que la web, del mismo modo que los espacios proyectados, son vividos por el usuario. Hay algo muy divertido en el hecho de intentar marcar un camino al usuario, pero sin forzarle, e intentar que vaya a usar lo que hemos diseñado para él de la manera que hemos diseñado para él... y luego, ver cómo hace lo que quiere.</p>
+             
+   <p>CV WEB</p>              
+                <ul>
+                    <li><span>2016</span> Diseño y Desarrollo Web de sitio online de <em>Takk Group</em></li>      
+                    <li><span>2014</span> Curso profesional de diseño y desarrollo web adaptativo con html 5.0 ,CSS y JavaScript en <em>Escuela Cice</em></li>          
+                     <li><span>2014-actualidad</span> Diseñadora y Front Web Developer en <em>IMF Business School</em></li>       
+                    <li><span>2013</span> Diseño y Desarrollo Web de sitio y tienda online de <em>MIGAYO</em></li>                
+
+                </ul>
+                <br/>
+                <p>HERRAMIENTAS WEB</p>
+                <ul>
+                    <li>HTML, CSS, SASS, Wordpress, Laravel, GIT, Meteor, Compiladores </li>
+                    <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>
+                   
+                </ul>
+
+'
             ],
             [
                 'id' => 2,

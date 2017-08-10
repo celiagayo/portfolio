@@ -84,7 +84,7 @@ h1.titulo {
   text-transform: uppercase; }
 
 h2.titulo {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", cursive;
   font-size: 14px;
   padding-bottom: 25px; }
 
@@ -180,10 +180,12 @@ ul.titulo {
   display: block;
   font-size: 17px;
   text-align: left;
-  padding: 150px 10px 10px;
+  padding: 100px 10px 10px;
   position: absolute;
   right: 0px;
-  z-index: 10; }
+  z-index: 10;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter; }
   @media screen and (max-width: 850px) {
     .banda {
       width: 70px; } }
@@ -191,13 +193,18 @@ ul.titulo {
     word-break: break-all;
     text-transform: uppercase; }
   .banda .detalle {
-    padding-left: 100px; }
+    padding-left: 100px;
+    overflow: scroll !important;
+    position: relative; }
   .banda div {
     position: relative;
     width: 70px; }
     @media screen and (max-width: 850px) {
       .banda div {
         width: 55px; } }
+  .banda p {
+    margin-bottom: 15px;
+    font-weight: lighter; }
 
 .banda.mostrada {
   width: 40%;
@@ -214,14 +221,14 @@ ul.titulo {
 
 .fix {
   position: fixed !important;
-  top: 60px;
+  top: 100px;
   width: auto; }
 
 .bloque {
   max-width: 1500px;
   width: 100%;
   margin: 0 auto;
-  padding: 200px 100px 100px 50px; }
+  padding: 100px 100px 100px 50px; }
   @media screen and (max-width: 1170px) {
     .bloque {
       padding: 200px 130px 100px 50px; } }
@@ -274,9 +281,10 @@ ul.titulo {
     text-transform: uppercase; }
 
 .proyect {
+  font-family: "Raleway", cursive;
   width: 100%;
   margin: 0 auto;
-  padding: 150px 100px 100px 50px;
+  padding: 110px 100px 100px 50px;
   background: #F7F4F1;
   text-align: center; }
   .proyect .presenta-proyecto {
@@ -318,11 +326,24 @@ ul.titulo {
     width: 100%;
     height: auto;
     display: block;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
   .proyect > div {
     display: block;
     width: auto;
     margin: 40px 2.5%; }
+
+.info-button {
+  height: 55px !important;
+  width: 55px !important;
+  border-radius: 300px;
+  text-align: center;
+  line-height: 49px;
+  font-size: 40px;
+  background: #ffffff;
+  text-align: center;
+  color: #EE6F49;
+  margin-bottom: 10px; }
 
 /*@-webkit-keyframes color-change-2x {
     0% {
