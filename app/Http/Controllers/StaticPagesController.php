@@ -19,8 +19,7 @@ class StaticPagesController extends Controller
 		*/
 		foreach ($categories as $category) {
 
-			$projects = $category->projectsDb();
-			$category->projects = $projects;
+			$category->projects = $category->projects()->get();
 
 		}
 
