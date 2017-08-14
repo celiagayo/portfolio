@@ -24,12 +24,6 @@
         </header>
 
         @yield('content')
-        <footer>
-            @include('layout.footer')
-        </footer>
-
-
-
 
     </body>
 
