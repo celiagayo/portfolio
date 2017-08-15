@@ -23,16 +23,16 @@ portfolio-webserver:
    - portfolio-php-fpm
 
 portfolio-php-fpm:
-  # Si estamos en entorno de proxy, comentar estas tres lineas
-  #build: .
-  #dockerfile: php-fpm/Dockerfile
-  #container_name: portfolio-php-fpm
+  # Si no estamos en entorno de proxy, comentar estas tres lineas
+  build: .
+  dockerfile: php-fpm/Dockerfile
+  container_name: portfolio-php-fpm
 
   # Si estamos en un entorno de proxy, construir manualmente la imagen
   # docker build -t portfolio-php-fpm --build-arg http_proxy=XXX --build-arg https_proxy=YYY 
   #  .
   # y descomentar la siguiente linea
-  image: portfolio-php-fpm
+  #image: portfolio-php-fpm
   volumes:
     - ..:/var/www/portfolio
     - ./php-fpm/php-ini-overrides.ini:/etc/php/7.0/fpm/conf.d/99-overrides.ini

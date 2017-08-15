@@ -24,7 +24,7 @@
                         <div class='ver {{$category->css_class}}'> <a title="volver" href="/"> 
                                 <img src="/img/back.png" title="volver" alt="volver"/>
 <!--                                <i class="fa fa-undo fa-2x" aria-hidden="true" ></i>-->
-                            
+
                             </a></div>
                         <div class='volver {{$category->css_class}}'>  <a title="ver online" href="{{ $project->url }}<" >     <img src="/img/eye.png" title="Ver online" alt="Ver online"/></a></div>
                         <div class='titulo {{$category->css_class}}'><h2>{{ $project->title }}</h2></div>
@@ -35,20 +35,23 @@
                         <!--                        <div>{{ $project->detail_two }}</div>-->
                         </a>
                     </div>
-                  
+
                 </div>
 
-      <div class="images">
-    
-            <div>{{ $project->id }}</div>
-            <div>{{ $project->slug }}</div>
-            <div>{{ $project->title }}</div>
-            <div>{{ $project->url }}</div>
-            <div>{{ $project->featured_image }}</div>
-            <div>{{ $project->detail_one }}</div>
-            <div>{{ $project->detail_two }}</div>
-     <div>{{ $project->images }}</div>
-        </div>
+<!--                <div class="images">
+
+                    <div>{{ $project->id }}</div>
+                    <div>{{ $project->slug }}</div>
+                    <div>{{ $project->title }}</div>
+                    <div>{{ $project->url }}</div>
+                    <div>{{ $project->featured_image }}</div>
+                    <div>{{ $project->detail_one }}</div>
+                    <div>{{ $project->detail_two }}</div>
+                    <div>{{ $images }}</div>
+                </div>-->
+                  @foreach ($images as $image)
+                <div><img src="{{ $images->url }}"/></div>
+                @endforeach
 
             </div>
             <br/>
