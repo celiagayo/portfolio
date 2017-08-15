@@ -50,7 +50,7 @@
                     <div>{{ $images }}</div>
                 </div>-->
                   @foreach ($images as $image)
-                <div><img src="{{ $images->url }}"/></div>
+                <div><img src="{{ $image->url }}"/></div>
                 @endforeach
 
             </div>

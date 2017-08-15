@@ -14,7 +14,7 @@ class ImagesTableSeeder extends Seeder
         DB::table('images')->insert([
             [
                 'id' => 1,
-                'url' => '/public/images/a'
+                'url' => '/img/web/migayo/web-celia-gayo-www.migayo.com-blog.png'
             ],
             [
                 'id' => 2,
