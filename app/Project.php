@@ -10,11 +10,11 @@ class Project extends Model
 {
     public function categories()
     {
-        return $this->belongsToMany('App\Category','category_project','project_id','category_id');
+        return $this->belongsToMany('App\Category');
     }
 
     public function images()
     {
-        return $this->belongsToMany('App\Image');
+        return $this->hasMany('App\Image');
     }
 }

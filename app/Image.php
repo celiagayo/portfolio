@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
-    public function projects()
+    public function project()
     {
-        return $this->belongsToMany('App\Project');
+        return $this->belongsTo('App\Project');
     }
 }
