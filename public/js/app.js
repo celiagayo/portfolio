@@ -138,7 +138,7 @@ $(document).ready(function () {
 
 
 // ALTURA DE BANDA
-$('.banda .detalle').height(WindHeight - 100);
+    $('.banda .detalle').height(WindHeight - 100);
 
 //MENUBOX funcionamiento
     $('.menu-box')
@@ -157,6 +157,30 @@ $('.banda .detalle').height(WindHeight - 100);
                 $('.menu-box').removeClass('abremenu');
                 $('.menu-box p').html('menu');
             });
+
+    //PROYECTO imagen agrandada          
+    $('.imagenes-proyecto div').click(function () {
+        posicionImg = $(this).offset();
+        $('.modal').show();
+        $('.exit').show();
+        $('html, body').animate({scrollTop: 0}, 'slow');
+        $(this).addClass('capa-modal');
+        $('.modal').click(function () {
+            $('.modal').hide();
+            $('.exit').hide();
+            $('.imagenes-proyecto div').removeClass('capa-modal');
+            $('html, body').animate({scrollTop: posicionImg.top}, 'slow');
+        });
+
+        $('.exit').click(function () {
+            $('.modal').hide();
+            $('.exit').hide();
+            $('.imagenes-proyecto div').removeClass('capa-modal');
+            $('html, body').animate({scrollTop: posicionImg.top}, 'slow');
+        });
+    });
+
+
     //RESIZE
     $(window).resize(function () {
         portadaTodo();

@@ -494,14 +494,14 @@ ul.titulo{
         column-fill: balance;
 
 
-        div{
+        >div{
             position: relative;
             -moz-column-break-inside: avoid;
             -webkit-column-break-inside: avoid;
             break-inside: avoid-column;
             margin: 0 2px;
             padding: 0px;
-            border: 1px solid $color-grey;;
+            border: 1px solid $color-grey;
             font-size: 16px;
             white-space: normal;
             display: table;
@@ -528,8 +528,51 @@ ul.titulo{
 
 
 }
+.modal{
+    position: fixed;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    background: $color-graphic;
+    z-index: 11;
+    display: none;
+    cursor: pointer;
+}
 
+.exit{
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    color: #ffffff;
+    z-index: 13;
+    display: none;
+    cursor: pointer;
+    opacity: 1;
+} 
+.exit img{
+    height: 46px;
+    width: auto;
+}
 
+.exit img:hover{
+    height: 52px;
+}
+.imagenes-proyecto> div.capa-modal{
+    position: absolute;
+    width: 60%;
+    z-index: 12;
+    left: 50%;
+    margin-left: -30%;
+    top: 70px;
+    padding-top: 32px;
+    border: 0px;
+    cursor: initial;
+    img{
+        box-shadow: 8px 8px 17px 5px rgba(238, 111, 73, 0.69);
+        
+    }
+
+}
 .info-button{
     height: 55px !important;
     width: 55px !important;

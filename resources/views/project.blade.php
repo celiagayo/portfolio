@@ -2,6 +2,8 @@
 @section('title', '{{$project->slug}}')
 @section('content')
 
+<div class="modal" title="volver"></div>
+ <div class="exit" title="volver"> <img src="/img/back.png" title="volver" alt="volver"/></div>
 
 <div class="content ">
 
@@ -43,6 +45,7 @@
 
                     @foreach ($images as $image)
                     <div>
+                       
                         <img src="{{ $image->url }}"/>
                     </div>
                     @endforeach
@@ -56,4 +59,5 @@
 
 
 </div>
+
 @endsection
