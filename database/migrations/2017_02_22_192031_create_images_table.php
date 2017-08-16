@@ -18,6 +18,8 @@ class CreateImagesTable extends Migration
             $table->string('url')
                 ->comment('url relativa tipo "/public/images/..."');
             $table->timestamps();
+            $table->integer('project_id')->unsigned();
+            $table->foreign('project_id')->references('id')->on('projects');
         });
     }
 
