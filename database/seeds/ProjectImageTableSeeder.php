@@ -17,12 +17,24 @@ class ProjectImageTableSeeder extends Seeder
                 'project_id' => 1
             ],
             [
-                'image_id' => 2,
-                'project_id' => 2
+                'image_id' =>  2,
+                'project_id' => 1
             ],
             [
-                'image_id' => 3,
-                'project_id' => 3
+                'image_id' =>  3,
+                'project_id' => 1
+            ],
+            [
+                'image_id' =>  4,
+                'project_id' => 1
+            ],
+            [
+                'image_id' =>  5,
+                'project_id' => 1
+            ],
+            [
+                'image_id' =>  6,
+                'project_id' => 1
             ],
         ]);
     }

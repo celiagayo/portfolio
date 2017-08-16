@@ -337,6 +337,43 @@ ul.titulo {
     display: block;
     width: auto;
     margin: 40px 2.5%; }
+  .proyect .imagenes-proyecto {
+    -moz-column-count: 3;
+    -moz-column-gap: 8px;
+    -moz-column-fill: balance;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 8px;
+    -webkit-column-fill: balance;
+    column-count: 3;
+    column-gap: 8px;
+    column-fill: balance; }
+    .proyect .imagenes-proyecto div {
+      position: relative;
+      -moz-column-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      break-inside: avoid-column;
+      margin: 0 2px;
+      padding: 0px;
+      border: 1px solid #F7F4F1;
+      font-size: 16px;
+      white-space: normal;
+      display: table;
+      width: 98%;
+      cursor: pointer; }
+      .proyect .imagenes-proyecto div img {
+        position: relative;
+        display: block;
+        box-shadow: 2px 2px 4px 0px rgba(34, 25, 25, 0.19);
+        background: #ffffff;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+    .proyect .imagenes-proyecto div:first-child {
+      margin-top: 0px; }
 
 .info-button {
   height: 55px !important;

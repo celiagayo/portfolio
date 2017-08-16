@@ -38,21 +38,15 @@
 
                 </div>
 
-<!--                <div class="images">
 
-                    <div>{{ $project->id }}</div>
-                    <div>{{ $project->slug }}</div>
-                    <div>{{ $project->title }}</div>
-                    <div>{{ $project->url }}</div>
-                    <div>{{ $project->featured_image }}</div>
-                    <div>{{ $project->detail_one }}</div>
-                    <div>{{ $project->detail_two }}</div>
-                    <div>{{ $images }}</div>
-                </div>-->
-                  @foreach ($images as $image)
-                <div><img src="{{ $image->url }}"/></div>
-                @endforeach
+                <div class="imagenes-proyecto">  
 
+                    @foreach ($images as $image)
+                    <div>
+                        <img src="{{ $image->url }}"/>
+                    </div>
+                    @endforeach
+                </div>
             </div>
             <br/>
             <br/>
