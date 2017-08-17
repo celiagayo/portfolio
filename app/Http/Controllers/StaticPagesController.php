@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Project;
 use App\Category;
 use DB;
 
@@ -19,8 +17,7 @@ class StaticPagesController extends Controller
 		*/
 		foreach ($categories as $category) {
 
-			$projects = $category->projectsDb();
-			$category->projects = $projects;
+			$category->projects = $category->projects()->get();
 
 		}
 
@@ -31,29 +28,33 @@ class StaticPagesController extends Controller
 
 	public function show($category_slug,$project_slug)
 	{
-		/**
-			Obtenemos la categoría, first() devuelve un objeto
-			de la clase del Modelo Category
-		*/
-		$category = Category::where('slug','=',$category_slug)->first();
+
+		$categories = Category::all();
+		// Obtenemos la categoría, first() devuelve un objeto de la clase del Modelo Category
+		$category = $categories->where('slug','=',$category_slug)->first();
+
 
 		if ($category == null){
 			return "error";
 		}
 
 		/**
-			Obtenemos el projecto. getProject también
-			devuelve un objeto de la clase del Modelo
+		De todos los proyectos de la categoría, obtenemos el que tiene
+		el slug buscado
 		*/
-		$project = $category->getProject($project_slug);
+		$project = $category -> projects()->where('slug','=',$project_slug)->first();
 
 		if ($project == null){
 			return "error";
 		}
 
+		// Obtenemos las imágenes de ese proyecto
+		$images = $project->images()->get();
 
 		return view('project')
+            ->with('categories',$categories)
 			->with('category',$category)
-			->with('project',$project);
+			->with('project',$project)
+			->with('images',$images);
 	}
 }

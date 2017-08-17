@@ -53,7 +53,24 @@ class CategoryProjectTableSeeder extends Seeder
             [
                 'project_id' => 10,
                 'category_id' => 3
+            ] ,
+            [
+                'project_id' => 11,
+                'category_id' => 3
+            ] ,
+            [
+                'project_id' => 12,
+                'category_id' => 4
+            ],
+            [
+                'project_id' => 13,
+                'category_id' => 4
+            ],
+            [
+                'project_id' => 14,
+                'category_id' => 4
             ]
+            
         ]);
     }
 }

@@ -3,86 +3,53 @@
 @section('content')
 
 
-<div class="portada">
+<div class="portada ">
     <div>
         <h1 class="titulo">Celia Gayo Escribano</h1>
         <h2 class="titulo"><em>diseñadora</em></h2>
 
         <ul class="titulo">
             @foreach ($categories as $category)
-            <li class="{{ $category->css_class }}">{{ $category->title }}</li>
-            <!--            <li class="c-graphic">Graphic</li>
-                        <li class="c-producto">Producto</li>
-                        <li class="c-arquitectura">Arquitectura</li>-->
+            <li class="menu-ap {{ $category->css_class }}" data-attr="{{ $category->slug }}">{{ $category->title }}</li>
             @endforeach
         </ul>
     </div>
+
 </div>
 
 <div class="content">
     @foreach ($categories as $category)
-    <div  class="{{ $category->css_class }}">
-        <div class="banda">
-            <div>
-                <h2>{{ $category->title }}</h2>
-                    <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>
+    <div class="area {{ $category->slug }}" >
+        <div class="{{ $category->css_class }}">
+            <div class="banda {{ $category->slug }}">
+                <div class="cont-banda">
+                    <h2>{{ $category->title }}</h2>
+<!--                    <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>-->
+                    <br/>
+                     <img src="/img/arrow.png" title="Más información" alt="Más información"/>
+                     <br/>
                     <div class="detalle">
-                        {{ $category->detail }}
+                        {!!html_entity_decode($category->detail)!!}
                     </div>
-            </div>
-        </div>
-        <div class="bloque">
-             @foreach ($category->projects as $project)
-            <div >
-                <a href="{{ $project->url }}" title="Ver {{ $project->title }}">
-                <img src="{{ $project->featured_image }}"/>
-                <p>{{ $project->title }}</p>
-                </a>
-            </div>
-              @endforeach
-        </div>
-
-    </div>
-
-<!--    <div data-attr="c-graphic" class="c-graphic">
-        <div class="banda">
-            <div>
-                <h2>GRAPHIC</h2>
-                <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>
-                <div class=" detalle">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-                    </p>
-                    <p>
-                        Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.
-                    </p>
-
                 </div>
             </div>
-        </div>
-        <div class="bloque">
-            <div class="all">
-                <img src="img/web/imf/featured-web-imf-celia-gayo.jpg"/>
-                <p></p>
+            <div class="bloque">
+                @foreach ($category->projects as $project)
+                <div>
+                    <a href="{{ $project->url }}" title="Ver {{ $project->title }}">
+                        <img src="{{ $project->featured_image }}"/>
+                        <p>{{ $project->title }}</p>
+                    </a>
+                </div>
+                @endforeach
             </div>
-            <div>
-                <img src="img/web/migayo/featured-web-migayo-celia-gayo.jpg"/>
-                <p></p>
-            </div>
-            <div>
-                <img src="img/web/takk/featured-landing-web-takk-celia-gayo.jpg"/>
-                <p></p>
-            </div>
-            <div>
-                <img src="img/web/formando-imf/featured-landing-formando-imf-celia-gayo.jpg"/>
-                <p></p>
-            </div>
-        </div>
+            <br/>
+            <br/>
 
-    </div>-->
+        </div>
+    </div>
+
+
 
     @endforeach
 </div>
