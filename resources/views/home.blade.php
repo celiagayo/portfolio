@@ -5,8 +5,8 @@
 
 <div class="portada ">
     <div>
-        <h1 class="titulo">Celia Gayo Escribano</h1>
-        <h2 class="titulo"><em>diseñadora</em></h2>
+        <h2 class="titulo">Celia Gayo Escribano</h2>
+        <h3 class="titulo"><em>diseñadora</em></h3>
 
         <ul class="titulo">
             @foreach ($categories as $category)
@@ -27,8 +27,8 @@
                     <h2>{{ $category->title }}</h2>
 <!--                    <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>-->
                     <br/>
-                     <img class="icon-flecha" src="/img/arrow.png" title="Más información" alt="Más información"/>
-                     <br/>
+                    <img class="icon-flecha" src="/img/arrow.png" title="Más información" alt="Más información"/>
+                    <br/>
                     <div class="detalle">
                         {!!html_entity_decode($category->detail)!!}
                     </div>

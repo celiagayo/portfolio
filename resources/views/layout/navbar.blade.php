@@ -1,5 +1,5 @@
 <div class="navbar">
-    <h1 class="titulo">Celia Gayo Escribano</h1>
+    <h1 class="titulo"><a href="/" title="Volver a la home">Celia Gayo Escribano</a></h1>
 
     <div class="menu-box">
         <p>menú</p>

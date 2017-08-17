@@ -207,11 +207,19 @@ body{
     }
 }
 
-h1.titulo{
+h1.titulo, h2.titulo{
     text-transform: uppercase;
-
+    a{
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        height: 100%;
+            width:100%;
+            
+         
+    }
 }
-h2.titulo{
+h3.titulo{
     font-family: $font-italic-light;
     font-size: 14px;
     padding-bottom: 25px;
