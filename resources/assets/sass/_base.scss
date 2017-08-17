@@ -144,6 +144,13 @@ body{
     position: relative;
     top: 100px;
 }
+.icon-flecha{margin-bottom: 20px;}
+.icon-flecha.gira{
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); 
+    transform: rotate(180deg);
+
+}
 .menu-box{
     background: $color-producto;
     color: $color-white;
@@ -202,7 +209,7 @@ body{
 
 h1.titulo{
     text-transform: uppercase;
-    
+
 }
 h2.titulo{
     font-family: $font-italic-light;
@@ -578,7 +585,7 @@ ul.titulo{
     cursor: initial;
     img{
         box-shadow: 8px 8px 17px 5px rgba(238, 111, 73, 0.69);
-        
+
     }
 
 }

@@ -125,9 +125,11 @@ $(document).ready(function () {
     $('.banda')
             .mouseenter(function () {
                 $(this).addClass('mostrada');
+                $(this).find('.icon-flecha').addClass('gira');
             })
             .mouseleave(function () {
                 $(this).removeClass('mostrada');
+                  $(this).find('.icon-flecha').removeClass('gira');
             });
     //Si existe banda, centrar navbar
     if ($('.banda').length) {

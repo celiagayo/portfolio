@@ -42,6 +42,14 @@ body {
   position: relative;
   top: 100px; }
 
+.icon-flecha {
+  margin-bottom: 20px; }
+
+.icon-flecha.gira {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
 .menu-box {
   background: #F5A992;
   color: #ffffff;
