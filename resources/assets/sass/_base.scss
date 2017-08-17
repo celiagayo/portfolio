@@ -180,7 +180,7 @@ body{
     top: 10px;
     left: 10px;
     font-size: 13px;
-      @include box_shadow(2);
+    @include box_shadow(2);
     nav {
         display:none;
         position: absolute;
@@ -325,7 +325,10 @@ ul.titulo{
 .content{
     width: 100%;
     overflow: hidden;
-
+    ul{
+        padding-left: 40px;
+        list-style: disc;
+    }
     >div{
         width: 100%;
         position: relative;
@@ -381,7 +384,17 @@ ul.titulo{
         padding-left: 100px;
         overflow:scroll!important;
         position: relative;
-            padding-top: 20px;
+        padding-top: 20px;
+        p::before{
+            content:"";
+            height:8px; 
+            width:14px;
+            border-radius: 300px;
+            background: #ffffff;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
     }
     div{
         position: relative; 
@@ -442,7 +455,7 @@ ul.titulo{
         width: 100%;
         height: auto;
         text-align: center;
-          @include box_shadow(1);
+        @include box_shadow(1);
     }
     img:hover{opacity:0.9}
     .all{
@@ -471,7 +484,7 @@ ul.titulo{
         width: 100%;
         overflow: hidden;
         margin: 0 auto 10px;
-       
+
 
         .c-web{
             background: $color-web;
@@ -491,7 +504,7 @@ ul.titulo{
             float: left;
             margin: 2px;
             color: $color-white!important;
-              @include box_shadow(1);
+            @include box_shadow(1);
         }
         .titulo{
             font-family: $font-cuerpo;
@@ -529,9 +542,7 @@ ul.titulo{
         margin: 40px 2.5%;
 
         .featured-image{
-
             @include box_shadow(1);
-
         }
     }
 
@@ -564,7 +575,7 @@ ul.titulo{
             img {
                 position: relative;
                 display: block;
-                 @include box_shadow(1);
+                @include box_shadow(1);
                 background: #ffffff;
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
@@ -622,7 +633,7 @@ ul.titulo{
     border: 0px;
     cursor: initial;
     img{
-              @include box_shadow(2);
+        @include box_shadow(2);
 
     }
 
@@ -638,7 +649,7 @@ ul.titulo{
     text-align: center;
     color:$color-web;
     margin-bottom: 10px;
-      @include box_shadow(2);
+    @include box_shadow(2);
 }
 /*@-webkit-keyframes color-change-2x {
     0% {

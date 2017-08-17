@@ -178,6 +178,9 @@ ul.titulo {
 .content {
   width: 100%;
   overflow: hidden; }
+  .content ul {
+    padding-left: 40px;
+    list-style: disc; }
   .content > div {
     width: 100%;
     position: relative; }
@@ -226,6 +229,14 @@ ul.titulo {
     overflow: scroll !important;
     position: relative;
     padding-top: 20px; }
+    .banda .detalle p::before {
+      content: "";
+      height: 8px;
+      width: 14px;
+      border-radius: 300px;
+      background: #ffffff;
+      display: inline-block;
+      margin-right: 10px; }
   .banda div {
     position: relative;
     width: 70px; }

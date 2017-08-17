@@ -72,8 +72,8 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Cuadernos de viaje',
                 'url' => 'graphic/bitacora',
                 'featured_image' => '/img/graphic/bitacora/featured-graphic-bitacora-fez-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_one' => '<p>A tinta, a carboncillo, con bolígrafo, con acuarela...</p><p> En servilletas, en cuadernos de dibujo, en folios...</p> <p>Cuando viajo necesito hacer apuntes rápidos de lo que veo, no se otro modo de quedarme con un lugar guardado en mi memoria para siempre.</p> <p>El dibujo, a diferencia de la fotgrafía, me permite abstraerme de la realidad y captar aquello y sólo aquello que me llama la atención y quiero mantener en el recuerdo.</p> <p>El esfuerzo es más grande que tomar una fotografía, el hecho de elegir un lugar y ponerme a dibujar me obliga a pararme, a decidir si vale la pena, a pensar... y a disfrutar  </p>',
+                'detail_two' => '<p>Bocetos y recuerdos de viajes</p>',
             ]
             ,
             [
@@ -82,8 +82,8 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Fotografía',
                 'url' => 'graphic/photography',
                 'featured_image' => '/img/graphic/photography/featured-photography-portadas-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_one' => '<p>Organizar, encontrar patrones... me gusta hacer las mismas fotos cuando viajo, en este caso, de fachadas que me voy encontrando y llaman mi atención.</p><p>Quizá no son las fotos más representativas de los lugares que visito, pero me llegan más los pequeños detalles</p>',
+                'detail_two' => '<p>Serie de fotografía: "Portadas que cruzo"</p>',
             ]
             ,
             [
@@ -124,10 +124,10 @@ class ProjectsTableSeeder extends Seeder {
                 'id' => 11,
                 'slug' => 'joyas',
                 'title' => 'Joyería',
-                'url' => 'product/joyas',
+                'url' => 'https://www.migayo.com/',
                 'featured_image' => '/img/product/joyas/featured-product-joyas-a-medida-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_one' => '<p>Migayo nace en el año 2012 como escaparate de mis diseños de joyería minimalista.</p><p>Empiezo participando en diferentes ferias en Madrid y Barcelona (varias ediciones del Mercado Central de Diseño en Matadero, Ciento y Pico Market y Festivalet en Barcelona) con piezas de colección a las que llamo "joyas mínimas", pensadas para reasaltar la parte del cuerpo en que se llevan pero sin ser protagonsitas.</p><p>Poco a poco la marca evoluciona y me centro en el diseño y realización artesanal de joyas a medida. Este enfoque me permite hacer piezas más personales y con un simbolismo muy potente ya que van a acompañar a su dueño durante toda la vida, celebrando un evento, evocando un recuerdo, transformando una pieza heredada...</p> <p>Trabajo principalmente con oro y gemas nuevas, heredadas o compradas en viajes</p> <p><a href="https://www.migayo.com/" title="Visita Migayo" target="_blank">www.migayo.com</a></p>',
+                'detail_two' => '<p>Joyería a medida y artesanal bajo la marca Migayo</p>',
             ],
             [
                 'id' => 12,
