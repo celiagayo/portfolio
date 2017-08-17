@@ -47,6 +47,24 @@ $medium-text: 16px;
 $second-text: 13px;
 
 
+/*SHADOWS*/
+@mixin box_shadow ($level) {
+
+    @if $level == 1 {
+        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.12), 1px 1px 4px 0px rgba(0, 0, 0, 0.09);
+    } @else if $level == 2 {
+        box-shadow: 1px 3px 6px rgba(0,0,0,0.16), 1px 3px 6px rgba(0,0,0,0.23);
+    } @else if $level == 3 {
+        box-shadow: 1px 10px 20px rgba(0,0,0,0.19), 1px 6px 6px rgba(0,0,0,0.23);
+    } @else if $level == 4 {
+        box-shadow: 1px 14px 28px rgba(0,0,0,0.25), 1px 10px 10px rgba(0,0,0,0.22);
+    } @else if $level == 5 {
+        box-shadow: 1px 19px 38px rgba(0,0,0,0.30), 1px 15px 12px rgba(0,0,0,0.22);
+    }
+
+}
+
+
 /*MEDIAQUUERIES*/
 $hd-width:1920px;
 $desktop-width:1366px;
@@ -162,6 +180,7 @@ body{
     top: 10px;
     left: 10px;
     font-size: 13px;
+      @include box_shadow(2);
     nav {
         display:none;
         position: absolute;
@@ -214,9 +233,9 @@ h1.titulo, h2.titulo{
         color: inherit;
         display: block;
         height: 100%;
-            width:100%;
-            
-         
+        width:100%;
+
+
     }
 }
 h3.titulo{
@@ -336,6 +355,7 @@ ul.titulo{
         .banda{
             background: $color-arquitectura;
         }
+        p{color: $color-web}
     }
 
 }
@@ -361,6 +381,7 @@ ul.titulo{
         padding-left: 100px;
         overflow:scroll!important;
         position: relative;
+            padding-top: 20px;
     }
     div{
         position: relative; 
@@ -421,6 +442,7 @@ ul.titulo{
         width: 100%;
         height: auto;
         text-align: center;
+          @include box_shadow(1);
     }
     img:hover{opacity:0.9}
     .all{
@@ -449,6 +471,7 @@ ul.titulo{
         width: 100%;
         overflow: hidden;
         margin: 0 auto 10px;
+       
 
         .c-web{
             background: $color-web;
@@ -468,6 +491,7 @@ ul.titulo{
             float: left;
             margin: 2px;
             color: $color-white!important;
+              @include box_shadow(1);
         }
         .titulo{
             font-family: $font-cuerpo;
@@ -497,13 +521,18 @@ ul.titulo{
         display: block;
         text-align: center;
         margin-bottom: 20px;
+
     }
     >div{
         display: block;
         width: auto;
         margin: 40px 2.5%;
 
+        .featured-image{
 
+            @include box_shadow(1);
+
+        }
     }
 
     .imagenes-proyecto{
@@ -516,6 +545,7 @@ ul.titulo{
         column-count: 3;
         column-gap: 8px;
         column-fill: balance;
+        margin-top:80px;
 
 
         >div{
@@ -534,7 +564,7 @@ ul.titulo{
             img {
                 position: relative;
                 display: block;
-                box-shadow: 2px 2px 4px 0px rgba(34,25,25,0.19);
+                 @include box_shadow(1);
                 background: #ffffff;
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
@@ -592,7 +622,7 @@ ul.titulo{
     border: 0px;
     cursor: initial;
     img{
-        box-shadow: 8px 8px 17px 5px rgba(238, 111, 73, 0.69);
+              @include box_shadow(2);
 
     }
 
@@ -608,6 +638,7 @@ ul.titulo{
     text-align: center;
     color:$color-web;
     margin-bottom: 10px;
+      @include box_shadow(2);
 }
 /*@-webkit-keyframes color-change-2x {
     0% {

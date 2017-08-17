@@ -112,8 +112,13 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Joyería Artística',
                 'url' => 'product/joyeria-artistica',
                 'featured_image' => '/img/product/joyeria-artisitica/featured-product-joyeria-artistica-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_one' => '<p>La serie <strong>Broches en Proceso</strong> surge como un <strong>proyecto de investigación</strong> en el que busco los <strong>límites de la joyería:</strong></p>
+<p>Qué es lo mínimo que necesita una pieza para ser joya y por otro lado, cuánto carga artística es capaz de absorber.</p>
+<p>Para ello realizo un proyecto de <strong>arte procesual</strong> en le que unos usuarios piden intervenciones sobre una estructura inicial muy básica.</p>
+<p>A partir de ahí, mediante una aplicación web que diseñé, se establecía un <strong>diálogo</strong> en el que los usuario iban pidiendo pasos en su broche y yo les devolvía imágenes de su pieza como una joya terminada. Este proceso se repetía tantas veces como el usuario quisiera, generando <strong>piezas metamorfoseadas</strong>.</p>
+<br /><p>Como, reslutado, obtuve una serie de piezas en un estado de mayor o menor evolución, que muestran las infinitas posibilidades formales de la joya.</p>
+<p>Lo importante de los Broches en Proceso no son los resultados finales de las piezas. Lo importante son todos los <strong>estados intermedios que se han ido generando</strong> y que quedan documentados en cada ficha de broche.</p> <br/><br/><p>Esta colección ha sido expuesta en:</p> <ul><li><strong>Joya Barcelona</strong>. Barcelona 2016</li> <li>Escuela de Arte de la Palma. Madrid 2106</li></ul>',
+                'detail_two' => '<p>Joyería de investigación: Broches en proceso</p>  ',
             ],
             [
                 'id' => 11,
@@ -130,8 +135,14 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Proyecto Final de Carrera',
                 'url' => 'architecture/pfc',
                 'featured_image' => '/img/architecture/pfc/featured-architecture-pfc-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_one' => '
+<p>El proyecto se ubica en el Sitio Arqueológico de <em>Complutum</em>, origen de la actual ciudad de Alcalá de Henares entre los siglos I y V a.C.</p>                    
+<p>Las caracterísiticas de la arqueología, como son la indeterminación y la temporalidad, son la base del proyecto, que plantea un sistema que va evolucionando junto con los descubrimientos arqueológicos y donde cada estado tiene un valor propio.</p>
+<p>El objetivo es dar una solución inmediata y continuada en el tiempo a la situación actual del yacimiento, un descampado con puntuales espacios de trabajo arqueológico.</p>
+<p>Para ello, se define un catálogo de actuación a modo de red de intervenciones que envían "satélites" a las zonas con actividad arqueológica. Estos elementos irán colonizando el yacimiento hasta que su uso no sea necesario, momento en el que se integrarán en el edificio principal, que con el aumento de los decubrimientos, necesitará más espacio.</p>
+<p>El sistema constructivo, modular, es clave para permitr esta diversidad de formas: Todo el conjunto se construye con barras de 4 longitudes diferentes, que se unen entre sí mediante una rótula que permite diferentes ángulos de anclaje, generando diferentes tipolgías de pórticos. </p>
+',
+                'detail_two' => '<p>Proyecto que parte de la indeterminación y la temporalidad intrínsecas a una internvención arqueológica. ',
             ],
             [
                 'id' => 13,
@@ -139,8 +150,9 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Reebok Creative Hub',
                 'url' => 'architecture/reebok',
                 'featured_image' => '/img/architecture/reebok/featured-architecture-reebok-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_one' => '<p>Proyecto realizado con la arquitecta Marta Menéndez para transformar el espacio y usos de un local de Madrid para acoger dureante dos meses el Reebok Creative Hub </p>'
+                . '<p>Las características del encargo requerían de una intervención rápida y temporal para generar un espacio multiusos que acogiera eventos, talleres y presentaciones.</p><p>El espacio, recorrido y unificado mediante un tubo de acero que adquiere diferentes funciones, queda organizado y estructurado mediante una grada móvil de madera y una mesa-bici giratoria. De esta manera, conseguíamos generar diferentes espacios y usos</p>',
+                'detail_two' => '<p>Proyecto de arquitectura efímera para el Rebook Creative Hub. Madrid 2014</p>',
             ],
             [
                 'id' => 14,
@@ -148,7 +160,7 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Planeamiento Urbano',
                 'url' => 'architecture/urban',
                 'featured_image' => '/img/architecture/urban/featured-architecture-urban-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
+                'detail_one' => '<p>Low density urban development proposal in Arroyomolinos, Madrid.</p>',
                 'detail_two' => 'texto de detalle 2',
             ]
         ]);

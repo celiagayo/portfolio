@@ -122,7 +122,7 @@ class ImagesTableSeeder extends Seeder
             [
                 'id' => 21,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-8.jpg',
-                'project_id' => 13
+                'project_id' => 12
             ],
             [
                 'id' => 22,

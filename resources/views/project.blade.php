@@ -23,7 +23,7 @@
                 <div class="presenta-proyecto">
                     <div class='enlaces-proyecto '>
 
-                        <div class='ver {{$category->css_class}}'> <a title="volver" href="/"> 
+                        <div class='ver {{$category->css_class}}'> <a title="volver" href="/#{{$category->slug}}"> 
                                 <img src="/img/back.png" title="volver" alt="volver"/>
 <!--                                <i class="fa fa-undo fa-2x" aria-hidden="true" ></i>-->
 
@@ -32,7 +32,7 @@
                         <div class='titulo {{$category->css_class}}'><h2>{{ $project->title }}</h2></div>
                     </div>
                     <div>
-                        <img src="{{ $project->featured_image }}"/>
+                        <img class="featured-image" src="{{ $project->featured_image }}"/>
                         {!!html_entity_decode($project->detail_two)!!}
                         <!--                        <div>{{ $project->detail_two }}</div>-->
                         </a>
