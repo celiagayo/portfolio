@@ -33,6 +33,15 @@ body {
 .navbar.con-banda {
   padding-right: 90px; }
 
+.arrow-down {
+  background: #FCE9E7;
+  margin: 0 auto;
+  text-align: center;
+  height: 40px;
+  width: 7px;
+  position: relative;
+  top: 100px; }
+
 .menu-box {
   background: #F5A992;
   color: #ffffff;

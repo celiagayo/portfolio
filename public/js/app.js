@@ -22,12 +22,12 @@ $(document).ready(function () {
         $('.portada ul li').toggleClass('hovered');
     });
 
-//    if ($(window).width() <= 850) {
-//        $(window).scroll(function () {
-//            $('.portada ul li').addClass('hovered');
-//
-//        });
-//    }
+    if ($(window).width() <= 850) {
+        $(window).scroll(function () {
+            $('.portada ul li').addClass('hovered');
+
+        });
+    }
 //PORTADA adapta su tamaño al scroll
     function scrollPortada() {
         if ($('.portada').length) {
@@ -187,7 +187,7 @@ $(document).ready(function () {
     });
     //SCROLL
     $(window).scroll(function () {
- $('.portada ul li').addClass('hovered');
+// $('.portada ul li').addClass('hovered');
         scrollPortada();
         mueveFlotante();
     });
