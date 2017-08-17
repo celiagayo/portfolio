@@ -5,7 +5,7 @@ $(document).ready(function () {
     function portadaTodo() {
         $('.portada').height(WindHeight);
         var mitadPortada = $(".portada").height() / 2;
-        var padingPortada = mitadPortada;
+        var padingPortada = mitadPortada - $('.portada h1').height();
         $('.portada').css('padding-top', padingPortada);
         $('.portada ul').height(mitadPortada + $('.portada h1').height());
     }
@@ -19,15 +19,15 @@ $(document).ready(function () {
                 $('.portada ul li').removeClass('hovered');
             });
     $('.portada').click(function () {
-        $('.portada ul li').addClass('hovered');
+        $('.portada ul li').toggleClass('hovered');
     });
 
-    if ($(window).width() <= 850) {
-        $(window).scroll(function () {
-            $('.portada ul li').addClass('hovered');
-
-        });
-    }
+//    if ($(window).width() <= 850) {
+//        $(window).scroll(function () {
+//            $('.portada ul li').addClass('hovered');
+//
+//        });
+//    }
 //PORTADA adapta su tamaño al scroll
     function scrollPortada() {
         if ($('.portada').length) {
@@ -187,7 +187,7 @@ $(document).ready(function () {
     });
     //SCROLL
     $(window).scroll(function () {
-
+ $('.portada ul li').addClass('hovered');
         scrollPortada();
         mueveFlotante();
     });
