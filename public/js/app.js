@@ -5,9 +5,9 @@ $(document).ready(function () {
     function portadaTodo() {
         $('.portada').height(WindHeight);
         var mitadPortada = $(".portada").height() / 2;
-        var padingPortada = mitadPortada - $('.portada h1').height();
+        var padingPortada = mitadPortada - $('.portada h1').height() - 100;
         $('.portada').css('padding-top', padingPortada);
-        $('.portada ul').height(mitadPortada + $('.portada h1').height());
+        $('.portada ul').height(mitadPortada + $('.portada h1').height() + 100);
     }
     portadaTodo();
 //PORTADA despliega datos
@@ -133,38 +133,58 @@ $(document).ready(function () {
                 $(this).find('.icon-flecha').removeClass('gira');
                 $('.scroll-banda').animate({scrollTop: 0}, 'fast');
             });
-//    $('.banda').addClass('mostrada');
-    //Si existe banda, centrar navbar
+    //////Si existe banda, centrar navbar
     if ($('.banda').length) {
         $('.navbar').addClass('con-banda');
     } else {
         $('.navbar').removeClass('con-banda');
     }
 
-
-// ALTURA DE BANDA
+    //////Altura de banda
     function altoBanda() {
-//        var altoTituloBanda = $('.cont-banda h2').height() + $('.cont-banda img').height();
         $('.scroll-banda').height(WindHeight - 80);
     }
     altoBanda();
+
 //MENUBOX funcionamiento
-    $('.menu-box')
-            .mouseenter(function () {
-                $('.menu-box nav').show();
-                $('.menu-box').addClass('abremenu');
-                $('.menu-box p').html('X');
-                $('.menu-box p').click(function () {
-                    $('.menu-box nav').hide();
-                    $('.menu-box').removeClass('abremenu');
-                    $('.menu-box p').html('menu');
+    function menuBoxCierra() {
+        $('.menu-box nav').hide();
+        $('.menu-box').removeClass('abremenu');
+        $('.menu-box p').html('menú').addClass('box-abremenu').removeClass('box-cierramenu');
+         $('.box-abremenu').click(function () {
+           menuBoxAbre();
+        });
+        ;
+    }
+    function menuBoxAbre() {
+        $('.menu-box nav').show();
+        $('.menu-box').addClass('abremenu');
+        $('.menu-box p').html('X').removeClass('box-abremenu').addClass('box-cierramenu');
+        $('.box-cierramenu').click(function () {
+            menuBoxCierra();
+        });
+    }
+
+    if ($(window).width() <= 800) {
+        $('.box-abremenu').click(function () {
+            menuBoxAbre();
+        });
+         $('.box-cierramenu').click(function () {
+            menuBoxCierra();
+        });
+
+
+
+    } else {
+        $('.menu-box')
+                .mouseenter(function () {
+                    menuBoxAbre();
+                })
+                .mouseleave(function () {
+                    menuBoxCierra();
                 });
-            })
-            .mouseleave(function () {
-                $('.menu-box nav').hide();
-                $('.menu-box').removeClass('abremenu');
-                $('.menu-box p').html('menu');
-            });
+
+    }
 
     //PROYECTO imagen agrandada          
     $('.imagenes-proyecto div').click(function () {

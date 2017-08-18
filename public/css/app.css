@@ -26,13 +26,26 @@ body {
   text-align: center;
   z-index: 3;
   height: 70px; }
+  @media screen and (max-width: 400px) {
+    .navbar {
+      height: 50px; } }
   .navbar h1 {
     line-height: 70px;
     font-size: 17px;
     color: #F5A992; }
+    @media screen and (max-width: 850px) {
+      .navbar h1 {
+        text-align: left;
+        padding-left: 73px; } }
+    @media screen and (max-width: 400px) {
+      .navbar h1 {
+        line-height: 50px; } }
 
 .navbar.con-banda {
   padding-right: 90px; }
+  @media screen and (max-width: 850px) {
+    .navbar.con-banda {
+      padding-right: 70px; } }
 
 /*arrow*/
 .portada .arrow {
@@ -109,7 +122,11 @@ body {
     opacity: 0; } }
 /*fin arrow*/
 .icon-flecha {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 55px; }
+  @media screen and (max-width: 850px) {
+    .icon-flecha {
+      width: 44px; } }
 
 .icon-flecha.gira {
   -ms-transform: rotate(180deg);
@@ -127,6 +144,7 @@ body {
   top: 10px;
   left: 10px;
   font-size: 13px;
+  cursor: pointer;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.16), 1px 3px 6px rgba(0, 0, 0, 0.23); }
   .menu-box nav {
     display: none;
@@ -144,6 +162,16 @@ body {
   .menu-box a {
     text-decoration: none;
     color: inherit; }
+  .menu-box .box-abremenu {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /*        border-bottom: 1px solid red;*/ }
+  .menu-box .box-cierramenu {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /*        border-top: 1px solid blue;*/ }
 
 .ver-online {
   text-decoration: none;
@@ -188,7 +216,6 @@ body {
     top: 20px;
     left: 10px;
     cursor: pointer;
-    width: 100%;
     height: 40px;
     display: block;
     line-height: auto;
@@ -319,8 +346,15 @@ ul.titulo {
     word-break: break-all;
     text-transform: uppercase;
     font-family: "Cormorant Garamond", serif; }
+    @media screen and (max-width: 850px) {
+      .banda h2 {
+        font-size: 21px; } }
   .banda h3 {
-    font-family: "Cormorant Garamond", serif; }
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px; }
+    @media screen and (max-width: 850px) {
+      .banda h3 {
+        font-size: 17px; } }
   .banda .scroll-banda {
     position: relative;
     overflow-y: auto !important; }
@@ -348,6 +382,9 @@ ul.titulo {
     margin-bottom: 15px;
     font-weight: lighter;
     font-size: 15px; }
+    @media screen and (max-width: 850px) {
+      .banda p, .banda ul {
+        font-size: 13px; } }
 
 .banda.mostrada {
   width: 40%;
@@ -387,7 +424,7 @@ ul.titulo {
       .bloque > div {
         width: 45%;
         margin: 40px 2%; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 400px) {
       .bloque > div {
         width: 80%;
         margin: 30px auto;
@@ -400,7 +437,7 @@ ul.titulo {
         display: inline-block;
         vertical-align: top;
         margin: 40px 2%; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 400px) {
       .bloque > div:first-child {
         margin: 30px auto;
         display: block; } }

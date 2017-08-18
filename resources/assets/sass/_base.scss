@@ -39,7 +39,7 @@ $proyect-width:600px;
 $max-width:1500px;
 
 $ancho-banda:90px;
-
+$ancho-banda-tablet:70px;
 $main-text: 15px;
 $boton-text:26px; 
 $boton-text-d: 2.3vw;
@@ -70,7 +70,7 @@ $hd-width:1920px;
 $desktop-width:1366px;
 $laptop-width: 1170px;
 $tablet-width: 850px;
-$mobile-width: 600px;
+$mobile-width: 400px;
 $minimobile-width: 300px;
 
 
@@ -142,16 +142,29 @@ body{
     text-align: center;
     z-index: 3;
     height: 70px;
-
+    @include mobile {
+        height: 50px;  
+    }
 
     h1{
         line-height: 70px;
         font-size: 17px;
         color: $color-producto;
+
+
+        @include tablet {
+            text-align: left;
+            padding-left: 73px;
+        }
+        @include mobile {
+            line-height: 50px;  
+        }
     }
 }
 .navbar.con-banda{
     padding-right: $ancho-banda;
+    @include tablet {   padding-right: $ancho-banda-tablet}
+
 }
 
 /*arrow*/
@@ -238,7 +251,11 @@ body{
 }
 
 /*fin arrow*/
-.icon-flecha{margin-bottom: 20px;}
+.icon-flecha{
+    margin-bottom: 20px;
+    width: 55px;
+    @include tablet { width: 44px;}
+}
 .icon-flecha.gira{
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg); 
@@ -256,6 +273,7 @@ body{
     top: 10px;
     left: 10px;
     font-size: 13px;
+    cursor: pointer;
     @include box_shadow(2);
     nav {
         display:none;
@@ -276,6 +294,18 @@ body{
         text-decoration: none;
         color: inherit;
     }
+    .box-abremenu{
+        display: block;
+        height: 100%;
+        width: 100%;
+        /*        border-bottom: 1px solid red;*/
+    }
+    .box-cierramenu{
+        display: block;
+        height: 100%;
+        width: 100%;
+/*        border-top: 1px solid blue;*/
+    }
 }
 
 .ver-online{
@@ -290,12 +320,12 @@ body{
     font-size: 14px;
 
     img{
-     width: auto !important;
-         text-align: center !important;
-         margin: 0 auto !important;
-         display: inline-block!important;
-         vertical-align: middle;
-         padding-right: 10px;
+        width: auto !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        display: inline-block!important;
+        vertical-align: middle;
+        padding-right: 10px;
     }
     a{ display: block; height: 100%; width: 100%; cursor: pointer;     text-decoration: none;
        color:inherit;}
@@ -318,7 +348,7 @@ body{
         top: 20px;
         left: 10px;
         cursor: pointer;
-        width: 100%;
+        
         height: 40px;
         display: block;
         line-height: auto;
@@ -480,10 +510,20 @@ ul.titulo{
     z-index:10;
 
     font-weight: lighter;
-    @include tablet { width:70px;}
+    @include tablet { width:$ancho-banda-tablet;}
 
-    h2{word-break: break-all; text-transform: uppercase; font-family:$font-sans; }
-    h3{ font-family:$font-sans; }
+    h2{
+        word-break: break-all; 
+        text-transform: uppercase; 
+        font-family:$font-sans; 
+        @include tablet { font-size: 21px;}
+    }
+    h3{
+        font-family:$font-sans; 
+        font-size: 19px;
+        @include tablet { font-size: 17px;}
+
+    }
     .scroll-banda{
         position: relative;
         overflow-y: auto!important;
@@ -493,6 +533,7 @@ ul.titulo{
         position: relative;
         padding-top: 20px;
         padding-bottom: 100px;
+
 
         p::before{
             content:"";
@@ -515,6 +556,9 @@ ul.titulo{
         margin-bottom: 15px;
         font-weight: lighter;
         font-size: 15px;
+
+        @include tablet { font-size: 13px;}
+
     }
 
 }
