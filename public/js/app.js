@@ -122,19 +122,11 @@ $(document).ready(function () {
     mueveFlotante();
 
 // BANDA SE MUESTRA
-    $('.banda')
-            .mouseenter(function () {
-                $(this).addClass('mostrada');
-                $(this).find('.icon-flecha').addClass('gira');
-                $('.scroll-banda').animate({scrollTop: 0}, 'fast');
-            })
-            .mouseleave(function () {
-                $(this).removeClass('mostrada');
-                $(this).find('.icon-flecha').removeClass('gira');
-                $('.scroll-banda').animate({scrollTop: 0}, 'fast');
-            });
-
-
+    //////Altura de banda
+    function altoBanda() {
+        $('.scroll-banda').height(WindHeight - 80);
+    }
+    altoBanda();
 
     //////Si existe banda, centrar navbar
     if ($('.banda').length) {
@@ -143,11 +135,67 @@ $(document).ready(function () {
         $('.navbar').removeClass('con-banda');
     }
 
-    //////Altura de banda
-    function altoBanda() {
-        $('.scroll-banda').height(WindHeight - 80);
+// 
+//    function bandaCierra() {
+//        $('.banda').removeClass('mostrada');
+//        $('.banda').find('.icon-flecha').removeClass('gira');
+//        $('.scroll-banda').animate({scrollTop: 0}, 'fast');
+//    }
+//    function bandaAbre() {
+//        $(this).addClass('mostrada');
+//        $(this).find('.icon-flecha').addClass('gira');
+//        $('.scroll-banda').animate({scrollTop: 0}, 'fast');
+//    }
+//    $('.banda')
+//            .mouseenter(function () {
+//                $(this).addClass('mostrada');
+//                $(this).find('.icon-flecha').addClass('gira');
+//                $('.scroll-banda').animate({scrollTop: 0}, 'fast');
+//                bandaAbre();
+//            })
+//            .mouseleave(function () {
+//                $(this).removeClass('mostrada');
+//                $(this).find('.icon-flecha').removeClass('gira');
+//                $('.scroll-banda').animate({scrollTop: 0}, 'fast');
+//                bandaCierra();
+//            });
+
+
+    if ($(window).width() <= 800) {
+        $('.banda-mostrada').click(function () {
+            console.log('cierra');
+            $(this).removeClass('banda-mostrada').addClass('banda-cerrada');
+            $(this).find('.icon-flecha').removeClass('gira');
+            $('.scroll-banda').animate({scrollTop: 0}, 'fast');
+        });
+        $('.banda-cerrada').click(function () {
+            console.log('abre');
+            $(this).addClass('banda-mostrada').removeClass('banda-cerrada');
+            $(this).find('.icon-flecha').addClass('gira');
+            $('.scroll-banda').animate({scrollTop: 0}, 'fast');
+        });
+
+
+    } else {
+        $('.banda')
+                .mouseenter(function () {
+                    $(this).addClass('banda-mostrada');
+                    $(this).find('.icon-flecha').addClass('gira').removeClass('singirar');
+                    $('.scroll-banda').animate({scrollTop: 0}, 'fast');
+
+                })
+                .mouseleave(function () {
+                    $(this).removeClass('banda-mostrada');
+                    $(this).find('.icon-flecha').removeClass('gira').addClass('singirar');
+                    $('.scroll-banda').animate({scrollTop: 0}, 'fast');
+
+                });
+
     }
-    altoBanda();
+
+
+
+
 
 //MENUBOX funcionamiento
     function menuBoxCierra() {
@@ -175,8 +223,6 @@ $(document).ready(function () {
         $('.box-cierramenu').click(function () {
             menuBoxCierra();
         });
-
-
 
     } else {
         $('.menu-box')

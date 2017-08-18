@@ -146,6 +146,17 @@ body {
   font-size: 13px;
   cursor: pointer;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.16), 1px 3px 6px rgba(0, 0, 0, 0.23); }
+  @media screen and (max-width: 400px) {
+    .menu-box {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+      top: 5px;
+      left: 5px;
+      font-size: 14px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      border-radius: 300px; } }
   .menu-box nav {
     display: none;
     position: absolute;
@@ -209,6 +220,12 @@ body {
   min-width: 250px;
   width: 25%;
   line-height: inherit; }
+  @media screen and (max-width: 400px) {
+    .menu-box.abremenu {
+      -webkit-border-radius: 0px 100px 100px 100px;
+      -moz-border-radius: 0px 100px 100px 100px;
+      border-radius: 0px 100px 100px 100px;
+      min-width: 193px; } }
   .menu-box.abremenu p {
     font-size: 30px;
     text-align: left;
@@ -386,15 +403,18 @@ ul.titulo {
       .banda p, .banda ul {
         font-size: 13px; } }
 
-.banda.mostrada {
+.banda-cerrada {
+  /*    border: 1px solid red;*/ }
+
+.banda-mostrada {
   width: 40%;
   padding: 150px 30px; }
   @media screen and (max-width: 850px) {
-    .banda.mostrada {
+    .banda-mostrada {
       width: 70%; } }
-  .banda.mostrada .detalle {
+  .banda-mostrada .detalle {
     padding-left: 0px; }
-  .banda.mostrada div {
+  .banda-mostrada div {
     width: auto;
     overflow: hidden;
     padding-right: 20px; }

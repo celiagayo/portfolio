@@ -280,6 +280,17 @@ body{
     font-size: 13px;
     cursor: pointer;
     @include box_shadow(2);
+    @include mobile { 
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        top: 5px;
+        left: 5px;
+        font-size: 14px;
+        -webkit-border-radius: 300px; 
+        -moz-border-radius: 300px; 
+        border-radius: 300px;
+    }
     nav {
         display:none;
         position: absolute;
@@ -303,6 +314,7 @@ body{
         display: block;
         height: 100%;
         width: 100%;
+
         /*        border-bottom: 1px solid red;*/
     }
     .box-cierramenu{
@@ -345,6 +357,12 @@ body{
     min-width: 250px;
     width: 25%;
     line-height: inherit;
+    @include mobile { 
+        -webkit-border-radius: 0px 100px 100px 100px; 
+        -moz-border-radius: 0px 100px 100px 100px; 
+        border-radius: 0px 100px 100px 100px; 
+        min-width: 193px;
+    }
 
     p{
         font-size: 30px;
@@ -567,8 +585,12 @@ ul.titulo{
     }
 
 }
+.banda-cerrada{
 
-.banda.mostrada{
+
+/*    border: 1px solid red;*/
+}
+.banda-mostrada{
     width: 40%;
     padding: 150px 30px;
     @include tablet { width:70%;}

@@ -27,7 +27,7 @@
     @foreach ($categories as $category)
     <div class="area {{ $category->slug }}" id="{{ $category->slug }}" >
         <div class="{{ $category->css_class }}">
-            <div class="banda {{ $category->slug }}">
+            <div class="banda {{ $category->slug }} banda-cerrada">
                 <div class="cont-banda">
                     <div class="scroll-banda">
                         <h2>{{ $category->title }}</h2>
