@@ -133,6 +133,9 @@ $(document).ready(function () {
                 $(this).find('.icon-flecha').removeClass('gira');
                 $('.scroll-banda').animate({scrollTop: 0}, 'fast');
             });
+
+
+
     //////Si existe banda, centrar navbar
     if ($('.banda').length) {
         $('.navbar').addClass('con-banda');
@@ -151,8 +154,8 @@ $(document).ready(function () {
         $('.menu-box nav').hide();
         $('.menu-box').removeClass('abremenu');
         $('.menu-box p').html('menú').addClass('box-abremenu').removeClass('box-cierramenu');
-         $('.box-abremenu').click(function () {
-           menuBoxAbre();
+        $('.box-abremenu').click(function () {
+            menuBoxAbre();
         });
         ;
     }
@@ -169,7 +172,7 @@ $(document).ready(function () {
         $('.box-abremenu').click(function () {
             menuBoxAbre();
         });
-         $('.box-cierramenu').click(function () {
+        $('.box-cierramenu').click(function () {
             menuBoxCierra();
         });
 

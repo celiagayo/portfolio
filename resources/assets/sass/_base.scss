@@ -70,6 +70,7 @@ $hd-width:1920px;
 $desktop-width:1366px;
 $laptop-width: 1170px;
 $tablet-width: 850px;
+$una-columna-width: 600px;
 $mobile-width: 400px;
 $minimobile-width: 300px;
 
@@ -91,7 +92,11 @@ $minimobile-width: 300px;
         @content;
     }
 }
-
+@mixin una-columna {
+    @media screen and (max-width: #{$una-columna-width}) {
+        @content;
+    }
+}
 @mixin mobile {
     @media screen and (max-width: #{$mobile-width}) {
         @content;
@@ -304,7 +309,7 @@ body{
         display: block;
         height: 100%;
         width: 100%;
-/*        border-top: 1px solid blue;*/
+        /*        border-top: 1px solid blue;*/
     }
 }
 
@@ -348,7 +353,7 @@ body{
         top: 20px;
         left: 10px;
         cursor: pointer;
-        
+
         height: 40px;
         display: block;
         line-height: auto;
@@ -590,13 +595,13 @@ ul.titulo{
         margin: 40px 2.5%;
 
         @include laptop { width:45%; margin: 40px 2%;}
-        @include mobile { width:80%; margin: 30px auto;    display: block;}
+        @include una-columna  { width:80%; margin: 30px auto;    display: block;}
     }
     >div:first-child{
         display: block;
         margin:40px auto;
         @include laptop {@include inline-top;  margin: 40px 2%;}
-        @include mobile {margin: 30px auto; display: block;}
+        @include una-columna {margin: 30px auto; display: block;}
 
     }
     a{
