@@ -26,8 +26,8 @@ class ProjectsTableSeeder extends Seeder {
                 <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>
                     <li>HTML, CSS, SASS, Laravel, GIT,</li>
                 </ul>
-                <div class="ver-online"><a title="ver online" href="http://www.takkgroup.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div>',
-                'detail_two' => '<p>Diseño y programación Front de la web corporativa de la empresa de retail Takk Group</p> ',
+                ',
+                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.takkgroup.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><p>Diseño y programación Front de la web corporativa de la empresa de retail Takk Group</p> ',
             ],
             [
                 'id' => 2,
@@ -35,8 +35,8 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Web y tienda online de Migayo',
                 'url' => 'web/web-migayo',
                 'featured_image' => '/img/web/migayo/featured-web-migayo-celia-gayo.jpg',
-                'detail_one' => '<div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div>',
-                'detail_two' => 'texto de detalle 2',
+                'detail_one' => '',
+                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><p>Diseño y programación Front de la web con tienda online de Migayo</p>',
             ],
             [
                 'id' => 3,
@@ -119,7 +119,7 @@ class ProjectsTableSeeder extends Seeder {
 <p>A partir de ahí, mediante una aplicación web que diseñé, se establecía un <strong>diálogo</strong> en el que los usuario iban pidiendo pasos en su broche y yo les devolvía imágenes de su pieza como una joya terminada. Este proceso se repetía tantas veces como el usuario quisiera, generando <strong>piezas metamorfoseadas</strong>.</p>
 <br /><p>Como, reslutado, obtuve una serie de piezas en un estado de mayor o menor evolución, que muestran las infinitas posibilidades formales de la joya.</p>
 <p>Lo importante de los Broches en Proceso no son los resultados finales de las piezas. Lo importante son todos los <strong>estados intermedios que se han ido generando</strong> y que quedan documentados en cada ficha de broche.</p> <br/><br/><p>Esta colección ha sido expuesta en:</p> <ul><li><strong>Joya Barcelona</strong>. Barcelona 2016</li> <li>Escuela de Arte de la Palma. Madrid 2106</li></ul>',
-                'detail_two' => '<p>Joyería de investigación: Broches en proceso</p>  ',
+                'detail_two' => ' <div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div> <p>Joyería de investigación: Broches en proceso</p> ',
             ],
             [
                 'id' => 11,

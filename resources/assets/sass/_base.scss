@@ -280,20 +280,30 @@ body{
 
 .ver-online{
     text-decoration: none;
-    color:inherit;
+    color:#ffffff;
     font-family: $font-italic-light;
-    padding-bottom: 7px;
+    background: $color-producto;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
 
     img{
-        margin-right: 10px;
-        top: 10px;
-        position: relative;
+     width: auto !important;
+         text-align: center !important;
+         margin: 0 auto !important;
+         display: inline-block!important;
+         vertical-align: middle;
+         padding-right: 10px;
     }
     a{ display: block; height: 100%; width: 100%; cursor: pointer;     text-decoration: none;
-    color:inherit;}
+       color:inherit;}
     a:hover{opacity:0.8}
 }
-
+.texto-detalle-2 p{
+    margin-top: 20px;
+}
 .menu-box.abremenu{
     min-height: 500px;
     height: 100%;
@@ -642,6 +652,7 @@ ul.titulo{
 
         .featured-image{
             @include box_shadow(1);
+            margin-bottom: 0px;
         }
     }
 

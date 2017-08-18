@@ -147,13 +147,21 @@ body {
 
 .ver-online {
   text-decoration: none;
-  color: inherit;
+  color: #ffffff;
   font-family: "Raleway", cursive;
-  padding-bottom: 7px; }
+  background: #F5A992;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 8px;
+  font-size: 14px; }
   .ver-online img {
-    margin-right: 10px;
-    top: 10px;
-    position: relative; }
+    width: auto !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    display: inline-block !important;
+    vertical-align: middle;
+    padding-right: 10px; }
   .ver-online a {
     display: block;
     height: 100%;
@@ -163,6 +171,9 @@ body {
     color: inherit; }
   .ver-online a:hover {
     opacity: 0.8; }
+
+.texto-detalle-2 p {
+  margin-top: 20px; }
 
 .menu-box.abremenu {
   min-height: 500px;
@@ -468,7 +479,8 @@ ul.titulo {
     width: auto;
     margin: 40px 2.5%; }
     .proyect > div .featured-image {
-      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.12), 1px 1px 4px 0px rgba(0, 0, 0, 0.09); }
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.12), 1px 1px 4px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 0px; }
   .proyect .imagenes-proyecto {
     -moz-column-count: 3;
     -moz-column-gap: 8px;

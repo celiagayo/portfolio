@@ -34,8 +34,9 @@
                     </div>
                     <div>
                         <img class="featured-image" src="{{ $project->featured_image }}"/>
+                        <div class="texto-detalle-2">
                         {!!html_entity_decode($project->detail_two)!!}
-
+</div>
                         </a>
                     </div>
 
