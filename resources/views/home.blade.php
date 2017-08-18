@@ -12,7 +12,7 @@
             @foreach ($categories as $category)
             <li class="menu-ap {{ $category->css_class }}" data-attr="{{ $category->slug }}">{{ $category->title }}</li>
             @endforeach
-       
+
             <div class="arrow">
                 <div class="arrow-bottom">
                     <a><span></span></a>
@@ -29,13 +29,15 @@
         <div class="{{ $category->css_class }}">
             <div class="banda {{ $category->slug }}">
                 <div class="cont-banda">
-                    <h2>{{ $category->title }}</h2>
-<!--                    <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>-->
-                    <br/>
-                    <img class="icon-flecha" src="/img/arrow.png" title="Más información" alt="Más información"/>
-                    <br/>
-                    <div class="detalle">
-                        {!!html_entity_decode($category->detail)!!}
+                    <div class="scroll-banda">
+                        <h2>{{ $category->title }}</h2>
+    <!--                    <i class="fa fa-long-arrow-left fa-3x" aria-hidden="true"></i>-->
+                        <br/>
+                        <img class="icon-flecha" src="/img/arrow.png" title="Más información" alt="Más información"/>
+                        <br/>
+                        <div class="detalle">
+                            {!!html_entity_decode($category->detail)!!}
+                        </div>
                     </div>
                 </div>
             </div>

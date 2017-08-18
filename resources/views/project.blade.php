@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="modal" title="volver"></div>
- <div class="exit" title="volver"> <img src="/img/back.png" title="volver" alt="volver"/></div>
+<div class="exit" title="volver"> <img src="/img/back.png" title="volver" alt="volver"/></div>
 
 <div class="content ">
 
@@ -11,11 +11,13 @@
         <div class="{{ $category->css_class }}">
             <div class="banda {{ $category->slug }}">
                 <div class="cont-banda fix">
-                    <div class="info-button">i</div>
+                    <div class="scroll-banda">
+                        <div class="info-button">i</div>
 
-                    <div class="detalle">
-                        {!!html_entity_decode($project->detail_one)!!}
-                        <!--                        {{ $project->detail_one }}-->
+                        <div class="detalle">
+                            {!!html_entity_decode($project->detail_one)!!}
+                            <!--                        {{ $project->detail_one }}-->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -25,7 +27,6 @@
 
                         <div class='ver {{$category->css_class}}'> <a title="volver" href="/#{{$category->slug}}"> 
                                 <img src="/img/back.png" title="volver" alt="volver"/>
-<!--                                <i class="fa fa-undo fa-2x" aria-hidden="true" ></i>-->
 
                             </a></div>
                         <div class='volver {{$category->css_class}}'>  <a title="ver online" href="{{ $project->url }}" >     <img src="/img/eye.png" title="Ver online" alt="Ver online"/></a></div>
@@ -34,7 +35,7 @@
                     <div>
                         <img class="featured-image" src="{{ $project->featured_image }}"/>
                         {!!html_entity_decode($project->detail_two)!!}
-                        <!--                        <div>{{ $project->detail_two }}</div>-->
+
                         </a>
                     </div>
 
@@ -45,7 +46,7 @@
 
                     @foreach ($images as $image)
                     <div>
-                       
+
                         <img src="{{ $image->url }}"/>
                     </div>
                     @endforeach

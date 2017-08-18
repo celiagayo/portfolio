@@ -126,11 +126,14 @@ $(document).ready(function () {
             .mouseenter(function () {
                 $(this).addClass('mostrada');
                 $(this).find('.icon-flecha').addClass('gira');
+                $('.scroll-banda').animate({scrollTop: 0}, 'fast');
             })
             .mouseleave(function () {
                 $(this).removeClass('mostrada');
-                  $(this).find('.icon-flecha').removeClass('gira');
+                $(this).find('.icon-flecha').removeClass('gira');
+                $('.scroll-banda').animate({scrollTop: 0}, 'fast');
             });
+//    $('.banda').addClass('mostrada');
     //Si existe banda, centrar navbar
     if ($('.banda').length) {
         $('.navbar').addClass('con-banda');
@@ -140,8 +143,11 @@ $(document).ready(function () {
 
 
 // ALTURA DE BANDA
-    $('.banda .detalle').height(WindHeight - 100);
-
+    function altoBanda() {
+//        var altoTituloBanda = $('.cont-banda h2').height() + $('.cont-banda img').height();
+        $('.scroll-banda').height(WindHeight - 80);
+    }
+    altoBanda();
 //MENUBOX funcionamiento
     $('.menu-box')
             .mouseenter(function () {
@@ -186,6 +192,7 @@ $(document).ready(function () {
     //RESIZE
     $(window).resize(function () {
         portadaTodo();
+        altoBanda();
     });
     //SCROLL
     $(window).scroll(function () {
