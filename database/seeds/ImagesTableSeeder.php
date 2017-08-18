@@ -291,70 +291,83 @@ class ImagesTableSeeder extends Seeder {
             ],
             /* ARCHITECTURE */
             [
-                'id' => 14,
+                'id' => 100,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-1.jpg',
                 'project_id' => 12
             ],
             [
-                'id' => 15,
+                'id' => 101,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-2.jpg',
                 'project_id' => 12
             ],
             [
-                'id' => 16,
+                'id' => 102,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-3.jpg',
                 'project_id' => 12
             ],
             [
-                'id' => 17,
+                'id' => 103,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-4.jpg',
                 'project_id' => 12
             ],
             [
-                'id' => 18,
+                'id' => 104,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-5.jpg',
                 'project_id' => 12
             ],
             [
-                'id' => 19,
+                'id' => 105,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-6.jpg',
                 'project_id' => 12
             ],
             [
-                'id' => 20,
+                'id' => 106,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-7.jpg',
                 'project_id' => 12
             ],
             [
-                'id' => 21,
+                'id' => 107,
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-8.jpg',
                 'project_id' => 12
             ],
             [
-                'id' => 22,
+                'id' => 108,
+                'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-9.jpg',
+                'project_id' => 12
+            ],
+            
+            
+            [
+                'id' => 110,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-1.jpg',
                 'project_id' => 13
             ],
             [
-                'id' => 23,
+                'id' => 111,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-2.jpg',
                 'project_id' => 13
             ],
             [
-                'id' => 24,
+                'id' => 112,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-3.jpg',
                 'project_id' => 13
             ],
             [
-                'id' => 25,
+                'id' => 113,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-4.jpg',
                 'project_id' => 13
             ],
             [
-                'id' => 26,
+                'id' => 114,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-5.jpg',
                 'project_id' => 13
             ],
+              [
+                'id' => 115,
+                'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-6.jpg',
+                'project_id' => 13
+            ],
+              
         ]);
     }
 

@@ -12,7 +12,12 @@
             @foreach ($categories as $category)
             <li class="menu-ap {{ $category->css_class }}" data-attr="{{ $category->slug }}">{{ $category->title }}</li>
             @endforeach
-            <div class="arrow-down"></div>
+       
+            <div class="arrow">
+                <div class="arrow-bottom">
+                    <a><span></span></a>
+                </div>
+            </div>
         </ul>
     </div>
 

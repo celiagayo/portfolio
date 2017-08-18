@@ -153,15 +153,100 @@ body{
 .navbar.con-banda{
     padding-right: $ancho-banda;
 }
-.arrow-down{
-    background:$color-light;
+
+/*arrow*/
+.portada .arrow {
     margin: 0 auto;
     text-align: center;
     height: 40px;
     width: 7px;
     position: relative;
-    top: 100px;
+    top: 80px;
+    /*    position: absolute;
+        left: 50%;
+        margin-left: -38px;
+        top: 96%;*/
 }
+.portada .arrow-bottom a span {
+    border-left: 2px solid $color-light;;
+    border-bottom: 2px solid $color-light;;
+}
+.portada .arrow a {
+    color: $color-light;;
+}
+.arrow-bottom a {
+    padding-top: 70px;
+}
+.arrow a {
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #ffffff;
+    letter-spacing: .1em;
+    text-decoration: none;
+    -o-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+/*.arrow::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}*/
+.arrow-bottom a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+/*fin arrow*/
 .icon-flecha{margin-bottom: 20px;}
 .icon-flecha.gira{
     -ms-transform: rotate(180deg);
