@@ -29,7 +29,7 @@
                                 <img src="/img/back.png" title="volver" alt="volver"/>
 
                             </a></div>
-                        <div class='volver {{$category->css_class}}'>  <a title="ver online" href="{{ $project->url }}" >     <img src="/img/eye.png" title="Ver online" alt="Ver online"/></a></div>
+<!--                        <div class='volver {{$category->css_class}}'>  <a title="ver online" href="{{ $project->url }}" >     <img src="/img/eye.png" title="Ver online" alt="Ver online"/></a></div>-->
                         <div class='titulo {{$category->css_class}}'><h2>{{ $project->title }}</h2></div>
                     </div>
                     <div>

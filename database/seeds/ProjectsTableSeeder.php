@@ -25,8 +25,9 @@ class ProjectsTableSeeder extends Seeder {
                 <ul>
                 <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>
                     <li>HTML, CSS, SASS, Laravel, GIT,</li>
-                </ul>',
-                'detail_two' => '<p>Diseño y programación Front de la web corporativa de la empresa de retail Takk Group</p>',
+                </ul>
+                <div class="ver-online"><a title="ver online" href="http://www.takkgroup.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div>',
+                'detail_two' => '<p>Diseño y programación Front de la web corporativa de la empresa de retail Takk Group</p> ',
             ],
             [
                 'id' => 2,
@@ -34,7 +35,7 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Web y tienda online de Migayo',
                 'url' => 'web/web-migayo',
                 'featured_image' => '/img/web/migayo/featured-web-migayo-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
+                'detail_one' => '<div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div>',
                 'detail_two' => 'texto de detalle 2',
             ],
             [

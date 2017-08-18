@@ -145,6 +145,25 @@ body {
     text-decoration: none;
     color: inherit; }
 
+.ver-online {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Raleway", cursive;
+  padding-bottom: 7px; }
+  .ver-online img {
+    margin-right: 10px;
+    top: 10px;
+    position: relative; }
+  .ver-online a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit; }
+  .ver-online a:hover {
+    opacity: 0.8; }
+
 .menu-box.abremenu {
   min-height: 500px;
   height: 100%;

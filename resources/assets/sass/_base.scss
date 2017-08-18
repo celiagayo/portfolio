@@ -278,6 +278,22 @@ body{
     }
 }
 
+.ver-online{
+    text-decoration: none;
+    color:inherit;
+    font-family: $font-italic-light;
+    padding-bottom: 7px;
+
+    img{
+        margin-right: 10px;
+        top: 10px;
+        position: relative;
+    }
+    a{ display: block; height: 100%; width: 100%; cursor: pointer;     text-decoration: none;
+    color:inherit;}
+    a:hover{opacity:0.8}
+}
+
 .menu-box.abremenu{
     min-height: 500px;
     height: 100%;
