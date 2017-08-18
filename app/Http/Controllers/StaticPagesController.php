@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Category;
-use DB;
 
 class StaticPagesController extends Controller
 {

@@ -12,3 +12,7 @@ Homestead.yaml
 # Archivos intermedios del compilador sass
 .sass-cache/
 public/css/app.css.map
+
+# PHPStorm y Laravelide
+.phpstorm.meta.php
+_ide_helper.php
