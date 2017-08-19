@@ -3,22 +3,30 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Database\QueryException;
 
 class PagesController extends Controller
 {
 	public function home(){
 
-		$categories = Category::all();
+	    try {
+            $categories = Category::all();
 
-		/**
-		Para cada categoría, obtenemos sus proyectos
-		y los guardamos en el atributo no persistente
-		*/
-		foreach ($categories as $category) {
+            /**
+            Para cada categoría, obtenemos sus proyectos
+            y los guardamos en el atributo no persistente
+             */
+            foreach ($categories as $category) {
 
-			$category->projects = $category->projects()->get();
+                $category->projects = $category->projects()->get();
 
-		}
+            }
+        }catch(QueryException $e){
+            Log::emergency("Excepción al conectar a BBDD en PagesController.home()");
+            return view('error');
+        }
+
 
 		return view('home')
 			->with('categories',$categories);
