@@ -27,10 +27,9 @@ class PagesController extends Controller
             y los guardamos en el atributo no persistente
              */
             foreach ($categories as $category) {
-
                 $category->projects = $category->projects()->get();
-
             }
+
         }catch(QueryException $e){
             Log::emergency("Excepción al conectar a BBDD en " . $route->getActionName());
             return view('error');
@@ -42,27 +41,36 @@ class PagesController extends Controller
 
 	}
 
-	public function show($category_slug,$project_slug)
+	public function show($category_slug,$project_slug,Route $route)
 	{
 
-		$categories = Category::all();
-		// Obtenemos la categoría, first() devuelve un objeto de la clase del Modelo Category
-		$category = $categories->where('slug','=',$category_slug)->first();
+	    try{
+            $categories = Category::all();
+            // Obtenemos la categoría, first() devuelve un objeto de la clase del Modelo Category
+            $category = $categories->where('slug','=',$category_slug)->first();
 
 
-		if ($category == null){
-			return "error";
-		}
+            if ($category == null){
+                Log::critical('Categoría ' . $category_slug . ' no encontrada en ' . $route->getActionName());
+                return view('error');
+            }
 
-		/**
-		De todos los proyectos de la categoría, obtenemos el que tiene
-		el slug buscado
-		*/
-		$project = $category -> projects()->where('slug','=',$project_slug)->first();
+            /**
+            De todos los proyectos de la categoría, obtenemos el que tiene
+            el slug buscado
+             */
+            $project = $category -> projects()->where('slug','=',$project_slug)->first();
 
-		if ($project == null){
-			return "error";
-		}
+            if ($project == null){
+                Log::critical('Proyecto ' . $project_slug . ' no encontrada para la categoría ' . $category_slug . ' en ' . $route->getActionName());
+                return view('error');
+            }
+
+        }catch(QueryException $e){
+            Log::emergency("Excepción al conectar a BBDD en " . $route->getActionName());
+            return view('error');
+        }
+
 
 		// Obtenemos las imágenes de ese proyecto
 		$images = $project->images()->get();
