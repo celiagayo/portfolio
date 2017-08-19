@@ -38,3 +38,5 @@ portfolio-php-fpm:
     - ./php-fpm/php-ini-overrides.ini:/etc/php/7.0/fpm/conf.d/99-overrides.ini
   links:
     - portfolio-mysql
+  environment:
+    PHP_IDE_CONFIG : "serverName=my.local"
