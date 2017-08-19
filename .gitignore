@@ -16,3 +16,6 @@ public/css/app.css.map
 # PHPStorm y Laravelide
 .phpstorm.meta.php
 _ide_helper.php
+
+# Resultado de los tests
+tests/results-junit
