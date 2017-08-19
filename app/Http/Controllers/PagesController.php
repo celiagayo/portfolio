@@ -5,13 +5,22 @@ namespace App\Http\Controllers;
 use App\Category;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Database\QueryException;
+use Illuminate\Routing\Route;
 
 class PagesController extends Controller
 {
-	public function home(){
+	public function home(Route $route){
 
 	    try {
             $categories = Category::all();
+
+
+            if ($categories->isEmpty()){
+                Log::critical("No se encontraron categorías en  " . $route->getActionName());
+                return view('error');
+            }else{
+                Log::debug('Se encontraron las siguientes categorías:' . $categories->count());
+            }
 
             /**
             Para cada categoría, obtenemos sus proyectos
@@ -23,7 +32,7 @@ class PagesController extends Controller
 
             }
         }catch(QueryException $e){
-            Log::emergency("Excepción al conectar a BBDD en PagesController.home()");
+            Log::emergency("Excepción al conectar a BBDD en " . $route->getActionName());
             return view('error');
         }
 
