@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/','StaticPagesController@home');
-Route::get('/{category_slug}/{project_slug}', 'StaticPagesController@show');
+Route::get('/','PagesController@home');
+Route::get('/{category_slug}/{project_slug}', 'PagesController@show');

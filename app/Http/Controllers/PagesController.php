@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Category;
 
-class StaticPagesController extends Controller
+class PagesController extends Controller
 {
 	public function home(){
 
