@@ -10,6 +10,7 @@ use Illuminate\Routing\Route;
 class PagesController extends Controller
 {
 	public function home(Route $route){
+	    Log::debug('Entrando en ' . $route->getActionName());
 
 	    try {
             $categories = Category::all();
@@ -43,6 +44,7 @@ class PagesController extends Controller
 
 	public function show($category_slug,$project_slug,Route $route)
 	{
+        Log::debug('Entrando en ' . $route->getActionName());
 
 	    try{
             $categories = Category::all();
@@ -53,6 +55,8 @@ class PagesController extends Controller
             if ($category == null){
                 Log::critical('Categoría ' . $category_slug . ' no encontrada en ' . $route->getActionName());
                 return view('error');
+            }else{
+                Log::debug('Encontrada la categoría :' . $category_slug);
             }
 
             /**
@@ -64,6 +68,8 @@ class PagesController extends Controller
             if ($project == null){
                 Log::critical('Proyecto ' . $project_slug . ' no encontrada para la categoría ' . $category_slug . ' en ' . $route->getActionName());
                 return view('error');
+            }else{
+                Log::debug('Encontrado el proyecto :' . $project_slug);
             }
 
         }catch(QueryException $e){
@@ -74,6 +80,7 @@ class PagesController extends Controller
 
 		// Obtenemos las imágenes de ese proyecto
 		$images = $project->images()->get();
+        Log::debug('Encontradas imágenes :' . $images->count());
 
 		return view('project')
             ->with('categories',$categories)
