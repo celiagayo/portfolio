@@ -9,7 +9,7 @@
 
     <div class="area {{ $category->slug }}" >
         <div class="{{ $category->css_class }}">
-            <div class="banda {{ $category->slug }}">
+            <div class="banda {{ $category->slug }} banda-cerrada">
                 <div class="cont-banda fix">
                     <div class="scroll-banda">
                         <div class="info-button">i</div>

@@ -216,7 +216,8 @@ $(document).ready(function () {
 
     }
 
-    //PROYECTO imagen agrandada          
+    //PROYECTO imagen agrandada 
+    if ($(window).width() >= 600) {
     $('.imagenes-proyecto div').click(function () {
         posicionImg = $(this).offset();
         $('.modal').show();
@@ -237,7 +238,7 @@ $(document).ready(function () {
             $('html, body').animate({scrollTop: posicionImg.top}, 'slow');
         });
     });
-
+    }
 
     //RESIZE
     $(window).resize(function () {
