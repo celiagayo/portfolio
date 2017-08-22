@@ -40,6 +40,7 @@ $max-width:1500px;
 
 $ancho-banda:90px;
 $ancho-banda-tablet:70px;
+$ancho-banda-mobile:50px;
 $main-text: 15px;
 $boton-text:26px; 
 $boton-text-d: 2.3vw;
@@ -72,7 +73,7 @@ $laptop-width: 1170px;
 $tablet-width: 850px;
 $una-columna-width: 600px;
 $mobile-width: 400px;
-$minimobile-width: 300px;
+$minimobile-width: 350px;
 
 
 @mixin desktop {
@@ -163,6 +164,9 @@ body{
         }
         @include mobile {
             line-height: 50px;  
+        }
+         @include minimobile {
+                  font-size: 13px;
         }
     }
 }
@@ -260,6 +264,7 @@ body{
     margin-bottom: 20px;
     width: 55px;
     @include tablet { width: 44px;}
+    @include mobile { width: 37px;}
 }
 .icon-flecha.gira{
     -ms-transform: rotate(180deg);
@@ -534,23 +539,29 @@ ul.titulo{
 
     font-weight: lighter;
     @include tablet { width:$ancho-banda-tablet;}
+    @include mobile { 
+
+        width:$ancho-banda-mobile;
+        padding: 100px 5px 10px;
+
+
+    }
 
     h2{
         word-break: break-all; 
         text-transform: uppercase; 
         font-family:$font-sans; 
         @include tablet { font-size: 21px;}
+        @include mobile { font-size: 18px;}
     }
     h3{
         font-family:$font-sans; 
         font-size: 19px;
         @include tablet { font-size: 17px;}
+        @include mobile { font-size: 15px;}
 
     }
-    .scroll-banda{
-        position: relative;
-        overflow-y: auto!important;
-    }
+
     .detalle{
         padding-left: 100px;
         position: relative;
@@ -573,6 +584,7 @@ ul.titulo{
         position: relative; 
         width: 70px;
         @include tablet { width:55px;}
+        @include mobile {  width:45px;}
     }
     p, ul{
         font-family:$font-cuerpo; 
@@ -585,17 +597,20 @@ ul.titulo{
     }
 
 }
-.banda-cerrada{
 
-
-/*    border: 1px solid red;*/
-}
 .banda-mostrada{
     width: 40%;
     padding: 150px 30px;
     @include tablet { width:70%;}
     .detalle{ padding-left: 0px;}
-    div{width: auto; overflow: hidden; padding-right: 20px;}
+    div{
+        width: auto; overflow: hidden; padding-right: 20px;
+        @include tablet {padding-right: 5px}
+    }
+    .scroll-banda{
+        position: relative;
+        overflow-y: auto!important;
+    }
 }
 .fix{
     position: fixed!important;
@@ -611,6 +626,8 @@ ul.titulo{
 
     @include laptop {padding: 200px 130px 100px 50px;}
     @include tablet {padding: 100px 90px 100px 20px;}
+    @include mobile {padding: 70px 70px 70px 20px;}
+
     >div{
         @include inline-top;
         width: 28%;

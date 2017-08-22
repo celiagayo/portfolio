@@ -40,6 +40,9 @@ body {
     @media screen and (max-width: 400px) {
       .navbar h1 {
         line-height: 50px; } }
+    @media screen and (max-width: 350px) {
+      .navbar h1 {
+        font-size: 13px; } }
 
 .navbar.con-banda {
   padding-right: 90px; }
@@ -127,6 +130,9 @@ body {
   @media screen and (max-width: 850px) {
     .icon-flecha {
       width: 44px; } }
+  @media screen and (max-width: 400px) {
+    .icon-flecha {
+      width: 37px; } }
 
 .icon-flecha.gira {
   -ms-transform: rotate(180deg);
@@ -359,6 +365,10 @@ ul.titulo {
   @media screen and (max-width: 850px) {
     .banda {
       width: 70px; } }
+  @media screen and (max-width: 400px) {
+    .banda {
+      width: 50px;
+      padding: 100px 5px 10px; } }
   .banda h2 {
     word-break: break-all;
     text-transform: uppercase;
@@ -366,15 +376,18 @@ ul.titulo {
     @media screen and (max-width: 850px) {
       .banda h2 {
         font-size: 21px; } }
+    @media screen and (max-width: 400px) {
+      .banda h2 {
+        font-size: 18px; } }
   .banda h3 {
     font-family: "Cormorant Garamond", serif;
     font-size: 19px; }
     @media screen and (max-width: 850px) {
       .banda h3 {
         font-size: 17px; } }
-  .banda .scroll-banda {
-    position: relative;
-    overflow-y: auto !important; }
+    @media screen and (max-width: 400px) {
+      .banda h3 {
+        font-size: 15px; } }
   .banda .detalle {
     padding-left: 100px;
     position: relative;
@@ -394,6 +407,9 @@ ul.titulo {
     @media screen and (max-width: 850px) {
       .banda div {
         width: 55px; } }
+    @media screen and (max-width: 400px) {
+      .banda div {
+        width: 45px; } }
   .banda p, .banda ul {
     font-family: "Lato", sans-serif;
     margin-bottom: 15px;
@@ -402,9 +418,6 @@ ul.titulo {
     @media screen and (max-width: 850px) {
       .banda p, .banda ul {
         font-size: 13px; } }
-
-.banda-cerrada {
-  /*    border: 1px solid red;*/ }
 
 .banda-mostrada {
   width: 40%;
@@ -418,6 +431,12 @@ ul.titulo {
     width: auto;
     overflow: hidden;
     padding-right: 20px; }
+    @media screen and (max-width: 850px) {
+      .banda-mostrada div {
+        padding-right: 5px; } }
+  .banda-mostrada .scroll-banda {
+    position: relative;
+    overflow-y: auto !important; }
 
 .fix {
   position: fixed !important;
@@ -435,6 +454,9 @@ ul.titulo {
   @media screen and (max-width: 850px) {
     .bloque {
       padding: 100px 90px 100px 20px; } }
+  @media screen and (max-width: 400px) {
+    .bloque {
+      padding: 70px 70px 70px 20px; } }
   .bloque > div {
     display: inline-block;
     vertical-align: top;
