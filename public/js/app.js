@@ -5,7 +5,19 @@ $(document).ready(function () {
     function portadaTodo() {
         $('.portada').height(WindHeight);
         var mitadPortada = $(".portada").height() / 2;
-        var padingPortada = mitadPortada - $('.portada h1').height() - 100;
+     
+        if ($(window).width() >= 700) {
+               var padingPortada = mitadPortada - $('.portada h1').height();
+            $('.portada').css('padding-top', padingPortada);
+            $('.portada ul').height(mitadPortada + $('.portada h1').height());
+
+
+        } else {
+    var padingPortada = mitadPortada - $('.portada h1').height() - 100;
+            $('.portada').css('padding-top', padingPortada);
+            $('.portada ul').height(mitadPortada + $('.portada h1').height() + 100);
+
+        }
         $('.portada').css('padding-top', padingPortada);
         $('.portada ul').height(mitadPortada + $('.portada h1').height() + 100);
     }
