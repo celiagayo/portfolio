@@ -35,7 +35,7 @@ body {
       height: 50px; } }
   .navbar h1 {
     line-height: 70px;
-    font-size: 17px;
+    font-size: 21px;
     color: #F5A992;
     font-family: "Poiret One", cursive; }
     @media screen and (max-width: 850px) {
@@ -377,7 +377,7 @@ ul.titulo {
     .content .c-product .banda {
       background: #F5A992; }
   .content .c-architecture {
-    color: #FACBBD; }
+    color: #F5A992; }
     .content .c-architecture .banda {
       background: #FACBBD; }
     .content .c-architecture p {
@@ -561,6 +561,11 @@ ul.titulo {
     width: 100%;
     margin: 0 auto;
     padding: 0px; }
+    .proyect .presenta-proyecto h2 {
+      margin-top: 16px;
+      font-size: 20px; }
+    .proyect .presenta-proyecto .content .c-architecture {
+      color: #EE6F49; }
   .proyect .enlaces-proyecto {
     width: 100%;
     overflow: hidden;
@@ -609,7 +614,7 @@ ul.titulo {
     width: auto;
     margin: 40px 0px; }
     .proyect > div .featured-image {
-      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.12), 1px 1px 4px 0px rgba(0, 0, 0, 0.09);
+      /*            @include box_shadow(1);*/
       margin-bottom: 0px; }
   .proyect .imagenes-proyecto {
     -moz-column-count: 3;

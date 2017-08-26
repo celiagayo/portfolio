@@ -339,7 +339,7 @@ class ImagesTableSeeder extends Seeder {
             
             [
                 'id' => 110,
-                'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-1.jpg',
+                'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-1.png',
                 'project_id' => 13
             ],
             [
@@ -365,6 +365,21 @@ class ImagesTableSeeder extends Seeder {
               [
                 'id' => 115,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-6.jpg',
+                'project_id' => 13
+            ],
+                [
+                'id' => 116,
+                'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-7.jpg',
+                'project_id' => 13
+            ],
+                [
+                'id' => 117,
+                'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-8.jpg',
+                'project_id' => 13
+            ],
+            [
+                'id' => 118,
+                'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-9.jpg',
                 'project_id' => 13
             ],
               

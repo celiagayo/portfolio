@@ -160,7 +160,7 @@ body{
 
     h1{
         line-height: 70px;
-        font-size: 17px;
+        font-size: 21px;
         color: $color-producto;
         font-family: $font-titulo;
 
@@ -546,7 +546,7 @@ ul.titulo{
         }
     }
     .c-architecture{
-        color:  $color-arquitectura;
+        color:  $color-producto;
         .banda{
             background: $color-arquitectura;
         }
@@ -722,6 +722,11 @@ ul.titulo{
         width:100%;
         margin: 0 auto;
         padding: 0px;
+        h2{
+            margin-top: 16px;
+            font-size: 20px;
+        }
+        .content .c-architecture{color: $color-web}
     }
     .enlaces-proyecto{
         width: 100%;
@@ -786,7 +791,7 @@ ul.titulo{
         margin: 40px 0px;
 
         .featured-image{
-            @include box_shadow(1);
+/*            @include box_shadow(1);*/
             margin-bottom: 0px;
         }
     }

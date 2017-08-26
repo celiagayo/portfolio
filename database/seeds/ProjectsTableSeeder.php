@@ -27,7 +27,7 @@ class ProjectsTableSeeder extends Seeder {
                     <li>HTML, CSS, SASS, Laravel, GIT,</li>
                 </ul>
                 ',
-                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.takkgroup.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><p>Diseño y programación Front de la web corporativa de la empresa de retail Takk Group</p> ',
+                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.takkgroup.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Diseño y programación Front de la web corporativa de la empresa de retail Takk Group</h2> ',
             ],
             [
                 'id' => 2,
@@ -36,7 +36,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'web/web-migayo',
                 'featured_image' => '/img/web/migayo/featured-web-migayo-celia-gayo.jpg',
                 'detail_one' => '',
-                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><p>Diseño y programación Front de la web con tienda online de Migayo</p>',
+                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Diseño y programación Front de la web con tienda online de Migayo</h2>',
             ],
             [
                 'id' => 3,
@@ -45,7 +45,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'web/web-imf',
                 'featured_image' => '/img/web/imf/featured-web-imf-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_two' => '<h2>Diseño y programación Front de la Escuela de Negocios IMF Business School</h2>',
             ],
             [
                 'id' => 4,
@@ -54,7 +54,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'web/web-formando-imf',
                 'featured_image' => '/img/web/formando-imf/featured-landing-formando-imf-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_two' => '<h2>Diseño y programación Front de lanidng pages para escuela de formación</h2>',
             ]
             ,
             [
@@ -64,7 +64,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'graphic/graphic-marketing-migayo',
                 'featured_image' => '/img/graphic/marketing/featured-marketing-migayo-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_two' => '<h2>Comunicaciones comerciales</h2>',
             ]
             ,
             [
@@ -74,7 +74,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'graphic/bitacora',
                 'featured_image' => '/img/graphic/bitacora/featured-graphic-bitacora-fez-celia-gayo.jpg',
                 'detail_one' => '<p>A tinta, a carboncillo, con bolígrafo, con acuarela...</p><p> En servilletas, en cuadernos de dibujo, en folios...</p> <p>Cuando viajo necesito hacer apuntes rápidos de lo que veo, no se otro modo de quedarme con un lugar guardado en mi memoria para siempre.</p> <p>El dibujo, a diferencia de la fotgrafía, me permite abstraerme de la realidad y captar aquello y sólo aquello que me llama la atención y quiero mantener en el recuerdo.</p> <p>El esfuerzo es más grande que tomar una fotografía, el hecho de elegir un lugar y ponerme a dibujar me obliga a pararme, a decidir si vale la pena, a pensar... y a disfrutar  </p>',
-                'detail_two' => '<p>Bocetos y recuerdos de viajes</p>',
+                'detail_two' => '<h2>Bocetos y recuerdos de viajes</h2>',
             ]
             ,
             [
@@ -84,7 +84,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'graphic/photography',
                 'featured_image' => '/img/graphic/photography/featured-photography-portadas-celia-gayo.jpg',
                 'detail_one' => '<p>Organizar, encontrar patrones... me gusta hacer las mismas fotos cuando viajo, en este caso, de fachadas que me voy encontrando y llaman mi atención.</p><p>Quizá no son las fotos más representativas de los lugares que visito, pero me llegan más los pequeños detalles</p>',
-                'detail_two' => '<p>Serie de fotografía: "Portadas que cruzo"</p>',
+                'detail_two' => '<h2>Serie de fotografía: "Portadas que cruzo"</h2>',
             ]
             ,
             [
@@ -94,7 +94,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'graphic/illustration',
                 'featured_image' => '/img/graphic/illustration/featured-graphic-illustration-woman-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_two' => '<h2>Ilustraciones</h2>',
             ]
             ,
             [
@@ -104,7 +104,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'product/objetcs',
                 'featured_image' => '/img/product/objects/featured-product-caja-madera-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
-                'detail_two' => 'texto de detalle 2',
+                'detail_two' => '<h2>Diseño de objetos</h2>',
             ]
             ,
             [
@@ -119,7 +119,7 @@ class ProjectsTableSeeder extends Seeder {
 <p>A partir de ahí, mediante una aplicación web que diseñé, se establecía un <strong>diálogo</strong> en el que los usuario iban pidiendo pasos en su broche y yo les devolvía imágenes de su pieza como una joya terminada. Este proceso se repetía tantas veces como el usuario quisiera, generando <strong>piezas metamorfoseadas</strong>.</p>
 <br /><p>Como, reslutado, obtuve una serie de piezas en un estado de mayor o menor evolución, que muestran las infinitas posibilidades formales de la joya.</p>
 <p>Lo importante de los Broches en Proceso no son los resultados finales de las piezas. Lo importante son todos los <strong>estados intermedios que se han ido generando</strong> y que quedan documentados en cada ficha de broche.</p> <br/><br/><p>Esta colección ha sido expuesta en:</p> <ul><li><strong>Joya Barcelona</strong>. Barcelona 2016</li> <li>Escuela de Arte de la Palma. Madrid 2106</li></ul>',
-                'detail_two' => ' <div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div> <p>Joyería de investigación: Broches en proceso</p> ',
+                'detail_two' => ' <div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div> <h2>Joyería de investigación: Broches en proceso</h2> ',
             ],
             [
                 'id' => 11,
@@ -128,7 +128,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'product/joyas',
                 'featured_image' => '/img/product/joyas/featured-product-joyas-a-medida-celia-gayo.jpg',
                 'detail_one' => '<p>Migayo nace en el año 2012 como escaparate de mis diseños de joyería minimalista.</p><p>Empiezo participando en diferentes ferias en Madrid y Barcelona (varias ediciones del Mercado Central de Diseño en Matadero, Ciento y Pico Market y Festivalet en Barcelona) con piezas de colección a las que llamo "joyas mínimas", pensadas para reasaltar la parte del cuerpo en que se llevan pero sin ser protagonsitas.</p><p>Poco a poco la marca evoluciona y me centro en el diseño y realización artesanal de joyas a medida. Este enfoque me permite hacer piezas más personales y con un simbolismo muy potente ya que van a acompañar a su dueño durante toda la vida, celebrando un evento, evocando un recuerdo, transformando una pieza heredada...</p> <p>Trabajo principalmente con oro y gemas nuevas, heredadas o compradas en viajes</p> <p><a href="https://www.migayo.com/" title="Visita Migayo" target="_blank">www.migayo.com</a></p>',
-                'detail_two' => '<p>Joyería a medida y artesanal bajo la marca Migayo</p>',
+                'detail_two' => '<h2>Joyería a medida y artesanal bajo la marca Migayo</h2>',
             ],
             [
                 'id' => 12,
@@ -143,7 +143,7 @@ class ProjectsTableSeeder extends Seeder {
 <p>Para ello, se define un catálogo de actuación a modo de red de intervenciones que envían "satélites" a las zonas con actividad arqueológica. Estos elementos irán colonizando el yacimiento hasta que su uso no sea necesario, momento en el que se integrarán en el edificio principal o "núcelo", que con el aumento de los decubrimientos, necesitará más espacio.</p>
 <p>El sistema constructivo, modular, es clave para permitr esta diversidad de formas: Todo el conjunto se construye con barras de 4 longitudes diferentes, que se unen entre sí mediante una rótula que permite diferentes ángulos de anclaje, generando diferentes tipolgías de pórticos. </p><p>Enero 2012</p>
 ',
-                'detail_two' => '<p>Proyecto evolutivo, que parte de la indeterminación y la temporalidad intrínsecas a un yacimeinto arqueológico. ',
+                'detail_two' => '<h2>Proyecto Final de Carrera, arquitectura evolutiva, que parte de la indeterminación y la temporalidad de un yacimeinto arqueológico.</h2> ',
             ],
             [
                 'id' => 13,
@@ -152,8 +152,8 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'architecture/reebok',
                 'featured_image' => '/img/architecture/reebok/featured-architecture-reebok-celia-gayo.jpg',
                 'detail_one' => '<p>Proyecto realizado con la arquitecta Marta Menéndez para transformar el espacio y usos de un local de Madrid para acoger dureante dos meses el Reebok Creative Hub </p>'
-                . '<p>Las características del encargo requerían de una intervención rápida y temporal para generar un espacio multiusos que acogiera eventos, talleres y presentaciones.</p><p>El espacio, recorrido y unificado mediante un tubo de acero que adquiere diferentes funciones, queda organizado y estructurado mediante una grada móvil de madera y una mesa-bici giratoria. De esta manera, conseguíamos generar diferentes espacios y usos</p>',
-                'detail_two' => '<p>Proyecto de arquitectura efímera para el Rebook Creative Hub. Madrid 2014</p>',
+                . '<p>Las características del encargo requerían de una intervención rápida y temporal para generar un espacio multiusos que acogiera eventos, talleres y presentaciones.</p><p>El espacio, recorrido y unificado mediante un tubo de acero que adquiere diferentes funciones, queda organizado y estructurado mediante una grada móvil de madera y una mesa-bici giratoria. De esta manera, conseguíamos generar diferentes espacios y usos</p> <p><a href="http://www.neo2.es/blog/2014/05/reebok-creative-hub/" title="Ver evento" target="_blank">Ver vídeo del evento</a></p><p><em>Imágenes de Marta Menéndez, Diario Digital y Neo2</em></p>',
+                'detail_two' => '<h2>Proyecto de arquitectura efímera para el Rebook Creative Hub. Madrid 2014</h2>',
             ],
             [
                 'id' => 14,
@@ -162,7 +162,7 @@ class ProjectsTableSeeder extends Seeder {
                 'url' => 'architecture/urban',
                 'featured_image' => '/img/architecture/urban/featured-architecture-urban-celia-gayo.jpg',
                 'detail_one' => '<p>Low density urban development proposal in Arroyomolinos, Madrid.</p>',
-                'detail_two' => 'texto de detalle 2',
+                'detail_two' => '<h2>Planeamiento Urbano</h2>',
             ]
         ]);
     }
