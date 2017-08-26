@@ -774,14 +774,30 @@ ul.titulo {
     -moz-animation: color-change-2x 9s infinite alternate both;
     animation: color-change-2x 9s infinite alternate both;
 }*/
-.error {
+.pagina-generica-content {
   padding-top: 150px;
-  text-align: center;
-  color: #EE6F49; }
-  .error h2 {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  color: #EE6F49;
+  font-size: 15px; }
+  .pagina-generica-content h2 {
     padding-bottom: 15px; }
-  .error p {
-    padding: 15px; }
+  .pagina-generica-content p {
+    padding-top: 8px;
+    padding-bottom: 8px; }
+
+.error {
+  text-align: center; }
+
+.cita {
+  text-transform: italic;
+  background: #FCE9E7;
+  padding: 20px;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 14px;
+  color: #EE6F49; }
 
 .footer {
   width: 100%;

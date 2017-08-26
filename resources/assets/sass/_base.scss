@@ -624,7 +624,7 @@ ul.titulo{
         font-family:$font-cuerpo; 
         margin-bottom: 15px;
         font-weight: lighter;
-        font-size: 15px;
+        font-size: $main-text;
 
         @include tablet { font-size: 13px;}
 
@@ -791,7 +791,7 @@ ul.titulo{
         margin: 40px 0px;
 
         .featured-image{
-/*            @include box_shadow(1);*/
+            /*            @include box_shadow(1);*/
             margin-bottom: 0px;
         }
     }
@@ -964,14 +964,30 @@ ul.titulo{
     animation: color-change-2x 9s infinite alternate both;
 }*/
 
-.error{
+.pagina-generica-content{
     padding-top: 150px;
-text-align: center;
+    max-width: $proyect-width;
+    width: 100%;
+    margin: 0 auto;
     color: $color-web;
+    font-size: $main-text;
     h2{padding-bottom: 15px;}
     p{
-        padding: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
+}
+.error{
+    text-align: center;
+}
+.cita{
+    text-transform: italic;
+    background:  $color-light;
+    padding: 20px;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 14px;
+    color: $color-web;
 }
 .footer{
     width: 100%;
