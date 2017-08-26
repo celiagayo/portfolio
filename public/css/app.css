@@ -774,6 +774,15 @@ ul.titulo {
     -moz-animation: color-change-2x 9s infinite alternate both;
     animation: color-change-2x 9s infinite alternate both;
 }*/
+.error {
+  padding-top: 150px;
+  text-align: center;
+  color: #EE6F49; }
+  .error h2 {
+    padding-bottom: 15px; }
+  .error p {
+    padding: 15px; }
+
 .footer {
   width: 100%;
   margin: 0 auto;
