@@ -14,4 +14,4 @@
 Route::get('/','PagesController@home');
 Route::get('/{category_slug}/{project_slug}', 'PagesController@show');
 Route::get('/sobre-celia-gayo','PagesController@about');
-Route::get('/contacto','PagesController@contacto');
+Route::get('/contacto','PagesController@contact');

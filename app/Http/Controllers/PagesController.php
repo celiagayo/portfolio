@@ -107,7 +107,7 @@ class PagesController extends Controller {
                         ->with('categories', $categories);
     }
 
-    public function contacto(Route $route) {
+    public function contact(Route $route) {
         Log::debug('Entrando en ' . $route->getActionName());
 
         try {
@@ -125,7 +125,7 @@ class PagesController extends Controller {
             return view('error');
         }
 
-        return view('contacto')
+        return view('contact')
                         ->with('categories', $categories);
     }
 

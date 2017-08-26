@@ -10,8 +10,8 @@
             <p class="box-abremenu">menú</p>
             <nav>
                 <div class="menu-ap" ><a href="/" title="Ir al inicio">Inicio</a></div>
-                <div class="menu-ap"><a href="sobre-mi" title="Saber más sobre mi">Sobre mi</a></div>
-                <div class="menu-ap"><a href="contacto" title="Contactar">Contacto</a></div>
+                 <div class="menu-ap"><a href="/sobre-celia-gayo" title="Saber más sobre mi">Sobre mi</a></div>
+            <div class="menu-ap"><a href="/contacto" title="Contactar">Contacto</a></div>
 
             </nav>
 
