@@ -47,6 +47,124 @@ class ImagesTableSeeder extends Seeder {
                 'url' => '/img/web/migayo/web-migayo-celia-gayo-7.png',
                 'project_id' => 2
             ],
+            
+             [
+                'id' => 10101,
+                'url' => '/img/web/takk/web-takk-celia-gayo-1.jpg',
+                'project_id' => 1
+            ],
+            
+            [
+                'id' => 10208,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-8.jpg',
+                'project_id' => 2
+            ],
+            [
+                'id' => 10209,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-9.jpg',
+                'project_id' => 2
+            ],
+            [
+                'id' => 10210,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-10.jpg',
+                'project_id' => 2
+            ],
+            [
+                'id' => 10211,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-11.jpg',
+                'project_id' => 2
+            ],
+            
+             [
+                'id' => 103201,
+                'url' => '/img/web/imf/web-imf-celia-gayo-1.jpg',
+                'project_id' => 3
+            ],
+            [
+                'id' => 103202,
+                'url' => '/img/web/imf/web-imf-celia-gayo-2.jpg',
+                'project_id' => 3
+            ],
+            [
+                'id' => 103203,
+                'url' => '/img/web/imf/web-imf-celia-gayo-3.jpg',
+                'project_id' => 3
+            ],
+            [
+                'id' => 103204,
+                'url' => '/img/web/imf/web-imf-celia-gayo-4.jpg',
+                'project_id' => 3
+            ],
+            [
+                'id' => 103205,
+                'url' => '/img/web/imf/web-imf-celia-gayo-5.jpg',
+                'project_id' => 3
+            ],
+            [
+                'id' => 103206,
+                'url' => '/img/web/imf/web-imf-celia-gayo-6.jpg',
+                'project_id' => 3
+            ],
+            [
+                'id' => 103207,
+                'url' => '/img/web/imf/web-imf-celia-gayo-7.jpg',
+                'project_id' => 3
+            ],
+              [
+                'id' => 103208,
+                'url' => '/img/web/imf/web-imf-celia-gayo-8.jpg',
+                'project_id' => 3
+            ],
+            [
+                'id' => 11501,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-1.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11502,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-2.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11503,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-3.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11504,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-4.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11505,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-5.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 10401,
+                'url' => '/img/web/formando-imf/web-formando-imf-celia-gayo-1.jpg',
+                'project_id' => 4
+            ],
+            [
+                'id' => 10402,
+                'url' => '/img/web/formando-imf/web-formando-imf-celia-gayo-2.jpg',
+                'project_id' => 4
+            ],
+            [
+                'id' => 10403,
+                'url' => '/img/web/formando-imf/web-formando-imf-celia-gayo-3.jpg',
+                'project_id' => 4
+            ],
+            [
+                'id' => 10404,
+                'url' => '/img/web/formando-imf/web-formando-imf-celia-gayo-4.jpg',
+                'project_id' => 4
+            ],
+            [
+                'id' => 10405,
+                'url' => '/img/web/formando-imf/web-formando-imf-celia-gayo-5.jpg',
+                'project_id' => 4
+            ],
             /* GRAPHIC */
             [
                 'id' => 60,
@@ -113,72 +231,72 @@ class ImagesTableSeeder extends Seeder {
                 'url' => '/img/graphic/photography/photography-celia-gayo-2.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 82,
                 'url' => '/img/graphic/photography/photography-celia-gayo-3.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 83,
                 'url' => '/img/graphic/photography/photography-celia-gayo-4.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 84,
                 'url' => '/img/graphic/photography/photography-celia-gayo-5.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 85,
                 'url' => '/img/graphic/photography/photography-celia-gayo-6.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 86,
                 'url' => '/img/graphic/photography/photography-celia-gayo-7.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 87,
                 'url' => '/img/graphic/photography/photography-celia-gayo-8.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 88,
                 'url' => '/img/graphic/photography/photography-celia-gayo-9.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 89,
                 'url' => '/img/graphic/photography/photography-celia-gayo-10.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 90,
                 'url' => '/img/graphic/photography/photography-celia-gayo-11.jpg',
                 'project_id' => 7
             ],
-                   [
+            [
                 'id' => 91,
                 'url' => '/img/graphic/photography/photography-celia-gayo-12.jpg',
                 'project_id' => 7
             ],
-             [
+            [
                 'id' => 92,
                 'url' => '/img/graphic/photography/photography-celia-gayo-13.jpg',
                 'project_id' => 7
             ],
-             [
+            [
                 'id' => 93,
                 'url' => '/img/graphic/photography/photography-celia-gayo-14.jpg',
                 'project_id' => 7
             ],
-             [
+            [
                 'id' => 94,
                 'url' => '/img/graphic/photography/photography-celia-gayo-15.jpg',
                 'project_id' => 7
             ],
-             [
+            [
                 'id' => 95,
                 'url' => '/img/graphic/photography/photography-celia-gayo-16.jpg',
                 'project_id' => 7
@@ -335,8 +453,6 @@ class ImagesTableSeeder extends Seeder {
                 'url' => '/img/architecture/pfc/architecture-pfc-celia-gayo-9.jpg',
                 'project_id' => 12
             ],
-            
-            
             [
                 'id' => 110,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-1.png',
@@ -362,17 +478,17 @@ class ImagesTableSeeder extends Seeder {
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-5.jpg',
                 'project_id' => 13
             ],
-              [
+            [
                 'id' => 115,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-6.jpg',
                 'project_id' => 13
             ],
-                [
+            [
                 'id' => 116,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-7.jpg',
                 'project_id' => 13
             ],
-                [
+            [
                 'id' => 117,
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-8.jpg',
                 'project_id' => 13
@@ -382,7 +498,6 @@ class ImagesTableSeeder extends Seeder {
                 'url' => '/img/architecture/reebok/architecture-reebok-celia-gayo-9.jpg',
                 'project_id' => 13
             ],
-              
         ]);
     }
 

@@ -15,7 +15,7 @@ class ProjectsTableSeeder extends Seeder {
             [
                 'id' => 1,
                 'slug' => 'web-takk',
-                'title' => 'Nueva web de la empresa Takk',
+                'title' => 'Takk Group',
                 'url' => 'web/web-takk',
                 'featured_image' => '/img/web/takk/featured-landing-web-takk-celia-gayo.jpg',
                 'detail_one' => ' <p>Las necesidades específicas de la empresa requería de una web que aglutinara los diferentes proyectos que realizan con uno o varios clientes. Por eso, los proyectos se agrupan según cliente... </p>
@@ -24,15 +24,15 @@ class ProjectsTableSeeder extends Seeder {
                 <h3>Herramientas</h3>
                 <ul>
                 <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>
-                    <li>HTML, CSS, SASS, Laravel, GIT,</li>
+                    <li>HTML, CSS, SASS, Laravel, GIT</li>
                 </ul>
                 ',
-                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.takkgroup.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Diseño y programación Front de la web corporativa de la empresa de retail Takk Group</h2> ',
+                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.takkgroup.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Diseño, maquetación y desarrollo Front de la web corporativa de la empresa de retail Takk Group</h2> ',
             ],
             [
                 'id' => 2,
                 'slug' => 'web-migayo',
-                'title' => 'Web y tienda online de Migayo',
+                'title' => 'MIGAYO',
                 'url' => 'web/web-migayo',
                 'featured_image' => '/img/web/migayo/featured-web-migayo-celia-gayo.jpg',
                 'detail_one' => '',
@@ -41,20 +41,36 @@ class ProjectsTableSeeder extends Seeder {
             [
                 'id' => 3,
                 'slug' => 'web-imf',
-                'title' => 'Web de la Escuela de Negocios IMF',
+                'title' => 'IMF Business School',
                 'url' => 'web/web-imf',
                 'featured_image' => '/img/web/imf/featured-web-imf-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
-                'detail_two' => '<h2>Diseño y programación Front de la Escuela de Negocios IMF Business School</h2>',
+                'detail_two' => '<h2>Diseño, maquetación y desarrollo Front de la web de la Escuela de Negocios IMF Business School</h2>',
             ],
+            [
+                'id' => 15,
+                'slug' => 'web-hogo',
+                'title' => 'HOGO Beds',
+                'url' => 'web/web-hogo',
+                'featured_image' => '/img/web/formando-imf/featured-web-hogo.jpg',
+                'detail_one' => '<p>La web de la empresa HOGO Beds requería de un diseño muy limpio y onírico. El contenido se estructura en ventanas que van descubriendo al usuario el sistema de descanso. <br/> Botones sutiles que van respirando, apareciendo y desapareciendo, para hacer de la navegación una experiencia relejante.</p>
+ 
+                <br/>
+                    <h3>Herramientas</h3>
+                <ul>
+                    <li>HTML, CSS, SASS, Laravel, GIT</li>
+                </ul>',
+                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.hogo.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Maquetación y desarrollo Front de la web</h2> ',
+            ]
+            ,
             [
                 'id' => 4,
                 'slug' => 'web-formando-imf',
                 'title' => 'Landing page de formación online',
                 'url' => 'web/web-formando-imf',
-                'featured_image' => '/img/web/formando-imf/featured-landing-formando-imf-celia-gayo.jpg',
+                'featured_image' => '/img/web/formando-imf/featured-web-formando-imf-celia-gayo.jpg',
                 'detail_one' => 'texto de detalle 1',
-                'detail_two' => '<h2>Diseño y programación Front de lanidng pages para escuela de formación</h2>',
+                'detail_two' => '<h2>Diseño, maquetación y desarrollo Front de landing pages para escuela de formación</h2>',
             ]
             ,
             [

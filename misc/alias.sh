@@ -16,3 +16,4 @@ docker exec portfolio-php-fpm npm run watch
 
 # Watch de sass en Mac
 cd "/Users/celia/Google Drive/DISEÑO/DISEÑO WEB/proyectos/portfolio" && sass --watch resources/assets/sass:public/css
+cd "/Users/celia/Google Drive/DISEÑO/DISEÑO WEB/proyectos/portfolio" && /bin/bash misc/sass.sh
