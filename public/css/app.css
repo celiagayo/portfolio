@@ -14,10 +14,14 @@ $color-op-graphic:rgba(238,111, 73, 0.9 );
 $color-op-producto:rgba(238,111, 73, 0.8 );
 $color-op-arquitectura:rgba(238,111, 73, 0.7 );
 $color-op-light:rgba(238,111, 73, 0.6 );*/
+/*$font-titulo: 'Cormorant Garamond', serif;*/
+/*$font-titulo:'Josefin Slab', serif;*/
+/*$font-italic-light:'Raleway', cursive;*/
+/*$font-cuerpo:'Josefin Slab', serif;*/
 /*SHADOWS*/
 /*MEDIAQUUERIES*/
 body {
-  font-family: "Cormorant Garamond", serif; }
+  font-family: "Lato", sans-serif; }
 
 .navbar {
   background: #FCE9E7;
@@ -31,8 +35,9 @@ body {
       height: 50px; } }
   .navbar h1 {
     line-height: 70px;
-    font-size: 17px;
-    color: #F5A992; }
+    font-size: 21px;
+    color: #F5A992;
+    font-family: "Poiret One", cursive; }
     @media screen and (max-width: 850px) {
       .navbar h1 {
         text-align: left;
@@ -151,6 +156,7 @@ body {
   left: 10px;
   font-size: 13px;
   cursor: pointer;
+  font-family: "Poiret One", cursive;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.16), 1px 3px 6px rgba(0, 0, 0, 0.23); }
   @media screen and (max-width: 400px) {
     .menu-box {
@@ -193,13 +199,14 @@ body {
 .ver-online {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Raleway", cursive;
+  text-transform: uppercase;
+  font-family: "Poiret One", cursive;
   background: #F5A992;
   text-align: center;
   margin: 0 auto;
   width: 100%;
   padding: 8px;
-  font-size: 14px;
+  font-size: 12px;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.12), 1px 1px 4px 0px rgba(0, 0, 0, 0.09); }
   .ver-online img {
     width: auto !important;
@@ -230,7 +237,8 @@ body {
   height: 100%;
   min-width: 250px;
   width: 25%;
-  line-height: inherit; }
+  line-height: inherit;
+  font-family: "Poiret One", cursive; }
   @media screen and (max-width: 400px) {
     .menu-box.abremenu {
       -webkit-border-radius: 0px 100px 100px 100px;
@@ -238,6 +246,7 @@ body {
       border-radius: 0px 100px 100px 100px;
       min-width: 193px; } }
   .menu-box.abremenu p {
+    font-family: "Poiret One", cursive;
     font-size: 30px;
     text-align: left;
     position: relative;
@@ -249,8 +258,18 @@ body {
     line-height: auto;
     padding-left: 10px; }
 
+.mail-home {
+  position: absolute;
+  top: 10px;
+  right: 15px; }
+
+.mail-home:hover {
+  opacity: 0.8;
+  top: 9px;
+  right: 14px; }
+
 h1.titulo, h2.titulo {
-  text-transform: uppercase; }
+  /*    text-transform: uppercase;*/ }
   h1.titulo a, h2.titulo a {
     text-decoration: none;
     color: inherit;
@@ -260,13 +279,22 @@ h1.titulo, h2.titulo {
   h1.titulo a:hover, h2.titulo a:hover {
     text-decoration: underline; }
 
+h2.titulo {
+  font-family: "Poiret One", cursive;
+  font-size: 33px;
+  color: #ffffff;
+  font-weight: 100;
+  margin-bottom: 7px; }
+
 h3.titulo {
-  font-family: "Raleway", cursive;
+  font-family: "Poiret One", cursive;
   font-size: 14px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  color: #ffffff;
+  font-weight: 100; }
 
 ul.titulo {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Poiret One", cursive;
   list-style: none;
   color: #ffffff;
   width: 100%;
@@ -318,7 +346,7 @@ ul.titulo {
 
 .portada {
   background: #ec6137;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Poiret One", cursive;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -349,7 +377,7 @@ ul.titulo {
     .content .c-product .banda {
       background: #F5A992; }
   .content .c-architecture {
-    color: #FACBBD; }
+    color: #F5A992; }
     .content .c-architecture .banda {
       background: #FACBBD; }
     .content .c-architecture p {
@@ -377,7 +405,7 @@ ul.titulo {
   .banda h2 {
     word-break: break-all;
     text-transform: uppercase;
-    font-family: "Cormorant Garamond", serif; }
+    font-family: "Poiret One", cursive; }
     @media screen and (max-width: 850px) {
       .banda h2 {
         font-size: 21px; } }
@@ -385,14 +413,17 @@ ul.titulo {
       .banda h2 {
         font-size: 18px; } }
   .banda h3 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 19px; }
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: "Poiret One", cursive; }
     @media screen and (max-width: 850px) {
       .banda h3 {
-        font-size: 17px; } }
+        font-size: 15px; } }
     @media screen and (max-width: 400px) {
       .banda h3 {
-        font-size: 15px; } }
+        font-size: 13px; } }
   .banda .detalle {
     padding-left: 100px;
     position: relative;
@@ -496,12 +527,10 @@ ul.titulo {
     width: 100%;
     height: auto;
     text-align: center;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.12), 1px 1px 4px 0px rgba(0, 0, 0, 0.09); }
+    /*        @include box_shadow(1);*/ }
   .bloque img:hover {
-    opacity: 0.9;
-    top: -1px;
-    right: 1px;
-    position: relative; }
+    opacity: 0.8;
+    /*          @include resalta-hover */ }
   .bloque .all {
     display: block;
     margin: 30px auto; }
@@ -512,7 +541,7 @@ ul.titulo {
     text-transform: uppercase; }
 
 .proyect {
-  font-family: "Raleway", cursive;
+  font-family: "Poiret One", cursive;
   width: 100%;
   margin: 0 auto;
   padding: 110px 140px 100px 50px;
@@ -532,6 +561,11 @@ ul.titulo {
     width: 100%;
     margin: 0 auto;
     padding: 0px; }
+    .proyect .presenta-proyecto h2 {
+      margin-top: 16px;
+      font-size: 20px; }
+    .proyect .presenta-proyecto .content .c-architecture {
+      color: #EE6F49; }
   .proyect .enlaces-proyecto {
     width: 100%;
     overflow: hidden;
@@ -580,7 +614,7 @@ ul.titulo {
     width: auto;
     margin: 40px 0px; }
     .proyect > div .featured-image {
-      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.12), 1px 1px 4px 0px rgba(0, 0, 0, 0.09);
+      /*            @include box_shadow(1);*/
       margin-bottom: 0px; }
   .proyect .imagenes-proyecto {
     -moz-column-count: 3;
@@ -650,7 +684,7 @@ ul.titulo {
   opacity: 0.9;
   height: 100%;
   width: 100%;
-  background: #F18767;
+  background: #F7F4F1;
   z-index: 11;
   display: none;
   cursor: pointer; }
@@ -740,6 +774,31 @@ ul.titulo {
     -moz-animation: color-change-2x 9s infinite alternate both;
     animation: color-change-2x 9s infinite alternate both;
 }*/
+.pagina-generica-content {
+  padding-top: 150px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  color: #EE6F49;
+  font-size: 15px; }
+  .pagina-generica-content h2 {
+    padding-bottom: 15px; }
+  .pagina-generica-content p {
+    padding-top: 8px;
+    padding-bottom: 8px; }
+
+.error {
+  text-align: center; }
+
+.cita {
+  text-transform: italic;
+  background: #FCE9E7;
+  padding: 20px;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 14px;
+  color: #EE6F49; }
+
 .footer {
   width: 100%;
   margin: 0 auto;

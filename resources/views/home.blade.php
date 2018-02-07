@@ -4,6 +4,7 @@
 
 
 <div class="portada ">
+    <a class="mail-home" href="mailto:hola@celiagayo.com" title="Envíame un correo"><img src="/img/mail.png" alt="Envíame un correo" title="Envíame un correo"/></a>
     <div>
         <h2 class="titulo">Celia Gayo Escribano</h2>
         <h3 class="titulo"><em>diseñadora</em></h3>
