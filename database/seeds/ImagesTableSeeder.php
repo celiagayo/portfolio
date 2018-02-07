@@ -12,41 +12,6 @@ class ImagesTableSeeder extends Seeder {
     public function run() {
         DB::table('images')->insert([
             /* WEB */
-            [
-                'id' => 1,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-1.png',
-                'project_id' => 2
-            ],
-            [
-                'id' => 2,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-2.png',
-                'project_id' => 2
-            ],
-            [
-                'id' => 3,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-3.png',
-                'project_id' => 2
-            ],
-            [
-                'id' => 4,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-4.png',
-                'project_id' => 2
-            ],
-            [
-                'id' => 5,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-5.png',
-                'project_id' => 2
-            ],
-            [
-                'id' => 6,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-6.png',
-                'project_id' => 2
-            ],
-            [
-                'id' => 7,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-7.png',
-                'project_id' => 2
-            ],
             
              [
                 'id' => 10101,
@@ -55,25 +20,43 @@ class ImagesTableSeeder extends Seeder {
             ],
             
             [
-                'id' => 10208,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-8.jpg',
+                'id' => 10201,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-1.jpg',
                 'project_id' => 2
             ],
             [
-                'id' => 10209,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-9.jpg',
+                'id' => 10202,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-2.jpg',
                 'project_id' => 2
             ],
             [
-                'id' => 10210,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-10.jpg',
+                'id' => 10203,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-3.jpg',
                 'project_id' => 2
             ],
             [
-                'id' => 10211,
-                'url' => '/img/web/migayo/web-migayo-celia-gayo-11.jpg',
+                'id' => 10204,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-4.jpg',
                 'project_id' => 2
             ],
+            [
+                'id' => 10205,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-5.jpg',
+                'project_id' => 2
+            ],
+            [
+                'id' => 10206,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-6.jpg',
+                'project_id' => 2
+            ],
+            
+            [
+                'id' => 10207,
+                'url' => '/img/web/migayo/web-migayo-celia-gayo-7.jpg',
+                'project_id' => 2
+            ],
+            
+           
             
              [
                 'id' => 103201,
@@ -110,11 +93,7 @@ class ImagesTableSeeder extends Seeder {
                 'url' => '/img/web/imf/web-imf-celia-gayo-7.jpg',
                 'project_id' => 3
             ],
-              [
-                'id' => 103208,
-                'url' => '/img/web/imf/web-imf-celia-gayo-8.jpg',
-                'project_id' => 3
-            ],
+              
             [
                 'id' => 11501,
                 'url' => '/img/web/hogo/web-hogo-celia-gayo-1.jpg',
@@ -138,6 +117,41 @@ class ImagesTableSeeder extends Seeder {
             [
                 'id' => 11505,
                 'url' => '/img/web/hogo/web-hogo-celia-gayo-5.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11506,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-6.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11507,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-7.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11508,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-8.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11509,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-9.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11510,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-10.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11511,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-11.jpg',
+                'project_id' => 15
+            ],
+            [
+                'id' => 11512,
+                'url' => '/img/web/hogo/web-hogo-celia-gayo-12.jpg',
                 'project_id' => 15
             ],
             [

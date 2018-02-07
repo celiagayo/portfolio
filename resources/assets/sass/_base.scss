@@ -36,9 +36,9 @@ $color-op-light:rgba(238,111, 73, 1 );
 /*$font-cuerpo:'Josefin Slab', serif;*/
 
 
-$font-titulo:'Poiret One', cursive;
+/*$font-titulo:'Poiret One', cursive;*/
 $font-cuerpo: 'Lato', sans-serif;
-$font-titulo:'Poiret One', cursive;
+$font-titulo:'Work Sans', cursive;
 
 $proyect-width:700px;
 
@@ -406,8 +406,8 @@ body{
 }
 .mail-home:hover{
     opacity: 0.8;
-    top: 9px;
-    right: 14px;
+    /*    top: 9px;
+        right: 14px;*/
 }
 h1.titulo, h2.titulo{
     /*    text-transform: uppercase;*/
@@ -417,6 +417,7 @@ h1.titulo, h2.titulo{
         display: block;
         height: 100%;
         width:100%;
+        text-transform: uppercase;
 
     }
     a:hover{
@@ -429,6 +430,7 @@ h2.titulo{
     color: $color-white;
     font-weight: 100;
     margin-bottom: 7px;
+    text-transform: uppercase;
 }
 h3.titulo{
     font-family: $font-titulo;
@@ -436,6 +438,7 @@ h3.titulo{
     padding-bottom: 25px;
     color: $color-white;
     font-weight: 100;
+    text-transform: uppercase;
 }
 
 ul.titulo{
@@ -578,7 +581,7 @@ ul.titulo{
 
 
     }
-
+strong{font-weight: 300}
     h2{
         word-break: break-all; 
         text-transform: uppercase; 
@@ -646,6 +649,9 @@ ul.titulo{
     .scroll-banda{
         position: relative;
         overflow-y: auto!important;
+    }
+    .info-button{
+        padding: 0px;
     }
 }
 .fix{
@@ -724,9 +730,13 @@ ul.titulo{
         width:100%;
         margin: 0 auto;
         padding: 0px;
+
+
         h2{
             margin-top: 16px;
-            font-size: 20px;
+            font-size: 19px;
+            font-weight:100;
+            font-family:$font-cuerpo;
         }
         .content .c-architecture{color: $color-web}
     }
@@ -809,6 +819,8 @@ ul.titulo{
         column-gap: 8px;
         column-fill: balance;
         margin-top:80px;
+        max-width: 1400px;
+        margin: 60px auto;
         @include tablet{
             -moz-column-count: 2;
             -webkit-column-count: 2;

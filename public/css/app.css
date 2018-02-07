@@ -18,6 +18,7 @@ $color-op-light:rgba(238,111, 73, 0.6 );*/
 /*$font-titulo:'Josefin Slab', serif;*/
 /*$font-italic-light:'Raleway', cursive;*/
 /*$font-cuerpo:'Josefin Slab', serif;*/
+/*$font-titulo:'Poiret One', cursive;*/
 /*SHADOWS*/
 /*MEDIAQUUERIES*/
 body {
@@ -37,7 +38,7 @@ body {
     line-height: 70px;
     font-size: 21px;
     color: #F5A992;
-    font-family: "Poiret One", cursive; }
+    font-family: "Work Sans", cursive; }
     @media screen and (max-width: 850px) {
       .navbar h1 {
         text-align: left;
@@ -156,7 +157,7 @@ body {
   left: 10px;
   font-size: 13px;
   cursor: pointer;
-  font-family: "Poiret One", cursive;
+  font-family: "Work Sans", cursive;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.16), 1px 3px 6px rgba(0, 0, 0, 0.23); }
   @media screen and (max-width: 400px) {
     .menu-box {
@@ -200,7 +201,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "Poiret One", cursive;
+  font-family: "Work Sans", cursive;
   background: #F5A992;
   text-align: center;
   margin: 0 auto;
@@ -238,7 +239,7 @@ body {
   min-width: 250px;
   width: 25%;
   line-height: inherit;
-  font-family: "Poiret One", cursive; }
+  font-family: "Work Sans", cursive; }
   @media screen and (max-width: 400px) {
     .menu-box.abremenu {
       -webkit-border-radius: 0px 100px 100px 100px;
@@ -246,7 +247,7 @@ body {
       border-radius: 0px 100px 100px 100px;
       min-width: 193px; } }
   .menu-box.abremenu p {
-    font-family: "Poiret One", cursive;
+    font-family: "Work Sans", cursive;
     font-size: 30px;
     text-align: left;
     position: relative;
@@ -265,8 +266,8 @@ body {
 
 .mail-home:hover {
   opacity: 0.8;
-  top: 9px;
-  right: 14px; }
+  /*    top: 9px;
+      right: 14px;*/ }
 
 h1.titulo, h2.titulo {
   /*    text-transform: uppercase;*/ }
@@ -275,26 +276,29 @@ h1.titulo, h2.titulo {
     color: inherit;
     display: block;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    text-transform: uppercase; }
   h1.titulo a:hover, h2.titulo a:hover {
     text-decoration: underline; }
 
 h2.titulo {
-  font-family: "Poiret One", cursive;
+  font-family: "Work Sans", cursive;
   font-size: 33px;
   color: #ffffff;
   font-weight: 100;
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+  text-transform: uppercase; }
 
 h3.titulo {
-  font-family: "Poiret One", cursive;
+  font-family: "Work Sans", cursive;
   font-size: 14px;
   padding-bottom: 25px;
   color: #ffffff;
-  font-weight: 100; }
+  font-weight: 100;
+  text-transform: uppercase; }
 
 ul.titulo {
-  font-family: "Poiret One", cursive;
+  font-family: "Work Sans", cursive;
   list-style: none;
   color: #ffffff;
   width: 100%;
@@ -346,7 +350,7 @@ ul.titulo {
 
 .portada {
   background: #ec6137;
-  font-family: "Poiret One", cursive;
+  font-family: "Work Sans", cursive;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -402,10 +406,12 @@ ul.titulo {
     .banda {
       width: 50px;
       padding: 100px 5px 10px; } }
+  .banda strong {
+    font-weight: 300; }
   .banda h2 {
     word-break: break-all;
     text-transform: uppercase;
-    font-family: "Poiret One", cursive; }
+    font-family: "Work Sans", cursive; }
     @media screen and (max-width: 850px) {
       .banda h2 {
         font-size: 21px; } }
@@ -417,7 +423,7 @@ ul.titulo {
     text-transform: uppercase;
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: "Poiret One", cursive; }
+    font-family: "Work Sans", cursive; }
     @media screen and (max-width: 850px) {
       .banda h3 {
         font-size: 15px; } }
@@ -473,6 +479,8 @@ ul.titulo {
   .banda-mostrada .scroll-banda {
     position: relative;
     overflow-y: auto !important; }
+  .banda-mostrada .info-button {
+    padding: 0px; }
 
 .fix {
   position: fixed !important;
@@ -541,7 +549,7 @@ ul.titulo {
     text-transform: uppercase; }
 
 .proyect {
-  font-family: "Poiret One", cursive;
+  font-family: "Work Sans", cursive;
   width: 100%;
   margin: 0 auto;
   padding: 110px 140px 100px 50px;
@@ -563,7 +571,9 @@ ul.titulo {
     padding: 0px; }
     .proyect .presenta-proyecto h2 {
       margin-top: 16px;
-      font-size: 20px; }
+      font-size: 19px;
+      font-weight: 100;
+      font-family: "Lato", sans-serif; }
     .proyect .presenta-proyecto .content .c-architecture {
       color: #EE6F49; }
   .proyect .enlaces-proyecto {
@@ -626,7 +636,9 @@ ul.titulo {
     column-count: 3;
     column-gap: 8px;
     column-fill: balance;
-    margin-top: 80px; }
+    margin-top: 80px;
+    max-width: 1400px;
+    margin: 60px auto; }
     @media screen and (max-width: 850px) {
       .proyect .imagenes-proyecto {
         -moz-column-count: 2;

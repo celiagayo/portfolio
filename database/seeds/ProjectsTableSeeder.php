@@ -18,13 +18,14 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Takk Group',
                 'url' => 'web/web-takk',
                 'featured_image' => '/img/web/takk/featured-landing-web-takk-celia-gayo.jpg',
-                'detail_one' => ' <p>Las necesidades específicas de la empresa requería de una web que aglutinara los diferentes proyectos que realizan con uno o varios clientes. Por eso, los proyectos se agrupan según cliente... </p>
+                'detail_one' => ' <p>En construcción</p>
  
                 <br/>
                 <h3>Herramientas</h3>
                 <ul>
                 <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>
-                    <li>HTML, CSS, SASS, Laravel, GIT</li>
+                   <li>HTML, CSS, JQuery, SASS, Laravel, GIT</li>
+                   <li>Adobe Photoshop, Adobde Illustrator, Adobe In Design</li>
                 </ul>
                 ',
                 'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.takkgroup.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Diseño, maquetación y desarrollo Front de la web corporativa de la empresa de retail Takk Group</h2> ',
@@ -35,8 +36,12 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'MIGAYO',
                 'url' => 'web/web-migayo',
                 'featured_image' => '/img/web/migayo/featured-web-migayo-celia-gayo.jpg',
-                'detail_one' => '',
-                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Diseño y programación Front de la web con tienda online de Migayo</h2>',
+                'detail_one' => ' <h3>Herramientas</h3>
+                <ul>
+                    <li>Wordpress, HTLM CSS, Woocommerce</li>
+                    <li>Adobe Photoshop, Adobde Illustrator, Adobe In Design</li>
+                </ul>',
+                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.migayo.com/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Diseño y programación Front de tema Wordpress con tienda online de Migayo</h2>',
             ],
             [
                 'id' => 3,
@@ -44,23 +49,30 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'IMF Business School',
                 'url' => 'web/web-imf',
                 'featured_image' => '/img/web/imf/featured-web-imf-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => '<h2>Diseño, maquetación y desarrollo Front de la web de la Escuela de Negocios IMF Business School</h2>',
+                'detail_one' => '<p>Como la diseñadora web y diseñadora gráfica de la empresa realicé el rediseño de la web principal de la marca,  su mantenimiento y mejoras contínuas a lo largo de cuatro años. </p>
+                    <h3>Herramientas</h3>
+                <ul>
+                <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front.</li>
+                     <li>HTML, CSS, JQuery, SASS, GIT</li>
+                     <li>Adobe Photoshop, Adobde Illustrator, Adobe In Design</li>
+                </ul>',
+                'detail_two' => '<h2>Diseño, maquetación y desarrollo Front de la web de la Escuela de Negocios IMF</h2>',
             ],
             [
                 'id' => 15,
                 'slug' => 'web-hogo',
                 'title' => 'HOGO Beds',
                 'url' => 'web/web-hogo',
-                'featured_image' => '/img/web/formando-imf/featured-web-hogo.jpg',
-                'detail_one' => '<p>La web de la empresa HOGO Beds requería de un diseño muy limpio y onírico. El contenido se estructura en ventanas que van descubriendo al usuario el sistema de descanso. <br/> Botones sutiles que van respirando, apareciendo y desapareciendo, para hacer de la navegación una experiencia relejante.</p>
+                'featured_image' => '/img/web/hogo/featured-web-hogo-celia-gayo.jpg',
+                'detail_one' => '<p>La web de la empresa HOGO Beds aportaba un diseño muy limpio y onírico. </p><p>El contenido se estructura en ventanas que van descubriendo al usuario el sistema de descanso. </p/><p>Desarrollo de elementos con movimientos sutiles, botones que se hinchan como si respiraran, flechas que desaparecen mientras se mueven y fondos degradados, para hacer de la navegación una experiencia relejante.</p>
  
                 <br/>
                     <h3>Herramientas</h3>
                 <ul>
-                    <li>HTML, CSS, SASS, Laravel, GIT</li>
+                    <li>HTML, CSS, JQuery, SASS, Laravel, GIT</li>
+                     <li>Adobe Photoshop</li>
                 </ul>',
-                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.hogo.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Maquetación y desarrollo Front de la web</h2> ',
+                'detail_two' => '<div class="ver-online"><a title="ver online" href="http://www.hogo.es/" title="Visitar web" target="_blank">     <img src="/img/eye.png" title="Ver online" alt="Ver online"/> Ver online </a></div><h2>Maquetación y desarrollo Front de la web responsive y multilenguaje</h2> ',
             ]
             ,
             [
@@ -69,8 +81,14 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Landing page de formación online',
                 'url' => 'web/web-formando-imf',
                 'featured_image' => '/img/web/formando-imf/featured-web-formando-imf-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
-                'detail_two' => '<h2>Diseño, maquetación y desarrollo Front de landing pages para escuela de formación</h2>',
+                'detail_one' => '<p>Como la diseñadora web y diseñadora gráfica de IMF Business School, realizo diferentes propuestas y modelos de landing pages, su testeo y mejoras contínuas. </p>
+                    <h3>Herramientas</h3>
+                <ul>
+                <li>SEO, Validaciones W3School, Velocidades de carga, Diseño responsive, UX, Maquetación y programación front, Material Design.</li>
+                     <li>HTML, CSS, JQuery, SASS, GIT</li>
+                     <li>Adobe Photoshop, Adobde Illustrator, Adobe In Design, Visual Web Optimizer</li>
+                </ul>',
+                'detail_two' => '<h2>Diseño, maquetación y desarrollo Front de landing pages para IMF Business School</h2>',
             ]
             ,
             [
@@ -79,7 +97,7 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Comunicaciones comerciales',
                 'url' => 'graphic/graphic-marketing-migayo',
                 'featured_image' => '/img/graphic/marketing/featured-marketing-migayo-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
+                'detail_one' => '<p>En construcción</p>',
                 'detail_two' => '<h2>Comunicaciones comerciales</h2>',
             ]
             ,
@@ -109,7 +127,7 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Ilustraciones',
                 'url' => 'graphic/illustration',
                 'featured_image' => '/img/graphic/illustration/featured-graphic-illustration-woman-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
+                'detail_one' => '<p>En construcción</p>',
                 'detail_two' => '<h2>Ilustraciones</h2>',
             ]
             ,
@@ -119,7 +137,7 @@ class ProjectsTableSeeder extends Seeder {
                 'title' => 'Objetos',
                 'url' => 'product/objetcs',
                 'featured_image' => '/img/product/objects/featured-product-caja-madera-celia-gayo.jpg',
-                'detail_one' => 'texto de detalle 1',
+                'detail_one' => '<p>En construcción</p>',
                 'detail_two' => '<h2>Diseño de objetos</h2>',
             ]
             ,

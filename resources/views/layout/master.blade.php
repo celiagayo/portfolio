@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio personal Celia Gayo Escribano">
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Lato:100,300,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
         <!-- CSS files -->
         <link rel="stylesheet" href="/css/app.css">
 

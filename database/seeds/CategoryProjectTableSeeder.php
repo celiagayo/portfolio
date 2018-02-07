@@ -12,10 +12,7 @@ class CategoryProjectTableSeeder extends Seeder
     public function run()
     {
     	DB::table('category_project')->insert([
-            [
-                'project_id' => 1,
-                'category_id' => 1
-            ],
+            
             [
                 'project_id' => 2,
                 'category_id' => 1
@@ -26,6 +23,10 @@ class CategoryProjectTableSeeder extends Seeder
             ],
               [
                 'project_id' => 15,
+                'category_id' => 1
+            ],
+            [
+                'project_id' => 1,
                 'category_id' => 1
             ],
             [
